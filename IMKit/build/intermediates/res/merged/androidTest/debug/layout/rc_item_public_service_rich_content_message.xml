@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:paddingLeft="14dp"
+    android:paddingRight="14dp">
+
+    <TextView
+        android:id="@id/rc_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="6dp"
+        android:paddingTop="8dp"
+        android:textColor="#353535"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@id/rc_time"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="6dp"
+        android:paddingTop="6dp"
+        android:textColor="#999999"
+        android:textSize="14dp" />
+
+    <io.rong.imkit.widget.AsyncImageView
+        android:id="@id/rc_img"
+        android:layout_width="fill_parent"
+        android:layout_height="160dp"
+        android:layout_gravity="center"
+        android:background="@android:color/white"
+        android:paddingBottom="6dp"
+        android:paddingTop="6dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@id/rc_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingBottom="6dp"
+        android:paddingTop="6dp"
+        android:textColor="#999999"
+        android:textSize="14dp" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/rc_normal_bg"
+        android:paddingBottom="8dp"
+        android:paddingTop="6dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="@string/rc_read_all"
+        android:textColor="#353535"
+        android:textSize="14dp" />
+
+</LinearLayout>

@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "H:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\rc_default_portrait.png",
+        "source": "H:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\rc_default_portrait.png"
+    },
+    {
+        "merged": "H:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\rc_ic_warning.png",
+        "source": "H:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\rc_ic_warning.png"
+    },
+    {
+        "merged": "H:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\rc_group_default_portrait.png",
+        "source": "H:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\rc_group_default_portrait.png"
+    },
+    {
+        "merged": "C:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\rc_ic_warning.png",
+        "source": "C:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\rc_ic_warning.png"
+    },
+    {
+        "merged": "C:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\rc_default_portrait.png",
+        "source": "C:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\rc_default_portrait.png"
+    },
+    {
+        "merged": "C:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\rc_group_default_portrait.png",
+        "source": "C:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\rc_group_default_portrait.png"
+    },
+    {
+        "merged": "C:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\rc_ic_bubble_white.9.png",
+        "source": "C:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\rc_ic_bubble_white.9.png"
+    },
+    {
+        "merged": "H:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\rc_ic_bubble_white.9.png",
+        "source": "H:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\rc_ic_bubble_white.9.png"
+    }
+]

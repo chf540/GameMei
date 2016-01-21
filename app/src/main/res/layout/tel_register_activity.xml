@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/app_top_bar"
+        layout="@layout/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="52dp" />
+
+    <!--手机号码输入框-->
+    <gamemei.qiyun.com.gamemei.widget.clearedittext.ClearEditText
+        android:id="@+id/tel_number"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="50dp"
+        android:drawablePadding="7dp"
+        android:hint="请输入手机号码"
+        android:singleLine="true"
+        android:textSize="17sp">
+
+        <requestFocus />
+    </gamemei.qiyun.com.gamemei.widget.clearedittext.ClearEditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal">
+
+        <!--验证码输入框-->
+        <gamemei.qiyun.com.gamemei.widget.clearedittext.ClearEditText
+            android:id="@+id/user_name"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:drawablePadding="7dp"
+            android:hint="请输入验证码"
+            android:singleLine="true"
+            android:textSize="17sp" />
+        <!--获取验证码按钮-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:text="获取验证码" />
+
+    </LinearLayout>
+
+    <!--注册按钮-->
+    <Button
+        android:id="@+id/bt_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/holo_blue_light"
+        android:text="注 册"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</LinearLayout>

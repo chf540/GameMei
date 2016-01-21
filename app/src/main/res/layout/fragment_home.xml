@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#384554"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_column"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1.0">
+
+            <gamemei.qiyun.com.gamemei.widget.slidingtab.PagerSlidingTabStrip
+                android:id="@+id/viewpagerindicator"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:background="#384554"
+                android:fillViewport="false"
+                android:textColor="@android:color/darker_gray"
+                app:pstsDividerColor="@android:color/transparent"
+                app:pstsIndicatorColor="#0ad9b2"
+                app:pstsIndicatorHeight="4dp"
+                app:pstsShouldExpand="true"
+                app:selectedTabTextColor="#0ad9b2" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_subscription"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp">
+
+            <ImageView
+                android:id="@+id/button_subscription"
+                android:layout_width="30.0dip"
+                android:layout_height="30.0dip"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/channel_glide_day_bg" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:text="订阅"
+                android:textColor="#0ad9b2"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/mViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/loading_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="30dp">
+
+    <FrameLayout
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/common_waiting_icon_logo">
+
+        <ImageView
+            android:id="@+id/loading_progressbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@null"
+            android:src="@drawable/loading_img" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/loading_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:text="正在加载"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/loading_image_close"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="@null"
+        android:padding="8dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/common_waiting_icon_close"
+        android:visibility="visible" />
+
+</LinearLayout>

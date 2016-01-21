@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="main_red">#ffcc3131</color>
+
+    <color name="colorPrimary">#181919</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#808080</color>
+    <color name="red">#FF0000</color>
+    <color name="gold">#FFD700</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="green">#008000</color>
+    <color name="blue">#0000FF</color>
+    <color name="purple">#800080</color>
+    <color name="pink">#FFC0CB</color>
+    <color name="orange">#FFA500</color>
+    <color name="lemonyellow">#FFFACD</color>
+    <color name="graywhite">#F5F5F5</color>
+    <color name="grayslate">#708090</color>
+    <color name="lightblue">#0083FF</color>
+    <color name="title_color">#37BCB2</color>
+    <color name="black">#000000</color>
+
+
+    <!--条目弹出popwindow相关配色-->
+    <color name="dislike_bg_normal">#ff3e3e3e</color>
+    <color name="dislike_bg_pressed">#ff2b2b2b</color>
+
+    <color name="item_title_normal">#ff444444</color>
+    <color name="item_title_disabled">#ff888888</color>
+
+
+    <color name="activity_bg_color">#fff5f5f5</color>
+    <color name="ss_comment_time">#ff999999</color>
+    <color name="item_local">#ffffffff</color>
+
+    <color name="item_abstract_normal">#ff444444</color>
+    <color name="item_abstract_disabled">#ff929292</color>
+    <color name="feed_hint_pressed">#ffeaeaea</color>
+    <color name="feed_hint_normal">#fff0f0f0</color>
+    <color name="divider_day">#ffdddddd</color>
+
+
+    <!-- A light Holo shade of blue -->
+    <color name="holo_blue_light">#ff33b5e5</color>
+    <!-- A light Holo shade of gray -->
+    <color name="holo_gray_light">#33999999</color>
+    <!-- A light Holo shade of green -->
+    <color name="holo_green_light">#ff99cc00</color>
+    <!-- A light Holo shade of red -->
+    <color name="holo_red_light">#ffff4444</color>
+    <!-- A dark Holo shade of blue -->
+    <color name="holo_blue_dark">#ff0099cc</color>
+    <!-- A dark Holo shade of green -->
+    <color name="holo_green_dark">#ff669900</color>
+    <!-- A dark Holo shade of red -->
+    <color name="holo_red_dark">#ffcc0000</color>
+    <!-- A Holo shade of purple -->
+    <color name="holo_purple">#ffaa66cc</color>
+    <!-- A light Holo shade of orange -->
+    <color name="holo_orange_light">#ffffbb33</color>
+    <!-- A dark Holo shade of orange -->
+    <color name="holo_orange_dark">#ffff8800</color>
+    <!-- A really bright Holo shade of blue -->
+    <color name="holo_blue_bright">#ff00ddff</color>
+    <!-- A really bright Holo shade of gray -->
+    <color name="holo_gray_bright">#33CCCCCC</color>
+    <color name="foreground_material_light">#cc000000</color>
+
+    <color name="transparent">#00000000</color>
+
+    <item name="subscribe_item_text_color_normal_night" type="color">@color/default_text_night
+    </item>
+    <!--订阅界面item-->
+    <color name="default_text_night">#ff747474</color>
+    <color name="subscribe_item_text_color_pressed_night">#ff303030</color>
+    <color name="subscribe_item_selected_stroke_night">#ffbc494d</color>
+    <color name="subscribe_item_drag_stroke">#ffd2d2d2</color>
+    <color name="subscribe_item_drag_bg">#fff5f5f5</color>
+    <color name="subscribe_item_selected_bg">#ffffffff</color>
+    <color name="subscribe_item_selected_stroke">#3499da</color>
+    <color name="subscribe_item_disabled_stroke">#ffcdcdcd</color>
+    <color name="subscribe_item_disabled_bg">#fff5f5f5</color>
+    <color name="subscribe_item_pressed_stroke">#ffcdcdcd</color>
+    <color name="subscribe_item_pressed_bg">#fff9f9f9</color>
+    <color name="subscribe_item_normal_stroke">#ffcdcdcd</color>
+    <color name="subscribe_item_normal_bg">#fff5f5f5</color>
+
+    <item name="subscribe_item_text_color_normal" type="color">@color/default_text</item>
+
+    <color name="default_text">#ff454545</color>
+    <color name="subscribe_item_text_color_pressed">#ffb9b9b9</color>
+    <color name="category_subscribe_text">#ffffffff</color>
+    <color name="drawer_item_bg">#ff5d5d5d</color>
+    <color name="drawer_line_color">#ff444444</color>
+    <color name="title_text_color">#ffffffff</color>
+    <color name="subscribe_tip_text">#ff2e2e2e</color>
+    <color name="subscribe_activity_bg">#ffefefef</color>
+    <color name="subscribe_bg">#fff5f5f5</color>
+    <color name="subscribe_seperate_line">#ffcdcdcd</color>
+
+    <color name="tab_selected_bg">#384554</color>
+
+
+</resources>

@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\release\\layout-sw550dp-large-v13\\umeng_socialize_post_comment.xml",
+        "source": "H:\\GameMei\\support_lib\\src\\main\\res\\layout-sw550dp-large\\umeng_socialize_post_comment.xml"
+    },
+    {
+        "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\release\\layout-sw550dp-large-v13\\umeng_socialize_post_share.xml",
+        "source": "H:\\GameMei\\support_lib\\src\\main\\res\\layout-sw550dp-large\\umeng_socialize_post_share.xml"
+    },
+    {
+        "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\release\\layout-sw550dp-large-v13\\umeng_socialize_ucenter.xml",
+        "source": "H:\\GameMei\\support_lib\\src\\main\\res\\layout-sw550dp-large\\umeng_socialize_ucenter.xml"
+    },
+    {
+        "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\release\\layout-sw550dp-large-v13\\umeng_socialize_titile_bar.xml",
+        "source": "H:\\GameMei\\support_lib\\src\\main\\res\\layout-sw550dp-large\\umeng_socialize_titile_bar.xml"
+    },
+    {
+        "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\release\\layout-sw550dp-large-v13\\umeng_socialize_full_alert_dialog.xml",
+        "source": "H:\\GameMei\\support_lib\\src\\main\\res\\layout-sw550dp-large\\umeng_socialize_full_alert_dialog.xml"
+    },
+    {
+        "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\release\\layout-sw550dp-large-v13\\umeng_socialize_oauth_dialog.xml",
+        "source": "H:\\GameMei\\support_lib\\src\\main\\res\\layout-sw550dp-large\\umeng_socialize_oauth_dialog.xml"
+    }
+]

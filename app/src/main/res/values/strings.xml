@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">GameMei</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!--订阅界面-->
+    <string name="drawer_btn_rss">设置关注</string>
+    <string name="subscribe_my_category">已关注:</string>
+    <string name="subscribe_more_category">推荐关注</string>
+    <string name="subscribe_manager_category_info">拖拽可以排序</string>
+    <string name="attention_edittext">请输入添加关键词，我们会尽力给您匹配</string>
+    <string name="attention_edit">编辑</string>
+    <string name="attention_search">搜索</string>
+
+</resources>

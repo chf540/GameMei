@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/game_info_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/game_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="8dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/game_desc"
+            android:layout_width="186dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/game_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:singleLine="true"
+            android:text="天天跑酷，又名天天酷跑，根据时下最火爆最流行的手机跑酷类游戏"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/game_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/game_desc"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:text="天天跑酷"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/download_ll"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_download" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="加载" />
+        </LinearLayout>
+
+        <RatingBar
+            android:id="@+id/game_heat"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:layout_alignBottom="@+id/game_name"
+            android:layout_marginLeft="19dp"
+            android:layout_toRightOf="@+id/game_name"
+            android:isIndicator="true"
+            android:progressDrawable="@drawable/ratingbar_bg"
+            android:rating="3.5"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="0dp"
+        android:background="#eeeeee" />
+
+</LinearLayout>

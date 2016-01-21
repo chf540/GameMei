@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- 顶部轮播图片 -->
+    <RelativeLayout
+        android:id="@+id/rl_top_news_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="140dp">
+
+        <LinearLayout
+            android:id="@+id/top_viewpager"
+            android:layout_width="fill_parent"
+            android:layout_height="140dp"
+            android:orientation="horizontal" />
+
+        <LinearLayout
+            android:id="@+id/ll_title"
+            android:layout_width="fill_parent"
+            android:layout_height="24dp"
+            android:layout_alignParentBottom="true"
+            android:background="#30000000"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <!-- 放置图片标题的位置 -->
+            <TextView
+                android:id="@+id/top_hot_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:textColor="#ffffff" />
+
+            <!-- 放置图片中选中点的位置 -->
+            <LinearLayout
+                android:id="@+id/dots_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:orientation="horizontal" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!--热推手游-->
+    <LinearLayout
+        android:id="@+id/ll_hot_game"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_below="@id/rl_top_news_viewpager"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="热推手游"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <HorizontalScrollView
+            android:id="@+id/hs_game"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:background="@color/white"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/header_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal" />
+        </HorizontalScrollView>
+
+        <!--分割线-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray" />
+
+    </LinearLayout>
+
+    <!--玩家动态-->
+    <LinearLayout
+        android:id="@+id/ll_dynamic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_hot_game"
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginLeft="10dp"
+            android:text="玩家动态"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:id="@+id/iv_user_icon1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="8dp"
+                android:src="@drawable/default_round_head" />
+
+
+            <TextView
+                android:id="@+id/iv_user_name1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/iv_user_icon1"
+                android:layout_toEndOf="@+id/iv_user_icon1"
+                android:layout_toRightOf="@+id/iv_user_icon1"
+                android:text="会游泳的鱼"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_type1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/iv_user_name1"
+                android:layout_marginLeft="19dp"
+                android:layout_marginStart="19dp"
+                android:layout_toEndOf="@+id/iv_user_name1"
+                android:layout_toRightOf="@+id/iv_user_name1"
+                android:text="任务"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/tv_check_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/iv_user_name1"
+                android:layout_alignStart="@+id/iv_user_name1"
+                android:layout_below="@+id/iv_user_name1"
+                android:drawableLeft="@mipmap/browse"
+                android:text="1000"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tv_check_number"
+                android:layout_alignLeft="@+id/tv_type1"
+                android:layout_alignStart="@+id/tv_type1"
+                android:drawableLeft="@mipmap/time"
+                android:text="2016-1-11"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_content1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_time"
+                android:layout_toEndOf="@+id/iv_user_icon1"
+                android:layout_toRightOf="@+id/iv_user_icon1"
+                android:text="我想做个小游戏，谁可以帮帮我我想做个小游戏，谁可以帮帮我我想做个小游戏"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <!--分割线-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:id="@+id/iv_user_icon2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="8dp"
+                android:src="@drawable/default_round_head" />
+
+
+            <TextView
+                android:id="@+id/iv_user_name2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/iv_user_icon2"
+                android:layout_toEndOf="@+id/iv_user_icon2"
+                android:layout_toRightOf="@+id/iv_user_icon2"
+                android:text="会游泳的鱼"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_type2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/iv_user_name2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="21dp"
+                android:layout_toEndOf="@+id/iv_user_name2"
+                android:layout_toRightOf="@+id/iv_user_name2"
+                android:text="问答"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_check_number2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_content2"
+                android:layout_alignStart="@+id/tv_content2"
+                android:layout_below="@+id/iv_user_name2"
+                android:drawableLeft="@mipmap/browse"
+                android:text="1000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_time2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_type2"
+                android:layout_alignStart="@+id/tv_type2"
+                android:layout_below="@+id/tv_type2"
+                android:drawableLeft="@mipmap/time"
+                android:text="2016-1-11"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_content2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_time2"
+                android:layout_toEndOf="@+id/iv_user_icon2"
+                android:layout_toRightOf="@+id/iv_user_icon2"
+                android:text="我想做个小游戏，谁可以帮帮我我想做个小游戏，谁可以帮帮我我想做个小游戏"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <!--分割线-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/gray" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:id="@+id/iv_user_icon3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="8dp"
+                android:src="@drawable/default_round_head" />
+
+
+            <TextView
+                android:id="@+id/iv_user_name3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/iv_user_icon3"
+                android:layout_toEndOf="@+id/iv_user_icon3"
+                android:layout_toRightOf="@+id/iv_user_icon3"
+                android:text="会游泳的鱼"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_type3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/iv_user_name3"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="21dp"
+                android:layout_toEndOf="@+id/iv_user_name3"
+                android:layout_toRightOf="@+id/iv_user_name3"
+                android:text="经验"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_check_number3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_content3"
+                android:layout_alignStart="@+id/tv_content3"
+                android:layout_below="@+id/iv_user_name3"
+                android:drawableLeft="@mipmap/browse"
+                android:text="1000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_time3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_type3"
+                android:layout_alignStart="@+id/tv_type3"
+                android:layout_below="@+id/tv_type3"
+                android:drawableLeft="@mipmap/time"
+                android:text="2016-1-11"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tv_content3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_time3"
+                android:layout_toEndOf="@+id/iv_user_icon3"
+                android:layout_toRightOf="@+id/iv_user_icon3"
+                android:text="我想做个小游戏，谁可以帮帮我我想做个小游戏，谁可以帮帮我我想做个小游戏"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <!--分割线-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray" />
+
+    </LinearLayout>
+
+    <!--热门活动-->
+    <LinearLayout
+        android:id="@+id/ll_hot_event"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_dynamic"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="热门活动"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:src="@drawable/haha" />
+
+        <!--分割线-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_hot_event"
+        android:layout_margin="5dp"
+        android:text="今日热点"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+</RelativeLayout>

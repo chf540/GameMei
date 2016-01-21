@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--主界面显示的内容-->
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:background="@android:color/white" />
+
+    <!--分割线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="#bfbfbf" />
+
+    <!--底部菜单按钮-->
+    <RadioGroup
+        android:id="@+id/menu_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="false"
+            android:drawableBottom="@drawable/menu_icon_home"
+            android:gravity="center"
+            android:paddingBottom="10dp" />
+
+        <RadioButton
+            android:id="@+id/rb_game"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="false"
+            android:drawableBottom="@drawable/menu_icon_game"
+            android:gravity="center"
+            android:paddingBottom="10dp" />
+
+        <RadioButton
+            android:id="@+id/rb_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="false"
+
+            android:drawableBottom="@drawable/menu_icon_search"
+            android:gravity="center" />
+
+        <RadioButton
+            android:id="@+id/rb_gift"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="false"
+            android:drawableBottom="@drawable/menu_icon_gift"
+            android:gravity="center"
+            android:paddingBottom="10dp" />
+
+        <RadioButton
+            android:id="@+id/rb_my"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="false"
+            android:drawableBottom="@drawable/menu_icon_my"
+            android:gravity="center"
+            android:paddingBottom="10dp" />
+    </RadioGroup>
+</LinearLayout>
+
+
+
