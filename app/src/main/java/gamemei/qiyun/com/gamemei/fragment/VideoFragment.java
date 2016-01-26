@@ -1,6 +1,7 @@
 package gamemei.qiyun.com.gamemei.fragment;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.LayoutInflater;
@@ -13,6 +14,8 @@ import android.widget.Toast;
 
 
 import gamemei.qiyun.com.gamemei.R;
+import gamemei.qiyun.com.gamemei.activity.PlayVideoActivity;
+import gamemei.qiyun.com.gamemei.activity.VideoDetailActivity;
 import gamemei.qiyun.com.gamemei.fragment.common.BaseFragment;
 import gamemei.qiyun.com.gamemei.widget.xlistview.XListView;
 
@@ -69,9 +72,14 @@ public class VideoFragment extends BaseFragment implements XListView.IXListViewL
             @Override
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
-                Toast.makeText(getActivity(), "点击的是" + position,
-                        Toast.LENGTH_SHORT).show();
-                // TODO 点击跳转到游戏明细页面
+
+                // TODO 点击跳转到视频明细页面
+                Intent detailIntent = new Intent(getActivity(),
+                       VideoDetailActivity.class);
+                //   detailIntent.putExtra(SyncStateContract.Constants.EXTRA_PRODUCT_ID, pid);
+                startActivity(detailIntent);
+
+
             }
         });
     }

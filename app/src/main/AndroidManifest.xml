@@ -96,7 +96,9 @@
         <activity
             android:name=".activity.TelRegisterActivity"
             android:screenOrientation="portrait" />
-
+        <activity
+            android:name=".activity.PlayVideoActivity"
+            android:screenOrientation="landscape" />
 
         <meta-data
             android:name="com.google.android.gms.version"

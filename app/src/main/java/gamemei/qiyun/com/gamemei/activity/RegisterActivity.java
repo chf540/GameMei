@@ -20,7 +20,7 @@ import gamemei.qiyun.com.gamemei.activity.common.BaseActivity;
 import gamemei.qiyun.com.gamemei.utils.SharedPreferencesUitl;
 
 /**
- * Created by hfcui on 2015/12/22.
+ * Created by hfcui on 2015/1/22
  */
 public class RegisterActivity extends BaseActivity implements View.OnClickListener {
 

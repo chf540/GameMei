@@ -21,6 +21,7 @@ import java.util.TimerTask;
 
 import gamemei.qiyun.com.gamemei.R;
 import gamemei.qiyun.com.gamemei.activity.AttentionActivity;
+import gamemei.qiyun.com.gamemei.activity.LoginActivity;
 import gamemei.qiyun.com.gamemei.fragment.common.BaseFragment;
 import gamemei.qiyun.com.gamemei.fragment.ExperienceFragment;
 import gamemei.qiyun.com.gamemei.fragment.HotFragment;
@@ -209,12 +210,21 @@ public class HomeFragment extends BaseFragment implements OnClickListener {
         userChannelList.add("经验");
     }
 
+    int count = 0;
+
     @Override
     public void onClick(View v) {
+
         switch (v.getId()) {
-            //跳转到选择我的关注界面
+            //跳转到订阅界面
             case R.id.ll_subscription:
-                startActivity(new Intent(getActivity(), AttentionActivity.class));
+                //如果没有登录则跳转到登录界面，已经登录的跳转到订阅界面
+                count++;
+                if (count % 2 == 1) {
+                    startActivity(new Intent(getActivity(), LoginActivity.class));
+                } else {
+                    startActivity(new Intent(getActivity(), AttentionActivity.class));
+                }
         }
     }
 }

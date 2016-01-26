@@ -54,8 +54,6 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:button="@null"
-            android:checked="false"
-
             android:drawableBottom="@drawable/menu_icon_search"
             android:gravity="center" />
 

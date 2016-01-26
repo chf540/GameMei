@@ -43,6 +43,9 @@ import gamemei.qiyun.com.gamemei.activity.common.BaseActivity;
 import gamemei.qiyun.com.gamemei.utils.MyHttpUtils;
 import gamemei.qiyun.com.gamemei.utils.SharedPreferencesUitl;
 
+/**
+ * Created by hfcui on 2015/1/22
+ */
 public class LoginActivity extends BaseActivity implements OnClickListener {
 
     /**

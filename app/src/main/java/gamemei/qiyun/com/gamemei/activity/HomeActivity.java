@@ -12,6 +12,7 @@ import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
 import gamemei.qiyun.com.gamemei.R;
@@ -26,6 +27,7 @@ import io.rong.imkit.RongIM;
 import io.rong.imlib.RongIMClient;
 
 public class HomeActivity extends BaseActivity {
+
     /**
      * 日志标记
      */
@@ -50,6 +52,8 @@ public class HomeActivity extends BaseActivity {
      * 个人中心界面
      */
     private PersonalCenterFragment rb_my;
+
+    private RadioButton rb_search;
 
     /**
      * Fragment管理器
@@ -119,6 +123,13 @@ public class HomeActivity extends BaseActivity {
      */
     protected void initView() {
         menu_radiogroup = (RadioGroup) findViewById(R.id.menu_radiogroup);
+        rb_search = (RadioButton) findViewById(R.id.rb_search);
+        rb_search.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), LoginActivity.class));
+            }
+        });
     }
 
     /**
@@ -140,20 +151,17 @@ public class HomeActivity extends BaseActivity {
                     @Override
                     public void onCheckedChanged(RadioGroup group, int checkedId) {
                         switch (checkedId) {
-                            case R.id.rb_home:
+                            case R.id.rb_home://首页界面
                                 linpager1();
                                 break;
-                            case R.id.rb_game:
+                            case R.id.rb_game://游戏界面
                                 linpager2();
                                 break;
-                            case R.id.rb_gift:
+                            case R.id.rb_gift://礼包界面
                                 linpager3();
                                 break;
-                            case R.id.rb_my:
+                            case R.id.rb_my://我的界面
                                 linpager4();
-                                break;
-                            case R.id.rb_search:
-                                startActivity(new Intent(getApplicationContext(), LoginActivity.class));
                                 break;
                         }
                     }
