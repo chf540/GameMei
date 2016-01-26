@@ -171,10 +171,14 @@ public class HotFragment extends BaseFragment implements XListView.IXListViewLis
         binnerPlugin.initTitleList(titleList, top_hot_title);
         binnerPlugin.setBinnerData(imgUrlList);
         binnerPlugin.start();
-
         /****************************** view ********************************/
 
-        //热推游戏
+        //设置热门游戏
+        setHotGame();
+    }
+
+    private void setHotGame() {
+        //热门游戏
         for (int i = 0; i < 10; i++) {
             View coupon_home_ad_item = LayoutInflater.from(getActivity()).inflate(
                     R.layout.item_hot_game, null);
@@ -184,12 +188,13 @@ public class HotFragment extends BaseFragment implements XListView.IXListViewLis
 
             // 拿个这行的icon 就可以设置图片
             ImageView icon = (ImageView) coupon_home_ad_item
-                    .findViewById(R.id.iv_hot_game_icon);// 拿个这行的icon 就可以设置图片
-
-            coupon_home_ad_item.setOnClickListener(new View.OnClickListener() {// 每个item的点击事件加在这里
+                    .findViewById(R.id.iv_hot_game_icon);
+            icon.setImageResource(R.drawable.legend);
+            // 每个item的点击事件
+            coupon_home_ad_item.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Toast.makeText(getContext(),"aa",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), "1", Toast.LENGTH_SHORT).show();
                 }
             });
             header_ll.addView(coupon_home_ad_item);

@@ -272,6 +272,7 @@ public class XListView extends ListView {
         mListViewListener = l;
     }
 
+
     public interface IXListViewListener {
 
         public void onRefresh();

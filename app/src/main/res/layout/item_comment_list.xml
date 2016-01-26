@@ -70,7 +70,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:drawableLeft="@mipmap/like_click"
+                android:drawableLeft="@mipmap/like_normal"
                 android:text="30"
                 android:textSize="12sp" />
         </LinearLayout>
@@ -83,7 +83,14 @@
             android:layout_alignStart="@+id/tv_comment_time"
             android:layout_below="@+id/tv_comment_time"
             android:layout_marginBottom="5dp"
-            android:text="疯狂的小雨滴增长速度极快，它会淹没你的家园哦！它会淹没你的家园哦！" />
+            android:text="疯狂的小雨滴增长速度极快，它会淹没你的家园哦！它会淹没你的家园哦！"
+            android:textColor="#333333" />
     </RelativeLayout>
+
+    <!--分割线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#bfbfbf" />
 
 </LinearLayout>

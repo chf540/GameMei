@@ -1,80 +1,39 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-
-    <TextView
-        android:id="@+id/tv_video_detail_title"
+    <!--顶部bar-->
+    <include
+        android:id="@+id/app_top_bar"
+        layout="@layout/title_bar_search"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:text="标题"
-        android:textColor="#333333"
-        android:textSize="18sp"
-        android:textStyle="bold" />
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/tv_video_detail_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:drawableLeft="@mipmap/browse"
-            android:text="1000"
-            android:textSize="10sp" />
-
-        <TextView
-            android:id="@+id/tv_video_detail_hits"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:drawableLeft="@mipmap/browse"
-            android:text="1000"
-            android:textSize="10sp" />
-
-        <TextView
-            android:id="@+id/tv_video_detail_time"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:drawableLeft="@mipmap/time"
-            android:text="2016-1-1"
-            android:textSize="10sp" />
-    </LinearLayout>
-
-    <ImageView
-        android:layout_width="360dp"
-        android:layout_height="180dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="8dp" />
-
-    <TextView
-        android:id="@+id/tv_video_describe"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="5dp"
-        android:text="这里是大段的介绍这里是大段的介绍这里是大段的介绍这里是大段的介绍这里是大段的介绍这里是大段的介绍这里是大段的介绍这里是大段的介绍这里是大段的介绍"
-        android:textSize="14sp" />
-
-    <!--分割线-->
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="0.5dp"
-        android:layout_marginTop="5dp"
-        android:background="@color/gray" />
+        android:layout_height="45dp" />
 
     <gamemei.qiyun.com.gamemei.widget.xlistview.XListView
-        android:id="@+id/video_detail_comment_listview"
+        android:id="@+id/video_detail_listview"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_top_bar"
+        android:layout_marginBottom="42dp"
         android:divider="@null"
         android:dividerHeight="0dip"
         android:scrollbars="none" />
 
-</LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/white">
+
+        <Button
+            android:id="@+id/video_detail_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:background="@mipmap/btn_green_pinglun"
+            android:text="快来说两句吧！"
+            android:textColor="@color/white" />
+    </FrameLayout>
+
+</RelativeLayout>

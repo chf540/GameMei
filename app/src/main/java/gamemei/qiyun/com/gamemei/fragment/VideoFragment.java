@@ -75,11 +75,8 @@ public class VideoFragment extends BaseFragment implements XListView.IXListViewL
 
                 // TODO 点击跳转到视频明细页面
                 Intent detailIntent = new Intent(getActivity(),
-                       VideoDetailActivity.class);
-                //   detailIntent.putExtra(SyncStateContract.Constants.EXTRA_PRODUCT_ID, pid);
+                        VideoDetailActivity.class);
                 startActivity(detailIntent);
-
-
             }
         });
     }
