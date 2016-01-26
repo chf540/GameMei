@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_top_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_video_detail_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="废品机械师第11期 ScrapMechanic变形小屋初实验"
+            android:textColor="#333333"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_video_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/user_icon"
+                android:text="会游泳的鱼"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/tv_video_detail_hits"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:drawableLeft="@mipmap/browse"
+                android:text="1000"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/tv_video_detail_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:drawableLeft="@mipmap/time"
+                android:text="2016-1-1"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_picture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <ImageView
+                android:id="@+id/video_picture"
+                android:layout_width="360dp"
+                android:layout_height="180dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/iv_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@mipmap/play_video" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_video_describe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:text="        这里是大段的介绍这里是大段的介绍这里是大段的介绍这里是大段的介绍这里是大段的介绍"
+            android:textColor="#333333"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="评论"
+            android:textColor="#333333"
+            android:textSize="14sp" />
+
+        <!--评论下划线-->
+        <View
+            android:layout_width="28dp"
+            android:layout_height="2dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="#0ad9b2" />
+
+        <!--分割线-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#bfbfbf" />
+
+    </LinearLayout>
+</RelativeLayout>
