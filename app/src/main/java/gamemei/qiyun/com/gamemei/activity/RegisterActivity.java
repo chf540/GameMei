@@ -1,6 +1,5 @@
 package gamemei.qiyun.com.gamemei.activity;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -17,10 +16,11 @@ import java.util.regex.Pattern;
 
 import gamemei.qiyun.com.gamemei.R;
 import gamemei.qiyun.com.gamemei.activity.common.BaseActivity;
+import gamemei.qiyun.com.gamemei.utils.AppUtils;
 import gamemei.qiyun.com.gamemei.utils.SharedPreferencesUitl;
 
 /**
- * Created by hfcui on 2015/1/22
+ * Created by hfcui on 2015/1/26
  */
 public class RegisterActivity extends BaseActivity implements View.OnClickListener {
 
@@ -57,21 +57,16 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
     /**
      * 注册按钮
      */
-    private Button bt_register;
+    private ImageView bt_register;
     /**
      * 已有账号登录
      */
-    private TextView tv_login;
-
-    /**
-     * 手机号注册
-     */
-    private TextView tv_tel_register;
+    private TextView tv_tel_login;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.register_activity);
+        setContentView(R.layout.activity_register);
         Log.i(TAG, "hfcui-----onCreate");
     }
 
@@ -83,16 +78,14 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
         edit_register_email = (EditText) findViewById(R.id.edit_register_email);
         edit_register_password = (EditText) findViewById(R.id.edit_register_password);
         edit_register_password_ = (EditText) findViewById(R.id.edit_register_password_);
-        bt_register = (Button) findViewById(R.id.bt_register);
-        tv_login = (TextView) findViewById(R.id.tv_login);
-        tv_tel_register = (TextView) findViewById(R.id.tv_tel_register);
+        bt_register = (ImageView) findViewById(R.id.bt_register);
+        tv_tel_login = (TextView) findViewById(R.id.tv_tel_login);
         tv_title = (TextView) findViewById(R.id.tv_title);
         //设置顶部标题
-        tv_title.setText("注册新用户");
+        tv_title.setText("注册帐户");
         title_bar_back = (ImageView) findViewById(R.id.title_bar_back);
         bt_register.setOnClickListener(this);
-        tv_login.setOnClickListener(this);
-        tv_tel_register.setOnClickListener(this);
+        tv_tel_login.setOnClickListener(this);
     }
 
     /**
@@ -122,19 +115,16 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.bt_register:
-                //TODO  点击注册按钮
                 //校验注册内容
                 checkInfo();
+                //TODO  点击注册按钮
                 break;
-            case R.id.tv_login:
+            case R.id.tv_tel_login:
                 //跳转到登录界面
                 startActivity(new Intent(getApplicationContext(), LoginActivity.class));
                 //关闭该Activity
                 finish();
                 break;
-            case R.id.tv_tel_register:
-                //跳转到手机号码注册界面
-                startActivity(new Intent(getApplicationContext(), TelRegisterActivity.class));
             default:
                 break;
         }
@@ -152,48 +142,44 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
         //进行校验
         //用户名的非空和正则校验
         if (TextUtils.isEmpty(username)) {
-            Toast.makeText(getApplicationContext(), "用户名不能为空", Toast.LENGTH_SHORT).show();
+            AppUtils.showTips(this, R.mipmap.tips_error, "未填写用户名");
         } else {
             Pattern patternName = Pattern
                     .compile("([a-zA-Z0-9]{6,20})");//0~9的数字和A-Z,a-z字母，最低6位，最高20位
             Matcher matcher = patternName.matcher(username);
             if (!matcher.matches()) {
-                Toast.makeText(getApplicationContext(), "用户名格式错误", Toast.LENGTH_SHORT)
-                        .show();
+                AppUtils.showTips(this, R.mipmap.tips_error, "用户名不合规");
                 return;
             }
             //Email的非空和正则校验
             if (TextUtils.isEmpty(email)) {
-                Toast.makeText(getApplicationContext(), "邮箱不能为空", Toast.LENGTH_SHORT).show();
+                AppUtils.showTips(this, R.mipmap.tips_error, "未填写邮箱");
             } else {
                 Pattern patternEmail = Pattern
                         .compile("\\w+([-+.]\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*");//@前，首字符必须是字母或者数字，中间允许有 - + . 字符出现  @后同样类似是，区别在只能出现 - . 字符，最后结尾必须是字母或者数字
                 matcher = patternEmail.matcher(email);
                 if (!matcher.matches()) {
-                    Toast.makeText(getApplicationContext(), "邮箱格式错误", Toast.LENGTH_SHORT)
-                            .show();
+                    AppUtils.showTips(this, R.mipmap.tips_error, "邮箱不合规");
                     return;
                 }
                 //密码的非空和正则校验
                 if (TextUtils.isEmpty(password)) {
-                    Toast.makeText(getApplicationContext(), "密码不能为空", Toast.LENGTH_SHORT).show();
+                    AppUtils.showTips(this, R.mipmap.tips_error, "未填写密码");
                 } else {
                     Pattern patternPassword = Pattern
                             .compile("([a-zA-Z0-9]{6,20})");//0~9的数字和A-Z,a-z字母，最低6位，最高20位
                     matcher = patternPassword.matcher(password);
                     if (!matcher.matches()) {
-                        Toast.makeText(getApplicationContext(), "密码格式错误", Toast.LENGTH_SHORT)
-                                .show();
+                        AppUtils.showTips(this, R.mipmap.tips_error, "密码不合规");
                         return;
                     }
                     //确认密码的非空校验
                     if (TextUtils.isEmpty(password_)) {
-                        Toast.makeText(getApplicationContext(), "确认密码不能为空", Toast.LENGTH_SHORT).show();
+                        AppUtils.showTips(this, R.mipmap.tips_error, "未确认密码");
                     }
                     //确认密码和密码是否相同校验
                     else if (!password_.equals(password)) {
-                        Toast.makeText(getApplicationContext(), "密码两次输入不一致", Toast.LENGTH_SHORT)
-                                .show();
+                        AppUtils.showTips(this, R.mipmap.tips_error, "两次密码不一致");
                         return;
                     } else {
                         String userInfo = username + "**" + email + "**" + password;//用户注册的所有信息。

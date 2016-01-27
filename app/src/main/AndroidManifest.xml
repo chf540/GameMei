@@ -89,6 +89,7 @@
         <!--登录界面-->
         <activity
             android:name=".activity.LoginActivity"
+            android:launchMode="singleTask"
             android:screenOrientation="portrait" />
         <!--订阅关注界面-->
         <activity
@@ -97,6 +98,10 @@
         <!--注册界面-->
         <activity
             android:name=".activity.RegisterActivity"
+            android:screenOrientation="portrait" />
+        <!--密码找回界面-->
+        <activity
+            android:name=".activity.RetrievePasswordActivity"
             android:screenOrientation="portrait" />
         <!--手机号注册界面-->
         <activity
@@ -110,6 +115,7 @@
         <activity
             android:name=".activity.PlayVideoActivity"
             android:screenOrientation="landscape" />
+
 
         <meta-data
             android:name="com.google.android.gms.version"

@@ -2,8 +2,9 @@ package gamemei.qiyun.com.gamemei.activity;
 
 import java.util.List;
 import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -12,7 +13,6 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -40,11 +40,14 @@ import org.apache.http.impl.client.DefaultHttpClient;
 
 import gamemei.qiyun.com.gamemei.R;
 import gamemei.qiyun.com.gamemei.activity.common.BaseActivity;
+import gamemei.qiyun.com.gamemei.utils.AppUtils;
 import gamemei.qiyun.com.gamemei.utils.MyHttpUtils;
 import gamemei.qiyun.com.gamemei.utils.SharedPreferencesUitl;
+import gamemei.qiyun.com.gamemei.widget.clearedittext.ClearEditText;
 
 /**
- * Created by hfcui on 2015/1/22
+ * 登录界面
+ * Created by hfcui on 2015/1/26
  */
 public class LoginActivity extends BaseActivity implements OnClickListener {
 
@@ -64,31 +67,36 @@ public class LoginActivity extends BaseActivity implements OnClickListener {
     /**
      * 登录用户名
      */
-    private EditText edit_login_username;
+    private ClearEditText edit_login_username;
     /**
      * 登录密码
      */
-    private EditText edit_login_password;
+    private ClearEditText edit_login_password;
     /**
      * QQ登录
      */
-    private LinearLayout ll_qq;
+    private ImageView iv_qq;
     /**
      * 新浪微博登录
      */
-    private LinearLayout ll_xinlangweibo;
+    private ImageView iv_xinlangweibo;
     /**
      * 微信登录
      */
-    private LinearLayout ll_wechat;
+    private ImageView iv_wechat;
     /**
      * 注册新用户
      */
-    private TextView register_new;
+    private ImageView btn_register;
     /**
      * 登录按钮
      */
-    private Button btn_login;
+    private ImageView btn_login;
+    /**
+     * 忘记密码
+     */
+    private TextView tv_forget_password;
+
     /**
      * 友盟 首先在activity页里添加下面的成员变量
      */
@@ -98,7 +106,7 @@ public class LoginActivity extends BaseActivity implements OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.login_activity);
+        setContentView(R.layout.activity_login);
         Log.i(TAG, "hfcui-----onCreate");
         configPlatforms();
         //如果记住用户名的话复显
@@ -115,23 +123,25 @@ public class LoginActivity extends BaseActivity implements OnClickListener {
 
     @Override
     protected void initView() {
-        edit_login_username = (EditText) findViewById(R.id.edit_login_username);
-        edit_login_password = (EditText) findViewById(R.id.edit_login_password);
-        register_new = (TextView) findViewById(R.id.register_new);
-        ll_qq = (LinearLayout) findViewById(R.id.ll_qq);
-        ll_xinlangweibo = (LinearLayout) findViewById(R.id.ll_xinlangweibo);
-        ll_wechat = (LinearLayout) findViewById(R.id.ll_wechat);
-        btn_login = (Button) findViewById(R.id.btn_login);
+        edit_login_username = (ClearEditText) findViewById(R.id.edit_login_username);
+        edit_login_password = (ClearEditText) findViewById(R.id.edit_login_password);
+        btn_register = (ImageView) findViewById(R.id.btn_register);
+        iv_qq = (ImageView) findViewById(R.id.iv_qq);
+        iv_xinlangweibo = (ImageView) findViewById(R.id.iv_xinlangweibo);
+        iv_wechat = (ImageView) findViewById(R.id.iv_wechat);
+        btn_login = (ImageView) findViewById(R.id.btn_login);
         tv_title = (TextView) findViewById(R.id.tv_title);
         //设置顶部标题
-        tv_title.setText("用户登录");
+        tv_title.setText("账户登录");
         title_bar_back = (ImageView) findViewById(R.id.title_bar_back);
+        tv_forget_password = (TextView) findViewById(R.id.tv_forget_password);
 
-        register_new.setOnClickListener(this);
-        ll_qq.setOnClickListener(this);
-        ll_xinlangweibo.setOnClickListener(this);
-        ll_wechat.setOnClickListener(this);
+        btn_register.setOnClickListener(this);
+        iv_qq.setOnClickListener(this);
+        iv_xinlangweibo.setOnClickListener(this);
+        iv_wechat.setOnClickListener(this);
         btn_login.setOnClickListener(this);
+        tv_forget_password.setOnClickListener(this);
     }
 
     @Override
@@ -153,21 +163,24 @@ public class LoginActivity extends BaseActivity implements OnClickListener {
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.register_new://点击注册按钮
+            case R.id.btn_register://点击注册按钮
                 startActivity(new Intent(getApplicationContext(), RegisterActivity.class));
                 finish();
                 break;
-            case R.id.ll_qq: // QQ登录
+            case R.id.iv_qq: // QQ登录
                 threadLogin(SHARE_MEDIA.QQ);
                 break;
-            case R.id.ll_xinlangweibo: // 新浪微博登录
+            case R.id.iv_xinlangweibo: // 新浪微博登录
                 threadLogin(SHARE_MEDIA.SINA);
                 break;
-            case R.id.ll_wechat:  // 微信登录
+            case R.id.iv_wechat:  // 微信登录
                 threadLogin(SHARE_MEDIA.WEIXIN);
                 break;
-            case R.id.btn_login://用户名密码登录
+            case R.id.btn_login://登录
                 Login();
+                break;
+            case R.id.tv_forget_password:
+                startActivity(new Intent(getApplicationContext(), RetrievePasswordActivity.class));
             default:
                 break;
         }
@@ -177,36 +190,68 @@ public class LoginActivity extends BaseActivity implements OnClickListener {
      * 点击登录按钮
      */
     private void Login() {
+        String username = edit_login_username.getText().toString().trim();
+        String password = edit_login_password.getText().toString().trim();
+
+        //用户名和密码非空和正则校验
+        if (TextUtils.isEmpty(username)) {
+            AppUtils.showTips(this, R.mipmap.tips_error, "未填写用户名");
+            return;
+        } else {
+            Pattern patternName = Pattern
+                    .compile("([a-zA-Z0-9]{6,20})");//0~9的数字和A-Z,a-z字母，最低6位，最高20位
+            Matcher matcher = patternName.matcher(username);
+            if (!matcher.matches()) {
+                AppUtils.showTips(this, R.mipmap.tips_error, "用户名不合规");
+                return;
+            }
+        }
+        if (TextUtils.isEmpty(password)) {
+            AppUtils.showTips(this, R.mipmap.tips_error, "未填写密码");
+            return;
+        } else {
+            Pattern patternPassword = Pattern
+                    .compile("([a-zA-Z0-9]{6,20})");//0~9的数字和A-Z,a-z字母，最低6位，最高20位
+            Matcher matcher = patternPassword.matcher(password);
+            if (!matcher.matches()) {
+                AppUtils.showTips(this, R.mipmap.tips_error, "密码不合规");
+                return;
+            }
+        }
+        //TODO 和服务器交互
+        AppUtils.showTips(this, R.mipmap.tips_smile, "登录成功，跳转到个人中心界面");
+
         final HttpUtils httpUtils = new HttpUtils();
         final String geturl = "http://www.baidu.com";
         httpUtils.send(HttpRequest.HttpMethod.GET, geturl, new RequestCallBack<Object>() {
+                    @Override
+                    //成功回调
+                    public void onSuccess(ResponseInfo<Object> responseInfo) {
+                        //保存cookies
+                        DefaultHttpClient dh = (DefaultHttpClient) httpUtils.getHttpClient();
+                        MyHttpUtils.cookieStore = dh.getCookieStore();
+                        CookieStore cs = dh.getCookieStore();
+                        //获取到SESSIONID
+                        List<Cookie> cookies = cs.getCookies();
+                        String a = null;
+                        for (int i = 0; i < cookies.size(); i++) {
+                            if ("JSESSIONID".equals(cookies.get(i).getName())) {
+                                a = cookies.get(i).getValue();
+                                break;
+                            }
+                        }
+                        Log.d("hfcui", "获取sessionid" + a);
+                        Log.d("cookieStore", "haha" + MyHttpUtils.cookieStore.toString());
+                    }
 
-            @Override
-            //成功回调
-            public void onSuccess(ResponseInfo<Object> responseInfo) {
-                //保存cookies
-                DefaultHttpClient dh = (DefaultHttpClient) httpUtils.getHttpClient();
-                MyHttpUtils.cookieStore = dh.getCookieStore();
-                CookieStore cs = dh.getCookieStore();
-                //获取到SESSIONID
-                List<Cookie> cookies = cs.getCookies();
-                String a = null;
-                for (int i = 0; i < cookies.size(); i++) {
-                    if ("JSESSIONID".equals(cookies.get(i).getName())) {
-                        a = cookies.get(i).getValue();
-                        break;
+                    @Override
+                    //失败回调
+                    public void onFailure(HttpException e, String s) {
+
                     }
                 }
-                Log.d("hfcui", "获取sessionid" + a);
-                Log.d("cookieStore", "haha" + MyHttpUtils.cookieStore.toString());
-            }
 
-            @Override
-            //失败回调
-            public void onFailure(HttpException e, String s) {
-
-            }
-        });
+        );
     }
 
     /**
@@ -214,6 +259,7 @@ public class LoginActivity extends BaseActivity implements OnClickListener {
      *
      * @param platform
      */
+
     private void threadLogin(final SHARE_MEDIA platform) {
         mController.doOauthVerify(LoginActivity.this, platform,
                 new UMAuthListener() {

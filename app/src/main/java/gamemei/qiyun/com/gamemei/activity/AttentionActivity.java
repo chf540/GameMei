@@ -78,7 +78,7 @@ public class AttentionActivity extends BaseActivity implements OnItemClickListen
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.subscribe_activity);
+        setContentView(R.layout.activity_subscribe);
         Log.i(TAG, "hfcui-----onCreate");
     }
 
