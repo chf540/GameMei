@@ -115,6 +115,11 @@
         <activity
             android:name=".activity.PlayVideoActivity"
             android:screenOrientation="landscape" />
+        <!--首页经验详情界面-->
+        <activity
+            android:name=".activity.ExperienceDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
 
 
         <meta-data

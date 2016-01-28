@@ -13,7 +13,7 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/tv_video_detail_title"
+            android:id="@+id/tv_experience_detail_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="废品机械师第11期 ScrapMechanic变形小屋初实验"
@@ -28,7 +28,7 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/tv_video_user_name"
+                android:id="@+id/tv_experience_user_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:drawableLeft="@mipmap/user_icon"
@@ -37,7 +37,7 @@
                 android:textSize="10sp" />
 
             <TextView
-                android:id="@+id/tv_video_detail_hits"
+                android:id="@+id/tv_experience_detail_hits"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
@@ -47,7 +47,7 @@
                 android:textSize="10sp" />
 
             <TextView
-                android:id="@+id/tv_video_detail_time"
+                android:id="@+id/tv_experience_detail_time"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
@@ -57,34 +57,20 @@
                 android:textSize="10sp" />
         </LinearLayout>
 
-        <FrameLayout
-            android:id="@+id/fl_picture"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp">
-
-            <ImageView
-                android:id="@+id/video_picture"
-                android:layout_width="360dp"
-                android:layout_height="180dp"
-                android:layout_gravity="center_horizontal"
-                android:scaleType="fitXY" />
-
-            <ImageView
-                android:id="@+id/iv_play"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:src="@mipmap/play_video" />
-        </FrameLayout>
+        <ImageView
+            android:id="@+id/iv_experience_picture"
+            android:layout_width="360dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:scaleType="fitXY" />
 
         <TextView
-            android:id="@+id/tv_video_describe"
+            android:id="@+id/tv_experience_describe"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:layout_marginTop="5dp"
             android:text="        这里是大段的介绍这里是大段的介绍这里是大段的介绍这里是大段的介绍这里是大段的介绍"
             android:textColor="#333333"
             android:textSize="14sp" />

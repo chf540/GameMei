@@ -148,7 +148,7 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
                     .compile("([a-zA-Z0-9]{6,20})");//0~9的数字和A-Z,a-z字母，最低6位，最高20位
             Matcher matcher = patternName.matcher(username);
             if (!matcher.matches()) {
-                AppUtils.showTips(this, R.mipmap.tips_error, "用户名不合规");
+                AppUtils.showTips(this, R.mipmap.tips_error, "用户名不符合要求");
                 return;
             }
             //Email的非空和正则校验
@@ -159,7 +159,7 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
                         .compile("\\w+([-+.]\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*");//@前，首字符必须是字母或者数字，中间允许有 - + . 字符出现  @后同样类似是，区别在只能出现 - . 字符，最后结尾必须是字母或者数字
                 matcher = patternEmail.matcher(email);
                 if (!matcher.matches()) {
-                    AppUtils.showTips(this, R.mipmap.tips_error, "邮箱不合规");
+                    AppUtils.showTips(this, R.mipmap.tips_error, "邮箱格式不正确");
                     return;
                 }
                 //密码的非空和正则校验
@@ -175,7 +175,7 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
                     }
                     //确认密码的非空校验
                     if (TextUtils.isEmpty(password_)) {
-                        AppUtils.showTips(this, R.mipmap.tips_error, "未确认密码");
+                        AppUtils.showTips(this, R.mipmap.tips_error, "未填写确认密码");
                     }
                     //确认密码和密码是否相同校验
                     else if (!password_.equals(password)) {

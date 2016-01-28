@@ -22,37 +22,41 @@
             android:id="@+id/edit_login_username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@mipmap/line"
             android:drawableLeft="@mipmap/login_icon_normal"
             android:drawableRight="@mipmap/delete_edittext"
             android:hint="请输入用户名，昵称或邮箱"
             android:singleLine="true"
             android:textColorHint="#8f949b"
-            android:textSize="10sp" />
+            android:textSize="13sp" />
 
         <gamemei.qiyun.com.gamemei.widget.clearedittext.ClearEditText
             android:id="@+id/edit_login_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="15dp"
+            android:background="@mipmap/line"
             android:drawableLeft="@mipmap/login_password_normal"
             android:drawableRight="@mipmap/delete_edittext"
             android:hint="请输入密码"
+            android:inputType="textPassword"
             android:singleLine="true"
+            android:textIsSelectable="false"
             android:textColorHint="#8f949b"
-            android:textSize="10sp" />
+            android:textSize="13sp" />
 
         <ImageView
             android:id="@+id/btn_login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="15dp"
             android:src="@mipmap/login" />
 
         <ImageView
             android:id="@+id/btn_register"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="15dp"
             android:src="@mipmap/register" />
     </LinearLayout>
 
@@ -84,9 +88,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginLeft="40dp"
-        android:layout_marginRight="40dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="15dp"
         android:orientation="horizontal">
 
 
@@ -121,6 +125,6 @@
         android:layout_marginTop="80dp"
         android:text="忘记密码？"
         android:textColor="#8f949b"
-        android:textSize="12sp" />
+        android:textSize="14sp" />
 
 </LinearLayout>

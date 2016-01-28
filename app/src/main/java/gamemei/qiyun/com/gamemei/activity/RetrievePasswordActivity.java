@@ -30,7 +30,6 @@ public class RetrievePasswordActivity extends BaseActivity implements OnClickLis
      * 顶部标题
      */
     private TextView tv_title;
-
     /**
      * 顶部后退按钮
      */
@@ -43,7 +42,6 @@ public class RetrievePasswordActivity extends BaseActivity implements OnClickLis
      * 找回密码按钮
      */
     private ImageView btn_retrieve_password;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,7 +57,6 @@ public class RetrievePasswordActivity extends BaseActivity implements OnClickLis
         //设置顶部标题
         tv_title.setText("找回密码");
         title_bar_back = (ImageView) findViewById(R.id.title_bar_back);
-
         btn_retrieve_password.setOnClickListener(this);
     }
 
@@ -87,6 +84,7 @@ public class RetrievePasswordActivity extends BaseActivity implements OnClickLis
             case R.id.btn_retrieve_password:
                 messageBox();
                 break;
+
             default:
                 break;
         }
@@ -96,17 +94,18 @@ public class RetrievePasswordActivity extends BaseActivity implements OnClickLis
     private void messageBox() {
         String email = et_email.getText().toString().trim();
         if (TextUtils.isEmpty(email)) {
-            AppUtils.showTips(this, R.mipmap.tips_error, "未填写用邮箱");
+            AppUtils.showTips(this, R.mipmap.tips_error, "未填写注册邮箱");
             return;
         } else {
             Pattern patternEmail = Pattern
                     .compile("\\w+([-+.]\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*");//@前，首字符必须是字母或者数字，中间允许有 - + . 字符出现  @后同样类似是，区别在只能出现 - . 字符，最后结尾必须是字母或者数字
             Matcher matcher = patternEmail.matcher(email);
             if (!matcher.matches()) {
-                AppUtils.showTips(this, R.mipmap.tips_error, "邮箱不合规");
+                AppUtils.showTips(this, R.mipmap.tips_error, "邮箱格式不正确");
                 return;
             }
         }
+        // 取回密码成功弹框
         CustomDialog.Builder builder = new CustomDialog.Builder(this);
         builder.setPositiveButton("", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
@@ -117,12 +116,11 @@ public class RetrievePasswordActivity extends BaseActivity implements OnClickLis
                 //TODO 找回密码
             }
         });
-//                builder.setNegativeButton("取消",
-//                        new android.content.DialogInterface.OnClickListener() {
-//                            public void onClick(DialogInterface dialog, int which) {
-//                                dialog.dismiss();
-//                            }
-//                        });
+        builder.setNegativeButton("", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+        });
         builder.create().show();
     }
 }

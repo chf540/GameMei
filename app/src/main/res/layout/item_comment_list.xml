@@ -46,6 +46,7 @@
             android:layout_marginTop="5dp"
             android:drawableLeft="@mipmap/time"
             android:text="1个小时之前"
+            android:textColor="#8f949b"
             android:textSize="10dp" />
 
         <LinearLayout
@@ -63,6 +64,7 @@
                 android:layout_height="wrap_content"
                 android:drawableLeft="@mipmap/reply"
                 android:text="100"
+                android:textColor="#8f949b"
                 android:textSize="12sp" />
 
             <TextView
@@ -72,6 +74,7 @@
                 android:layout_marginLeft="20dp"
                 android:drawableLeft="@mipmap/like_normal"
                 android:text="30"
+                android:textColor="#8f949b"
                 android:textSize="12sp" />
         </LinearLayout>
 
@@ -85,12 +88,16 @@
             android:layout_marginBottom="5dp"
             android:text="疯狂的小雨滴增长速度极快，它会淹没你的家园哦！它会淹没你的家园哦！"
             android:textColor="#333333" />
+
+        <!--分割线-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_below="@id/tv_information_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/dotted_line" />
     </RelativeLayout>
 
-    <!--分割线-->
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="0.5dp"
-        android:background="#bfbfbf" />
 
 </LinearLayout>

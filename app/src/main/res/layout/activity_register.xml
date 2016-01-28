@@ -20,54 +20,60 @@
             android:id="@+id/edit_register_username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@mipmap/line"
             android:drawableLeft="@mipmap/login_icon_normal"
             android:drawableRight="@mipmap/delete_edittext"
-            android:hint="用户名(6-20个字符,仅限于数字、字母及下划线)"
+            android:hint="用户名(6-20位，数字、字母、下划线)"
             android:singleLine="true"
             android:textColorHint="#8f949b"
-            android:textSize="11sp" />
+            android:textSize="13sp" />
 
         <gamemei.qiyun.com.gamemei.widget.clearedittext.ClearEditText
             android:id="@+id/edit_register_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="15dp"
+            android:background="@mipmap/line"
             android:drawableLeft="@mipmap/login_mail_normal"
             android:drawableRight="@mipmap/delete_edittext"
             android:hint="邮箱(登录或找回密码使用)"
             android:inputType="textEmailAddress"
             android:textColorHint="#8f949b"
-            android:textSize="11sp" />
+            android:textSize="13sp" />
 
         <gamemei.qiyun.com.gamemei.widget.clearedittext.ClearEditText
             android:id="@+id/edit_register_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="15dp"
+            android:background="@mipmap/line"
             android:drawableLeft="@mipmap/login_password_normal"
             android:drawableRight="@mipmap/delete_edittext"
             android:hint="设置密码"
             android:inputType="textPassword"
             android:textColorHint="#8f949b"
-            android:textSize="11sp" />
+            android:textIsSelectable="false"
+            android:textSize="13sp" />
 
         <gamemei.qiyun.com.gamemei.widget.clearedittext.ClearEditText
             android:id="@+id/edit_register_password_"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="15dp"
+            android:background="@mipmap/line"
             android:drawableLeft="@mipmap/login_password_normal"
             android:drawableRight="@mipmap/delete_edittext"
             android:hint="确认密码"
             android:inputType="textPassword"
             android:textColorHint="#8f949b"
-            android:textSize="11sp" />
+            android:textIsSelectable="false"
+            android:textSize="13sp" />
 
         <ImageView
             android:id="@+id/bt_register"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="15dp"
             android:src="@mipmap/register" />
     </LinearLayout>
 
@@ -83,7 +89,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="已有账户？"
-            android:textSize="12sp" />
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/tv_tel_login"
@@ -92,7 +98,7 @@
             android:gravity="center"
             android:text="去登陆"
             android:textColor="#33aef3"
-            android:textSize="12sp" />
+            android:textSize="14sp" />
     </LinearLayout>
 
 </LinearLayout>

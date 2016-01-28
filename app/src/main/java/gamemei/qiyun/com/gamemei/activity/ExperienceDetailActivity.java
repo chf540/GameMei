@@ -2,12 +2,15 @@ package gamemei.qiyun.com.gamemei.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Layout;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -15,13 +18,14 @@ import com.lidroid.xutils.ViewUtils;
 
 import gamemei.qiyun.com.gamemei.R;
 import gamemei.qiyun.com.gamemei.activity.common.BaseActivity;
+import gamemei.qiyun.com.gamemei.utils.AppUtils;
 import gamemei.qiyun.com.gamemei.widget.xlistview.XListView;
 
 /**
- * 视频详情界面
- * Created by hfcui on 2016/1/25.
+ * 经验详情界面
+ * Created by hfcui on 2016/1/28.
  */
-public class VideoDetailActivity extends BaseActivity implements View.OnClickListener {
+public class ExperienceDetailActivity extends BaseActivity implements View.OnClickListener {
     /**
      * 日志标记
      */
@@ -37,28 +41,24 @@ public class VideoDetailActivity extends BaseActivity implements View.OnClickLis
     /**
      * ListView顶部的View
      */
-    private View activity_head_video_view;
-    /**
-     * 点击播放视频
-     */
-    private ImageView iv_play;
+    private View activity_head_experience_view;
     /**
      * 视频缩略图
      */
-    private ImageView video_picture;
+    private ImageView iv_experience_picture;
     /**
      * 返回按钮
      */
     private ImageView title_bar_back;
-    /**
-     * 发布评论按钮
-     */
-    private Button video_detail_comment;
+
+    private Button btn_issue;
+
+    private EditText et_comment_content;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_video_detail);
+        setContentView(R.layout.activity_experience_detail);
         //设置XListView
         setXListView();
     }
@@ -67,18 +67,17 @@ public class VideoDetailActivity extends BaseActivity implements View.OnClickLis
      * 设置XListView
      */
     private void setXListView() {
-        xListView = (XListView) findViewById(R.id.video_detail_listview);
+        xListView = (XListView) findViewById(R.id.experience_detail_listview);
         xListView.setAdapter(madapter);
         xListView.setPullLoadEnable(false);
         xListView.setPullRefreshEnable(false); // 设置不用下拉刷新和加载更多
         // 设置条目可以被点击
-        xListView.addHeaderView(activity_head_video_view); // listView添加头布局
+        xListView.addHeaderView(activity_head_experience_view); // listView添加头布局
         xListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
 
-                //  Toast.makeText(getApplication(), position, Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -89,15 +88,14 @@ public class VideoDetailActivity extends BaseActivity implements View.OnClickLis
     @Override
     protected void initView() {
         madapter = new MyAdapter();
-        activity_head_video_view = View.inflate(getApplicationContext(), R.layout.activity_head_video_view, null);
-        ViewUtils.inject(this, activity_head_video_view);
-        video_picture = (ImageView) activity_head_video_view.findViewById(R.id.video_picture);
-        iv_play = (ImageView) activity_head_video_view.findViewById(R.id.iv_play);
+        activity_head_experience_view = View.inflate(getApplicationContext(), R.layout.activity_head_experience_view, null);
+        ViewUtils.inject(this, activity_head_experience_view);
+        iv_experience_picture = (ImageView) activity_head_experience_view.findViewById(R.id.iv_experience_picture);
         title_bar_back = (ImageView) findViewById(R.id.title_bar_back);
-        video_detail_comment = (Button) findViewById(R.id.video_detail_comment);
-        iv_play.setOnClickListener(this);
+        btn_issue = (Button) findViewById(R.id.btn_issue);
+        et_comment_content = (EditText) findViewById(R.id.et_comment_content);
+        btn_issue.setOnClickListener(this);
         title_bar_back.setOnClickListener(this);
-        video_detail_comment.setOnClickListener(this);
     }
 
     /**
@@ -106,7 +104,7 @@ public class VideoDetailActivity extends BaseActivity implements View.OnClickLis
     @Override
     protected void initData() {
         //设置展示图片
-        video_picture.setImageResource(R.drawable.picture_demo);
+        iv_experience_picture.setImageResource(R.drawable.legend);
     }
 
     /**
@@ -131,9 +129,14 @@ public class VideoDetailActivity extends BaseActivity implements View.OnClickLis
                 break;
             case R.id.title_bar_back:
                 finish();
+            case R.id.btn_issue:
+                String string = et_comment_content.getText().toString().trim();
+                if(!TextUtils.isEmpty(string)){
+                    AppUtils.showTips(this, R.mipmap.tips_smile, "发布成功");
+                }else {
+                    AppUtils.showTips(this, R.mipmap.tips_error, "不能发布空白评论");
+                }
                 break;
-            case R.id.video_detail_comment:
-                Toast.makeText(getApplicationContext(), "发布评论", Toast.LENGTH_SHORT).show();
         }
     }
 

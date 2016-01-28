@@ -1,6 +1,7 @@
 package gamemei.qiyun.com.gamemei.widget.dialog;
 
 /**
+ * 取回密码弹框
  * Created by hfcui on 2016/1/27.
  */
 
@@ -149,35 +150,32 @@ public class CustomDialog extends Dialog {
                 layout.findViewById(R.id.positiveButton).setVisibility(
                         View.GONE);
             }
-//            // set the cancel button
-//            if (negativeButtonText != null) {
-//                ((Button) layout.findViewById(R.id.negativeButton))
-//                        .setText(negativeButtonText);
-//                if (negativeButtonClickListener != null) {
-//                    ((Button) layout.findViewById(R.id.negativeButton))
-//                            .setOnClickListener(new View.OnClickListener() {
-//                                public void onClick(View v) {
-//                                    negativeButtonClickListener.onClick(dialog,
-//                                            DialogInterface.BUTTON_NEGATIVE);
-//                                }
-//                            });
-//                }
-//            }
-//            else {
-//                // if no confirm button just set the visibility to GONE
-//                layout.findViewById(R.id.negativeButton).setVisibility(
-//                        View.GONE);
-//            }
+            // set the cancel button
+            if (negativeButtonText != null) {
+                ((Button) layout.findViewById(R.id.negativeButton))
+                        .setText(negativeButtonText);
+                if (negativeButtonClickListener != null) {
+                    ((Button) layout.findViewById(R.id.negativeButton))
+                            .setOnClickListener(new View.OnClickListener() {
+                                public void onClick(View v) {
+                                    negativeButtonClickListener.onClick(dialog,
+                                            DialogInterface.BUTTON_NEGATIVE);
+                                }
+                            });
+                }
+            } else {
+                // if no confirm button just set the visibility to GONE
+                layout.findViewById(R.id.negativeButton).setVisibility(
+                        View.GONE);
+            }
             // set the content message
             if (message != null) {
                 ((TextView) layout.findViewById(R.id.message)).setText(message);
             } else if (contentView != null) {
                 // if no message set
                 // add the contentView to the dialog body
-                ((LinearLayout) layout.findViewById(R.id.content))
-                        .removeAllViews();
-                ((LinearLayout) layout.findViewById(R.id.content))
-                        .addView(contentView, new LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.FILL_PARENT));
+                // ((LinearLayout) layout.findViewById(R.id.content)).removeAllViews();
+                // ((LinearLayout) layout.findViewById(R.id.content)).addView(contentView, new LayoutParams(LayoutParams.FILL_PARENT, LayoutParams.FILL_PARENT));
             }
             dialog.setContentView(layout);
             return dialog;

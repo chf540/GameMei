@@ -27,13 +27,13 @@
             android:layout_height="wrap_content"
             android:gravity="center">
 
-            <ImageView
-                android:id="@+id/dialog_close"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <Button
+                android:id="@+id/negativeButton"
+                android:layout_width="22dp"
+                android:layout_height="20dp"
                 android:layout_alignParentRight="true"
                 android:layout_marginRight="10dp"
-                android:src="@mipmap/longin_close" />
+                android:background="@mipmap/longin_close" />
 
             <TextView
                 android:id="@+id/message"

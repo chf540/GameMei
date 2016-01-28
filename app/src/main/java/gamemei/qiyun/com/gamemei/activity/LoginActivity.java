@@ -165,7 +165,6 @@ public class LoginActivity extends BaseActivity implements OnClickListener {
         switch (v.getId()) {
             case R.id.btn_register://点击注册按钮
                 startActivity(new Intent(getApplicationContext(), RegisterActivity.class));
-                finish();
                 break;
             case R.id.iv_qq: // QQ登录
                 threadLogin(SHARE_MEDIA.QQ);
@@ -197,14 +196,6 @@ public class LoginActivity extends BaseActivity implements OnClickListener {
         if (TextUtils.isEmpty(username)) {
             AppUtils.showTips(this, R.mipmap.tips_error, "未填写用户名");
             return;
-        } else {
-            Pattern patternName = Pattern
-                    .compile("([a-zA-Z0-9]{6,20})");//0~9的数字和A-Z,a-z字母，最低6位，最高20位
-            Matcher matcher = patternName.matcher(username);
-            if (!matcher.matches()) {
-                AppUtils.showTips(this, R.mipmap.tips_error, "用户名不合规");
-                return;
-            }
         }
         if (TextUtils.isEmpty(password)) {
             AppUtils.showTips(this, R.mipmap.tips_error, "未填写密码");
@@ -250,7 +241,6 @@ public class LoginActivity extends BaseActivity implements OnClickListener {
 
                     }
                 }
-
         );
     }
 
@@ -266,15 +256,11 @@ public class LoginActivity extends BaseActivity implements OnClickListener {
 
                     @Override
                     public void onStart(SHARE_MEDIA platform) {
-                        Toast.makeText(LoginActivity.this, "授权开始",
-                                Toast.LENGTH_SHORT).show();
                     }
 
                     @Override
                     public void onError(SocializeException e,
                                         SHARE_MEDIA platform) {
-                        Toast.makeText(LoginActivity.this, "授权失败",
-                                Toast.LENGTH_SHORT).show();
                     }
 
                     @Override
@@ -308,7 +294,6 @@ public class LoginActivity extends BaseActivity implements OnClickListener {
         addQQQZonePlatform();
         // 添加微信、微信朋友圈平台
         addWXPlatform();
-
     }
 
     /**
@@ -378,31 +363,6 @@ public class LoginActivity extends BaseActivity implements OnClickListener {
 
                     @Override
                     public void onComplete(int status, Map<String, Object> info) {
-
-                        /**
-                         * QQ登录信息
-                         *
-                         * 12-09 14:21:25.283: I/umengsocial(21619):
-                         * {is_yellow_year_vip=0, vip=0, level=0, province=安徽,
-                         * yellow_vip_level=0, is_yellow_vip=0, gender=男,
-                         * screen_name=与梦逆风而行, msg=,
-                         * profile_image_url=http://q.qlogo .cn/qqapp/100424468/
-                         * C760014E3CF49E25057757DDC319E38D /100, city=合肥}
-                         */
-
-                        /**
-                         * 新浪微博登录信息
-                         *
-                         * 12-09 14:23:40.453: I/umengsocial(21619):
-                         * {uid=3205585611, favourites_count=1, location=安徽 合肥,
-                         * description=与梦逆风而行, verified=false, friends_count=80,
-                         * gender=1, screen_name=与梦顺风而行, statuses_count=59,
-                         * followers_count=39,
-                         * profile_image_url=http://tp4.sinaimg
-                         * .cn/3205585611/180/40011457848/1,
-                         * access_token=2.00jP_wUDMZD6RE88b3121451HT2ciB}
-                         */
-
                         if (info != null) {
                             Toast.makeText(LoginActivity.this, info.toString(),
                                     Toast.LENGTH_SHORT).show();
