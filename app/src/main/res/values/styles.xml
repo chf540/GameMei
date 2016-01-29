@@ -103,7 +103,7 @@
     </style>
 
     <style name="title_text_style">
-        <item name="android:textSize">20.0sp</item>
+        <item name="android:textSize">18sp</item>
         <item name="android:textColor">@color/title_text_color</item>
     </style>
 

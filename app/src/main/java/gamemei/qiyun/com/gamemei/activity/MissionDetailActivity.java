@@ -15,6 +15,7 @@ import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 import com.lidroid.xutils.ViewUtils;
 
@@ -48,7 +49,7 @@ public class MissionDetailActivity extends BaseActivity implements View.OnClickL
     /**
      * 返回按钮
      */
-    private ImageView title_bar_back;
+    private LinearLayout ll_title_bar_back;
     /**
      * 点击参加任务按钮
      */
@@ -93,12 +94,12 @@ public class MissionDetailActivity extends BaseActivity implements View.OnClickL
         madapter = new MyAdapter();
         activity_head_mission_view = View.inflate(getApplicationContext(), R.layout.activity_head_mission_view, null);
         ViewUtils.inject(this, activity_head_mission_view);
-        title_bar_back = (ImageView) findViewById(R.id.title_bar_back);
+        ll_title_bar_back = (LinearLayout) findViewById(R.id.ll_title_bar_back);
         btn_issue = (Button) findViewById(R.id.btn_issue);
         et_comment_content = (EditText) findViewById(R.id.et_comment_content);
         btn_mission_attend = (Button) activity_head_mission_view.findViewById(R.id.btn_mission_attend);
         btn_issue.setOnClickListener(this);
-        title_bar_back.setOnClickListener(this);
+        ll_title_bar_back.setOnClickListener(this);
         btn_mission_attend.setOnClickListener(this);
     }
 
@@ -154,7 +155,7 @@ public class MissionDetailActivity extends BaseActivity implements View.OnClickL
                 Intent playVideo = new Intent(this, PlayVideoActivity.class);
                 startActivity(playVideo);
                 break;
-            case R.id.title_bar_back:
+            case R.id.ll_title_bar_back:
                 finish();
                 break;
             case R.id.btn_issue:

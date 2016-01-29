@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -33,7 +34,7 @@ public class RetrievePasswordActivity extends BaseActivity implements OnClickLis
     /**
      * 顶部后退按钮
      */
-    private ImageView title_bar_back;
+    private LinearLayout ll_top_back;
     /**
      * 邮箱输入框
      */
@@ -56,7 +57,7 @@ public class RetrievePasswordActivity extends BaseActivity implements OnClickLis
         tv_title = (TextView) findViewById(R.id.tv_title);
         //设置顶部标题
         tv_title.setText("找回密码");
-        title_bar_back = (ImageView) findViewById(R.id.title_bar_back);
+        ll_top_back = (LinearLayout) findViewById(R.id.ll_top_back);
         btn_retrieve_password.setOnClickListener(this);
     }
 
@@ -68,15 +69,13 @@ public class RetrievePasswordActivity extends BaseActivity implements OnClickLis
     @Override
     protected void setListener() {
         //顶部后退按钮
-        title_bar_back.setOnClickListener(new View.OnClickListener() {
+        ll_top_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finish();
             }
         });
-
     }
-
 
     @Override
     public void onClick(View view) {

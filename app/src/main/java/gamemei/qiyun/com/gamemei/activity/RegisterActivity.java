@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -32,7 +33,7 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
     /**
      * 顶部后退按钮
      */
-    private ImageView title_bar_back;
+    private LinearLayout ll_top_back;
     /**
      * 日志标记
      */
@@ -83,7 +84,7 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
         tv_title = (TextView) findViewById(R.id.tv_title);
         //设置顶部标题
         tv_title.setText("注册帐户");
-        title_bar_back = (ImageView) findViewById(R.id.title_bar_back);
+        ll_top_back = (LinearLayout) findViewById(R.id.ll_top_back);
         bt_register.setOnClickListener(this);
         tv_tel_login.setOnClickListener(this);
     }
@@ -102,7 +103,7 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
     @Override
     protected void setListener() {
         //顶部后退按钮
-        title_bar_back.setOnClickListener(new View.OnClickListener() {
+        ll_top_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finish();

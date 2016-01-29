@@ -30,7 +30,6 @@ public class TelRegisterActivity extends BaseActivity {
      * 顶部标题
      */
     private TextView tv_title;
-
     /**
      * 顶部后退按钮
      */

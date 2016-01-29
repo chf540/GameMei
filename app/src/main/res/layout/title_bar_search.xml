@@ -2,13 +2,19 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     style="@style/title_bar_style">
 
-    <ImageView
-        android:id="@+id/title_bar_back"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_marginLeft="15dp"
-        android:src="@mipmap/menu_back_normal" />
+    <LinearLayout
+        android:id="@+id/ll_title_bar_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/menu_back_normal" />
+    </LinearLayout>
 
     <EditText
         android:id="@+id/editText"
@@ -33,13 +39,18 @@
         android:layout_marginRight="10dp"
         android:background="@mipmap/menu_btn" />
 
-    <ImageView
-        android:id="@+id/title_bar_more"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <LinearLayout
+        android:id="@+id/ll_title_bar_more"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:layout_alignParentRight="true"
-        android:layout_centerVertical="true"
-        android:layout_marginRight="15dp"
-        android:src="@mipmap/menu_more" />
+        android:layout_centerVertical="true">
 
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/menu_more" />
+    </LinearLayout>
 </RelativeLayout>
