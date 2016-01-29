@@ -1,13 +1,18 @@
 package gamemei.qiyun.com.gamemei.activity;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextUtils;
+import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -15,6 +20,7 @@ import com.lidroid.xutils.ViewUtils;
 
 import gamemei.qiyun.com.gamemei.R;
 import gamemei.qiyun.com.gamemei.activity.common.BaseActivity;
+import gamemei.qiyun.com.gamemei.utils.AppUtils;
 import gamemei.qiyun.com.gamemei.widget.xlistview.XListView;
 
 /**
@@ -50,10 +56,10 @@ public class VideoDetailActivity extends BaseActivity implements View.OnClickLis
      * 返回按钮
      */
     private ImageView title_bar_back;
-    /**
-     * 发布评论按钮
-     */
-    private Button video_detail_comment;
+
+    private Button btn_issue;
+
+    private EditText et_comment_content;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -94,10 +100,11 @@ public class VideoDetailActivity extends BaseActivity implements View.OnClickLis
         video_picture = (ImageView) activity_head_video_view.findViewById(R.id.video_picture);
         iv_play = (ImageView) activity_head_video_view.findViewById(R.id.iv_play);
         title_bar_back = (ImageView) findViewById(R.id.title_bar_back);
-        video_detail_comment = (Button) findViewById(R.id.video_detail_comment);
+        btn_issue = (Button) findViewById(R.id.btn_issue);
+        et_comment_content = (EditText) findViewById(R.id.et_comment_content);
         iv_play.setOnClickListener(this);
+        btn_issue.setOnClickListener(this);
         title_bar_back.setOnClickListener(this);
-        video_detail_comment.setOnClickListener(this);
     }
 
     /**
@@ -114,7 +121,31 @@ public class VideoDetailActivity extends BaseActivity implements View.OnClickLis
      */
     @Override
     protected void setListener() {
+        //设置输入框变化监听
+        et_comment_content.addTextChangedListener(new TextWatcher() {
+            //初始化状态
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                btn_issue.setBackgroundResource(R.drawable.bg_edittext);
+            }
 
+            //输入框变时状态
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                btn_issue.setBackgroundColor(Color.parseColor("#0ad9b2"));
+                btn_issue.setTextColor(Color.parseColor("#ffffff"));
+            }
+
+            //输入后的状态
+            @Override
+            public void afterTextChanged(Editable editable) {
+                String string = et_comment_content.getText().toString().trim();
+                if (TextUtils.isEmpty(string)) {
+                    btn_issue.setBackgroundResource(R.drawable.bg_edittext);
+                    btn_issue.setTextColor(Color.parseColor("#969696"));
+                }
+            }
+        });
     }
 
     /**
@@ -132,8 +163,20 @@ public class VideoDetailActivity extends BaseActivity implements View.OnClickLis
             case R.id.title_bar_back:
                 finish();
                 break;
-            case R.id.video_detail_comment:
-                Toast.makeText(getApplicationContext(), "发布评论", Toast.LENGTH_SHORT).show();
+            case R.id.btn_issue:
+                //获取到输入框内容
+                String string = et_comment_content.getText().toString().trim();
+                if (!TextUtils.isEmpty(string)) {
+                    AppUtils.showTips(this, R.mipmap.tips_smile, "发布成功");
+                    //清空输入框
+                    et_comment_content.setText("");
+                } else {
+                    AppUtils.showTips(this, R.mipmap.tips_error, "不能发布空白评论");
+                }
+                break;
+
+            default:
+                break;
         }
     }
 

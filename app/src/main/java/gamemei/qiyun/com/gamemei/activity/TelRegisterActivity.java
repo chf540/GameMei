@@ -23,6 +23,10 @@ import gamemei.qiyun.com.gamemei.utils.SharedPreferencesUitl;
  */
 public class TelRegisterActivity extends BaseActivity {
     /**
+     * 日志标记
+     */
+    private String TAG = "TelRegisterActivity";
+    /**
      * 顶部标题
      */
     private TextView tv_title;

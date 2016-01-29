@@ -41,9 +41,8 @@
                 android:layout_height="100dp"
                 android:drawableLeft="@mipmap/login_succeed"
                 android:gravity="left|center"
-                android:paddingLeft="30dp"
-                android:text="新密码已经发到邮箱，请登录邮箱找回"
-                android:textSize="11sp" />
+                android:paddingLeft="20dp"
+                android:textSize="12sp" />
         </RelativeLayout>
 
         <Button
@@ -52,7 +51,10 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:background="@mipmap/login_back_button"
-            android:gravity="center" />
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold" />
     </LinearLayout>
 
 </FrameLayout>

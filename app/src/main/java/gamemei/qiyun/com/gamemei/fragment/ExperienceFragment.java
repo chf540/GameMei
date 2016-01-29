@@ -37,8 +37,8 @@ public class ExperienceFragment extends BaseFragment implements XListView.IXList
      */
     private MyAdapter madapter;
 
-    private LinearLayout header_ll;
     private Handler mHandler;
+
     private View view;
 
 
@@ -71,8 +71,6 @@ public class ExperienceFragment extends BaseFragment implements XListView.IXList
             @Override
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
-                Toast.makeText(getActivity(), "点击的是" + position,
-                        Toast.LENGTH_SHORT).show();
                 // TODO 点击跳转到经验明细页面
                 Intent detailIntent = new Intent(getActivity(),
                         ExperienceDetailActivity.class);

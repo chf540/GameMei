@@ -61,12 +61,13 @@
         </LinearLayout>
     </RelativeLayout>
 
+    <!--分割线-->
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
-        android:layout_marginTop="0dp"
-        android:background="@color/graywhite" />
+        android:src="@mipmap/dotted_line" />
 
 </LinearLayout>

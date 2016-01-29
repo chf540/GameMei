@@ -110,7 +110,8 @@
         <!--首页视屏详情界面-->
         <activity
             android:name=".activity.VideoDetailActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
         <!--视频播放界面(强制横屏)-->
         <activity
             android:name=".activity.PlayVideoActivity"
@@ -120,7 +121,11 @@
             android:name=".activity.ExperienceDetailActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustResize" />
-
+        <!--首页任务详情界面-->
+        <activity
+            android:name=".activity.MissionDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
 
         <meta-data
             android:name="com.google.android.gms.version"

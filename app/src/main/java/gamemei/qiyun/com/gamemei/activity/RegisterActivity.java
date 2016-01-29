@@ -145,7 +145,7 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
             AppUtils.showTips(this, R.mipmap.tips_error, "未填写用户名");
         } else {
             Pattern patternName = Pattern
-                    .compile("([a-zA-Z0-9]{6,20})");//0~9的数字和A-Z,a-z字母，最低6位，最高20位
+                    .compile("([a-zA-Z0-9_]{6,20})");//0~9的数字和A-Z,a-z字母,下划线，最低6位，最高20位
             Matcher matcher = patternName.matcher(username);
             if (!matcher.matches()) {
                 AppUtils.showTips(this, R.mipmap.tips_error, "用户名不符合要求");

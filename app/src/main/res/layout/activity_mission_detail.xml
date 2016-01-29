@@ -1,7 +1,9 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     android:orientation="vertical">
+
     <!--顶部bar-->
     <include
         android:id="@+id/app_top_bar"
@@ -9,12 +11,13 @@
         android:layout_width="match_parent"
         android:layout_height="45dp" />
 
+    <!--展示内容的ListView-->
     <gamemei.qiyun.com.gamemei.widget.xlistview.XListView
-        android:id="@+id/video_detail_listview"
+        android:id="@+id/mission_detail_listview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/app_top_bar"
-        android:layout_marginBottom="42dp"
+        android:layout_marginBottom="50dp"
         android:background="@color/white"
         android:divider="@null"
         android:dividerHeight="0dip"
@@ -36,5 +39,4 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_alignParentBottom="true" />
-
 </RelativeLayout>

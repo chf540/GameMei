@@ -1,0 +1,256 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_top_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_experience_detail_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="我想做个游戏，不是很难谁可以帮帮我？？？ "
+                android:textColor="#333333"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="0.01"
+                android:background="@color/gray" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:src="@mipmap/reward_btn" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|bottom"
+                    android:text="100积分"
+                    android:textColor="#0ad9b2"
+                    android:textSize="10sp" />
+
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_experience_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/portrait"
+                android:text="会游泳的鱼"
+                android:textColor="#0ad9b2"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:src="@mipmap/dotted_line" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp">
+
+            <LinearLayout
+                android:id="@+id/ll_mission_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/mission_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="任务类型："
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/mission_type_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="玩家组队"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_mission_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_mission_type"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/mission_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="报名时间："
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/mission_time_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2016.2.3-2016.2.10"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_mission_need"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="14dp"
+                android:layout_marginStart="14dp"
+                android:layout_toEndOf="@+id/ll_mission_time"
+                android:layout_toRightOf="@+id/ll_mission_time"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/mission_need_people"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="需求人数："
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/mission_need_people_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100人"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_mission_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/ll_mission_need"
+                android:layout_below="@+id/ll_mission_need"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/mission_mission_contact_way"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="联系方式："
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/mission_mission_contact_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="QQ123456"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_mission_time"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:src="@mipmap/dotted_line" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="详细说明："
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_experience_describe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:text="        这里是大段的介绍这里是大段的介绍这里是大段的介绍这里是大段的介绍这里是大段的介绍,这里是大段的介绍这里是大段的介绍,这里是大段的介绍这里是大段"
+            android:textColor="#333333"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_mission_attend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/attend_btn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="已有1人参加，还剩2个名额"
+            android:textSize="10sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="评论"
+            android:textColor="#333333"
+            android:textSize="14sp" />
+
+        <!--评论下划线-->
+        <View
+            android:layout_width="28dp"
+            android:layout_height="2dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="#0ad9b2" />
+
+        <!--分割线-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#bfbfbf" />
+
+    </LinearLayout>
+</RelativeLayout>

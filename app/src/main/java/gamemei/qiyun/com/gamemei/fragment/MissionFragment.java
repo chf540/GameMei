@@ -1,6 +1,7 @@
 package gamemei.qiyun.com.gamemei.fragment;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.LayoutInflater;
@@ -11,6 +12,8 @@ import android.widget.BaseAdapter;
 import android.widget.Toast;
 
 import gamemei.qiyun.com.gamemei.R;
+import gamemei.qiyun.com.gamemei.activity.ExperienceDetailActivity;
+import gamemei.qiyun.com.gamemei.activity.MissionDetailActivity;
 import gamemei.qiyun.com.gamemei.fragment.common.BaseFragment;
 import gamemei.qiyun.com.gamemei.widget.xlistview.XListView;
 
@@ -76,9 +79,10 @@ public class MissionFragment extends BaseFragment implements XListView.IXListVie
             @Override
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
-                Toast.makeText(getActivity(), "点击的是" + position,
-                        Toast.LENGTH_SHORT).show();
-                // TODO 点击跳转到游戏明细页面
+                // TODO 点击跳转到任务明细页面
+                Intent detailIntent = new Intent(getActivity(),
+                        MissionDetailActivity.class);
+                startActivity(detailIntent);
             }
         });
     }

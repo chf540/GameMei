@@ -107,7 +107,8 @@ public class RetrievePasswordActivity extends BaseActivity implements OnClickLis
         }
         // 取回密码成功弹框
         CustomDialog.Builder builder = new CustomDialog.Builder(this);
-        builder.setPositiveButton("", new DialogInterface.OnClickListener() {
+        builder.setMessage(" 新密码已经发到邮箱，请登录邮箱找回");
+        builder.setPositiveButton("返回登录页面", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
                 dialog.dismiss();
                 //跳转到登录界面

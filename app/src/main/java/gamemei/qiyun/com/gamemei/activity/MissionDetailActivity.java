@@ -1,10 +1,10 @@
 package gamemei.qiyun.com.gamemei.activity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Editable;
-import android.text.Layout;
 import android.text.TextUtils;
 import android.text.TextWatcher;
 import android.view.LayoutInflater;
@@ -15,24 +15,24 @@ import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 import com.lidroid.xutils.ViewUtils;
 
 import gamemei.qiyun.com.gamemei.R;
 import gamemei.qiyun.com.gamemei.activity.common.BaseActivity;
 import gamemei.qiyun.com.gamemei.utils.AppUtils;
+import gamemei.qiyun.com.gamemei.widget.dialog.CustomDialog;
 import gamemei.qiyun.com.gamemei.widget.xlistview.XListView;
 
 /**
- * 经验详情界面
- * Created by hfcui on 2016/1/28.
+ * 任务详情界面
+ * Created by hfcui on 2016/1/29.
  */
-public class ExperienceDetailActivity extends BaseActivity implements View.OnClickListener {
+public class MissionDetailActivity extends BaseActivity implements View.OnClickListener {
     /**
      * 日志标记
      */
-    private String TAG = "ExperienceDetailActivity";
+    private String TAG = "MissionDetailActivity";
     /**
      * 评论列表项
      */
@@ -44,15 +44,15 @@ public class ExperienceDetailActivity extends BaseActivity implements View.OnCli
     /**
      * ListView顶部的View
      */
-    private View activity_head_experience_view;
-    /**
-     * 视频缩略图
-     */
-    private ImageView iv_experience_picture;
+    private View activity_head_mission_view;
     /**
      * 返回按钮
      */
     private ImageView title_bar_back;
+    /**
+     * 点击参加任务按钮
+     */
+    private Button btn_mission_attend;
 
     private Button btn_issue;
 
@@ -61,7 +61,7 @@ public class ExperienceDetailActivity extends BaseActivity implements View.OnCli
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_experience_detail);
+        setContentView(R.layout.activity_mission_detail);
         //设置XListView
         setXListView();
     }
@@ -70,12 +70,12 @@ public class ExperienceDetailActivity extends BaseActivity implements View.OnCli
      * 设置XListView
      */
     private void setXListView() {
-        xListView = (XListView) findViewById(R.id.experience_detail_listview);
+        xListView = (XListView) findViewById(R.id.mission_detail_listview);
         xListView.setAdapter(madapter);
         xListView.setPullLoadEnable(false);
         xListView.setPullRefreshEnable(false); // 设置不用下拉刷新和加载更多
         // 设置条目可以被点击
-        xListView.addHeaderView(activity_head_experience_view); // listView添加头布局
+        xListView.addHeaderView(activity_head_mission_view); // listView添加头布局
         xListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view,
@@ -91,14 +91,15 @@ public class ExperienceDetailActivity extends BaseActivity implements View.OnCli
     @Override
     protected void initView() {
         madapter = new MyAdapter();
-        activity_head_experience_view = View.inflate(getApplicationContext(), R.layout.activity_head_experience_view, null);
-        ViewUtils.inject(this, activity_head_experience_view);
-        iv_experience_picture = (ImageView) activity_head_experience_view.findViewById(R.id.iv_experience_picture);
+        activity_head_mission_view = View.inflate(getApplicationContext(), R.layout.activity_head_mission_view, null);
+        ViewUtils.inject(this, activity_head_mission_view);
         title_bar_back = (ImageView) findViewById(R.id.title_bar_back);
         btn_issue = (Button) findViewById(R.id.btn_issue);
         et_comment_content = (EditText) findViewById(R.id.et_comment_content);
+        btn_mission_attend = (Button) activity_head_mission_view.findViewById(R.id.btn_mission_attend);
         btn_issue.setOnClickListener(this);
         title_bar_back.setOnClickListener(this);
+        btn_mission_attend.setOnClickListener(this);
     }
 
     /**
@@ -106,8 +107,7 @@ public class ExperienceDetailActivity extends BaseActivity implements View.OnCli
      */
     @Override
     protected void initData() {
-        //设置展示图片
-        iv_experience_picture.setImageResource(R.drawable.legend);
+
     }
 
     /**
@@ -168,11 +168,32 @@ public class ExperienceDetailActivity extends BaseActivity implements View.OnCli
                     AppUtils.showTips(this, R.mipmap.tips_error, "不能发布空白评论");
                 }
                 break;
-
+            case R.id.btn_mission_attend:
+                messageBox();
+                break;
             default:
                 break;
         }
     }
+
+    private void messageBox() {
+        // 取回密码成功弹框
+        CustomDialog.Builder builder = new CustomDialog.Builder(this);
+        builder.setMessage(" 参与成功，请联系需求方询问具体方式！");
+        builder.setPositiveButton("确定", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+                //TODO
+            }
+        });
+        builder.setNegativeButton("", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+        });
+        builder.create().show();
+    }
+
 
     /**
      * ListView 适配器
