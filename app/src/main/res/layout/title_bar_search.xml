@@ -27,6 +27,7 @@
         android:paddingLeft="8dp"
         android:textColor="@color/white"
         android:textColorHint="#c4cfd6"
+        android:textCursorDrawable="@null"
         android:textSize="14sp" />
 
     <Button

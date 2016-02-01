@@ -1,2 +1,2 @@
-include ':app', ':IMKit'
+include ':app', ':IMKit', ':social_sdk_library'
 include ':support_lib'

@@ -12,6 +12,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/IMKit" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/social_sdk_library" />
             <option value="$PROJECT_DIR$/support_lib" />
           </set>
         </option>
@@ -20,6 +21,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/IMKit" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/social_sdk_library" />
             <option value="$PROJECT_DIR$/support_lib" />
           </set>
         </option>

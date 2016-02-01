@@ -112,6 +112,7 @@
     <string name="umeng_socialize_laiwang_default_content">友盟社会化组件（SDK）让移动应用快速整合社交分享功能</string>
     <string name="umeng_socialize_login">登录</string>
     <string name="umeng_socialize_login_qq">QQ空间</string>
+    <string name="umeng_socialize_mail">邮件</string>
     <string name="umeng_socialize_msg_hor" translatable="false">小时前</string>
     <string name="umeng_socialize_msg_min" translatable="false">分钟前</string>
     <string name="umeng_socialize_msg_sec" translatable="false">秒前</string>
@@ -123,16 +124,31 @@
     <string name="umeng_socialize_share_content">友盟社会化组件（SDK）让移动应用快速整合社交分享功能，我们简化了社交平台的接入，为开发者提供坚实的基础服务。（一）支持各大主流社交平台， 
 												（二）支持图片、文字、gif动图、音频、视频；@好友，关注官方微博等功能。
 												（三）提供详尽的后台用户社交行为分析。www.umeng.com/social</string>
+    <string name="umeng_socialize_sina">新浪</string>
+    <string name="umeng_socialize_sms">短信</string>
     <string name="umeng_socialize_text_add_custom_platform">请配置用户平台</string>
+    <string name="umeng_socialize_text_alipay_key">支付宝</string>
     <string name="umeng_socialize_text_authorize">授权</string>
     <string name="umeng_socialize_text_choose_account">选择已有帐号登录</string>
     <string name="umeng_socialize_text_comment_hint">说点什么吧…</string>
     <string name="umeng_socialize_text_douban_key">豆瓣网</string>
+    <string name="umeng_socialize_text_evernote_key">印象笔记</string>
+    <string name="umeng_socialize_text_facebook_key">facebook</string>
+    <string name="umeng_socialize_text_flickr_key">Flickr</string>
+    <string name="umeng_socialize_text_foursquare_key">Foursquare</string>
     <string name="umeng_socialize_text_friend_list">好友列表</string>
+    <string name="umeng_socialize_text_googleplus_key">GooglePlus</string>
+    <string name="umeng_socialize_text_instagram_key">instagram</string>
+    <string name="umeng_socialize_text_kakao_key">Kakao Talk</string>
     <string name="umeng_socialize_text_laiwang_dynamic_key">来往动态</string>
     <string name="umeng_socialize_text_laiwang_key">来往</string>
+    <string name="umeng_socialize_text_laiwangdynamic_key">来往动态</string>
+    <string name="umeng_socialize_text_line_key">LINE</string>
+    <string name="umeng_socialize_text_linkedin_key">Linkedin</string>
     <string name="umeng_socialize_text_loading_message">载入中,请稍候...</string>
     <string name="umeng_socialize_text_login_fail">登录失败了，请重试</string>
+    <string name="umeng_socialize_text_pinterest_key">pinterest</string>
+    <string name="umeng_socialize_text_pocket_key">pocket</string>
     <string name="umeng_socialize_text_qq_key">QQ</string>
     <string name="umeng_socialize_text_qq_zone_key">QQ空间</string>
     <string name="umeng_socialize_text_renren_key">人人网</string>
@@ -142,6 +158,8 @@
     <string name="umeng_socialize_text_tencent_no_install">未安装腾讯微博客户端</string>
     <string name="umeng_socialize_text_tencent_oauth_login_fail">授权登录失败</string>
     <string name="umeng_socialize_text_tencent_version_no_match">版本不匹配，SSO只对微博客户端V3.8.1及以上的版本提供支持</string>
+    <string name="umeng_socialize_text_tumblr_key">Tumblr</string>
+    <string name="umeng_socialize_text_twitter_key">twitter</string>
     <string name="umeng_socialize_text_ucenter">个人中心</string>
     <string name="umeng_socialize_text_unauthorize">未授权</string>
     <string name="umeng_socialize_text_visitor">游客</string>
@@ -157,6 +175,10 @@
     <string name="umeng_socialize_text_waitting_yixin_circle">跳转易信朋友圈中，请稍候...</string>
     <string name="umeng_socialize_text_weixin_circle_key">微信朋友圈</string>
     <string name="umeng_socialize_text_weixin_key">微信</string>
+    <string name="umeng_socialize_text_whatsapp_key">WhatsApp</string>
+    <string name="umeng_socialize_text_ydnote_key">有道云笔记</string>
+    <string name="umeng_socialize_text_yixin_key">易信</string>
+    <string name="umeng_socialize_text_yixincircle_key">易信朋友圈</string>
     <string name="umeng_socialize_tip_blacklist" translatable="false">对不起，因为违反了用户协议您已被禁言.</string>
     <string name="umeng_socialize_tip_loginfailed" translatable="false">登录失败…</string>
     <string name="umeng_socialize_ucenter_login_title_guide" translatable="false">游客登录</string>
@@ -169,19 +191,6 @@
     <string name="ynote_no_client">未安装有道云笔记客户端</string>
     <string name="ynote_no_content">请设置分享内容</string>
     <string name="ynote_showword">有道云笔记</string>
-    <style name="Dialog_Fullscreen">
-
-        <!-- 边框 -->
-        <item name="android:windowFrame">@null</item>
-        <!-- 半透明 -->
-        <item name="android:windowIsTranslucent">true</item>
-        <!-- 背景透明 -->
-        <item name="android:windowBackground">@android:color/transparent</item>
-        <item name="android:windowFullscreen">true</item>
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:backgroundDimEnabled">true</item>
-        <item name="android:backgroundDimAmount">0.6</item>
-    </style>
     <style name="MessengerButton">
     <item name="android:clickable">true</item>
   </style>
@@ -240,10 +249,6 @@
     <style name="MessengerButtonText.White.Small">
     <item name="android:drawableLeft">@drawable/messenger_bubble_small_blue</item>
   </style>
-    <style name="Notitle_Fullscreen">
-        <item name="android:windowFullscreen">true</item>
-        <item name="android:windowNoTitle">true</item>
-    </style>
     <style name="Theme.UMDefault" parent="android:style/Theme.NoTitleBar"/>
     <style name="Theme.UMDialog" parent="android:style/Theme.Dialog">
         <item name="android:windowNoTitle">true</item>
@@ -279,36 +284,6 @@
         <item name="android:background">@drawable/com_facebook_button_login_silver_background</item>
         <item name="android:drawableLeft">@null</item>
         <item name="android:textColor">#4b5164</item>
-    </style>
-    <style mce_bogus="1" name="lan_DialogWindowAnim" parent="android:Animation">
-        <item name="android:windowExitAnimation">@anim/shake_umeng_socialize_dlg_alpha</item>
-    </style>
-    <style name="notitleDialog">
-
-        <!-- 边框 -->
-        <item name="android:windowFrame">@null</item>
-        <!-- 半透明 -->
-        <item name="android:windowIsTranslucent">true</item>
-        <!-- 无标题 -->
-        <item name="android:windowNoTitle">true</item>
-        <!-- 背景透明 -->
-        <item name="android:windowBackground">@android:color/transparent</item>
-        <!-- 模糊 -->
-        <item name="android:backgroundDimEnabled">false</item>
-    </style>
-    <style name="scrshot_dlg_style" parent="@android:style/Theme.Dialog">
-        <item name="android:windowFrame">@null</item>
-        <item name="android:windowIsFloating">true</item>
-        <item name="android:windowIsTranslucent">true</item>
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:background">@android:color/transparent</item>
-        <item name="android:windowBackground">@android:color/transparent</item>
-        <item name="android:backgroundDimEnabled">true</item>
-        <item name="android:backgroundDimAmount">0.6</item>
-    </style>
-    <style mce_bogus="1" name="snapshotDialogWindowAnim" parent="android:Animation">
-        <item name="android:windowEnterAnimation">@anim/shake_umeng_socialize_scrshot_dlg</item>
-        <item name="android:windowExitAnimation">@anim/shake_umeng_socialize_dlg_alpha</item>
     </style>
     <style name="tooltip_bubble_text">
 	    <item name="android:textColor">@android:color/white</item>
