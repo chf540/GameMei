@@ -21,11 +21,12 @@ import android.widget.PopupWindow;
 import com.lidroid.xutils.ViewUtils;
 import com.umeng.socialize.controller.UMServiceFactory;
 import com.umeng.socialize.controller.UMSocialService;
+import com.umeng.socialize.media.UMImage;
 import com.umeng.socialize.sso.QZoneSsoHandler;
 import com.umeng.socialize.sso.SinaSsoHandler;
 import com.umeng.socialize.sso.UMQQSsoHandler;
+import com.umeng.socialize.sso.UMSsoHandler;
 import com.umeng.socialize.weixin.controller.UMWXHandler;
-import com.umeng.socialize.weixin.media.WeiXinShareContent;
 
 import gamemei.qiyun.com.gamemei.R;
 import gamemei.qiyun.com.gamemei.activity.common.BaseActivity;
@@ -82,7 +83,9 @@ public class VideoDetailActivity extends BaseActivity implements View.OnClickLis
 
     private EditText et_comment_content;
 
-    // 首先在您的Activity中添加如下成员变量
+    /**
+     * 友盟社会化组件
+     */
     final UMSocialService mController = UMServiceFactory.getUMSocialService("com.umeng.share");
 
     @Override
@@ -93,6 +96,7 @@ public class VideoDetailActivity extends BaseActivity implements View.OnClickLis
         setShareCollect();
         //设置XListView
         setXListView();
+        //配置分享平台参数
         configPlatforms();
     }
 
@@ -101,7 +105,7 @@ public class VideoDetailActivity extends BaseActivity implements View.OnClickLis
      */
     private void configPlatforms() {
         // 添加新浪sso授权
-        mController.getConfig().setSsoHandler(new SinaSsoHandler());
+        //  mController.getConfig().setSsoHandler(new SinaSsoHandler());
         // 添加QQ、QZone平台
         addQQQZonePlatform();
         // 添加微信、微信朋友圈平台
@@ -117,6 +121,11 @@ public class VideoDetailActivity extends BaseActivity implements View.OnClickLis
         // wx967daebe835fbeac是你在微信开发平台注册应用的AppID, 这里需要替换成你注册的AppID
         String appId = "wx967daebe835fbeac";
         String appSecret = "5bb696d9ccd75a38c8a0bfe0675559b3";
+
+        mController.setShareContent("GameMei游戏魅");
+        // 设置分享图片, 参数2为图片的url地址
+        mController.setShareMedia(new UMImage(VideoDetailActivity.this,
+                "http://www.gamemei.com/background/uploads/160125/2-1601251R5401b.png"));
 
         // 添加微信平台
         UMWXHandler wxHandler = new UMWXHandler(VideoDetailActivity.this, appId,
@@ -153,6 +162,15 @@ public class VideoDetailActivity extends BaseActivity implements View.OnClickLis
         qZoneSsoHandler.addToSocialSDK();
     }
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        /**使用SSO授权必须添加如下代码 */
+        UMSsoHandler ssoHandler = mController.getConfig().getSsoHandler(requestCode);
+        if (ssoHandler != null) {
+            ssoHandler.authorizeCallBack(requestCode, resultCode, data);
+        }
+    }
 
     /**
      * 设置分享和收藏popwindow
@@ -187,7 +205,7 @@ public class VideoDetailActivity extends BaseActivity implements View.OnClickLis
                 pop.dismiss();
             }
         });
-        //popwindow展开，收起
+        //点击右上方按钮打开收起popwindow
         ll_title_bar_more.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -69,12 +69,9 @@ public class XListView extends ListView {
     }
 
     private void initView(Context context) {
-
         scroller = new Scroller(context, new DecelerateInterpolator());
-
         headerView = new XListViewHeader(context);
         footerView = new XListViewFooter(context);
-
         headerViewContent = (RelativeLayout) headerView
                 .findViewById(R.id.xlistview_header_content);
         headerView.getViewTreeObserver().addOnGlobalLayoutListener(

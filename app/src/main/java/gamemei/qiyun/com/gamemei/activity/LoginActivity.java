@@ -290,7 +290,7 @@ public class LoginActivity extends BaseActivity implements OnClickListener {
      */
     private void configPlatforms() {
         // 添加新浪sso授权
-        mController.getConfig().setSsoHandler(new SinaSsoHandler());
+        //mController.getConfig().setSsoHandler(new SinaSsoHandler());
         // 添加QQ、QZone平台
         addQQQZonePlatform();
         // 添加微信、微信朋友圈平台

@@ -17,7 +17,6 @@ import android.widget.TextView;
 
 import gamemei.qiyun.com.gamemei.R;
 
-
 public class CustomDialog extends Dialog {
 
     public CustomDialog(Context context) {

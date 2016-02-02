@@ -57,7 +57,7 @@
             android:layout_alignLeft="@+id/ll_experience_time"
             android:layout_alignStart="@+id/ll_experience_time"
             android:layout_below="@+id/ll_experience_time"
-            android:layout_marginTop="5dp"
+            android:layout_margin="5dp"
             android:text="本人技术略渣，主要是想认识些新朋友一起玩lol。 组个队，开个黑，没事high一下,爱玩网游的小伙伴赶快来找我呀！"
             android:textColor="@color/black" />
 
