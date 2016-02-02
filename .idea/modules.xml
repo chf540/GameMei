@@ -5,7 +5,6 @@
       <module fileurl="file://$PROJECT_DIR$/GameMei.iml" filepath="$PROJECT_DIR$/GameMei.iml" />
       <module fileurl="file://$PROJECT_DIR$/IMKit/IMKit.iml" filepath="$PROJECT_DIR$/IMKit/IMKit.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/social_sdk_library/social_sdk_library.iml" filepath="$PROJECT_DIR$/social_sdk_library/social_sdk_library.iml" />
       <module fileurl="file://$PROJECT_DIR$/support_lib/support_lib.iml" filepath="$PROJECT_DIR$/support_lib/support_lib.iml" />
     </modules>
   </component>

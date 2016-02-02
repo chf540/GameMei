@@ -10,6 +10,8 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -20,10 +22,18 @@ import com.lidroid.xutils.exception.HttpException;
 import com.lidroid.xutils.http.ResponseInfo;
 import com.lidroid.xutils.http.callback.RequestCallBack;
 import com.lidroid.xutils.http.client.HttpRequest;
-import com.umeng.socialize.UMAuthListener;
-import com.umeng.socialize.UMShareAPI;
 import com.umeng.socialize.bean.SHARE_MEDIA;
+import com.umeng.socialize.controller.UMServiceFactory;
+import com.umeng.socialize.controller.UMSocialService;
+import com.umeng.socialize.controller.listener.SocializeListeners.UMAuthListener;
+import com.umeng.socialize.controller.listener.SocializeListeners.UMDataListener;
+import com.umeng.socialize.exception.SocializeException;
+import com.umeng.socialize.sso.QZoneSsoHandler;
+import com.umeng.socialize.sso.SinaSsoHandler;
+import com.umeng.socialize.sso.UMQQSsoHandler;
+import com.umeng.socialize.sso.UMSsoHandler;
 import com.umeng.socialize.utils.Log;
+import com.umeng.socialize.weixin.controller.UMWXHandler;
 
 import org.apache.http.client.CookieStore;
 import org.apache.http.cookie.Cookie;
@@ -89,16 +99,17 @@ public class LoginActivity extends BaseActivity implements OnClickListener {
     private TextView tv_forget_password;
 
     /**
-     * 友盟第三方授权
+     * 友盟 首先在activity页里添加下面的成员变量
      */
-    private UMShareAPI mShareAPI = null;
+    private UMSocialService mController = UMServiceFactory
+            .getUMSocialService("com.umeng.login");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         Log.i(TAG, "hfcui-----onCreate");
-        mShareAPI = UMShareAPI.get(this);
+        configPlatforms();
         //如果记住用户名的话复显
         if (SharedPreferencesUitl.getStringData(getApplicationContext(), "username", "") != null) {
             String username = SharedPreferencesUitl.getStringData(getApplicationContext(), "username", "");
@@ -110,7 +121,6 @@ public class LoginActivity extends BaseActivity implements OnClickListener {
             edit_login_password.setText(password);
         }
     }
-
 
     @Override
     protected void initView() {
@@ -153,23 +163,18 @@ public class LoginActivity extends BaseActivity implements OnClickListener {
 
     @Override
     public void onClick(View v) {
-        SHARE_MEDIA platform = null;
-
         switch (v.getId()) {
             case R.id.btn_register://点击注册按钮
                 startActivity(new Intent(getApplicationContext(), RegisterActivity.class));
                 break;
             case R.id.iv_qq: // QQ登录
-                platform = SHARE_MEDIA.QQ;
-                mShareAPI.doOauthVerify(this, platform, umAuthListener);
+                threadLogin(SHARE_MEDIA.QQ);
                 break;
             case R.id.iv_xinlangweibo: // 新浪微博登录
-                platform = SHARE_MEDIA.SINA;
-                mShareAPI.doOauthVerify(this, platform, umAuthListener);
+                threadLogin(SHARE_MEDIA.SINA);
                 break;
             case R.id.iv_wechat:  // 微信登录
-                platform = SHARE_MEDIA.WEIXIN;
-                mShareAPI.doOauthVerify(this, platform, umAuthListener);
+                threadLogin(SHARE_MEDIA.WEIXIN);
                 break;
             case R.id.btn_login://登录
                 Login();
@@ -241,30 +246,107 @@ public class LoginActivity extends BaseActivity implements OnClickListener {
     }
 
     /**
-     * auth callback interface
-     **/
-    private UMAuthListener umAuthListener = new UMAuthListener() {
-        @Override
-        public void onComplete(SHARE_MEDIA platform, int action, Map<String, String> data) {
-            Toast.makeText(getApplicationContext(), "Authorize succeed", Toast.LENGTH_SHORT).show();
+     * 授权。如果授权成功，则获取用户信息
+     *
+     * @param platform
+     */
 
-        }
+    private void threadLogin(final SHARE_MEDIA platform) {
+        mController.doOauthVerify(LoginActivity.this, platform,
+                new UMAuthListener() {
 
-        @Override
-        public void onError(SHARE_MEDIA platform, int action, Throwable t) {
-            Toast.makeText(getApplicationContext(), "Authorize fail", Toast.LENGTH_SHORT).show();
-        }
+                    @Override
+                    public void onStart(SHARE_MEDIA platform) {
+                    }
 
-        @Override
-        public void onCancel(SHARE_MEDIA platform, int action) {
-            Toast.makeText(getApplicationContext(), "Authorize cancel", Toast.LENGTH_SHORT).show();
-        }
-    };
+                    @Override
+                    public void onError(SocializeException e,
+                                        SHARE_MEDIA platform) {
+                    }
 
+                    @Override
+                    public void onComplete(Bundle value, SHARE_MEDIA platform) {
+                        // 获取uid
+                        String uid = value.getString("uid");
+                        if (!TextUtils.isEmpty(uid)) {
+                            // uid不为空，获取用户信息
+                            getUserInfo(platform);
+                        } else {
+                            Toast.makeText(LoginActivity.this, "授权失败...",
+                                    Toast.LENGTH_LONG).show();
+                        }
+                    }
+
+                    @Override
+                    public void onCancel(SHARE_MEDIA platform) {
+                        Toast.makeText(LoginActivity.this, "授权取消",
+                                Toast.LENGTH_SHORT).show();
+                    }
+                });
+    }
+
+    /**
+     * 配置分享平台参数
+     */
+    private void configPlatforms() {
+        // 添加新浪sso授权
+        mController.getConfig().setSsoHandler(new SinaSsoHandler());
+        // 添加QQ、QZone平台
+        addQQQZonePlatform();
+        // 添加微信、微信朋友圈平台
+        addWXPlatform();
+    }
+
+    /**
+     * @return
+     * @功能描述 : QQ平台登录分享
+     */
+    private void addQQQZonePlatform() {
+        String appId = "100424468";
+        String appKey = "c7394704798a158208a74ab60104f0ba";
+        // 添加QQ支持, 并且设置QQ分享内容的target url
+        UMQQSsoHandler qqSsoHandler = new UMQQSsoHandler(LoginActivity.this,
+                appId, appKey);
+        qqSsoHandler.setTargetUrl("http://www.umeng.com");
+        qqSsoHandler.addToSocialSDK();
+
+        // 添加QZone平台
+        QZoneSsoHandler qZoneSsoHandler = new QZoneSsoHandler(
+                LoginActivity.this, appId, appKey);
+        qZoneSsoHandler.addToSocialSDK();
+    }
+
+    /**
+     * @return
+     * @功能描述 : 添加微信平台分享
+     */
+    private void addWXPlatform() {
+        // 注意：在微信授权的时候，必须传递appSecret
+        // wx967daebe835fbeac是你在微信开发平台注册应用的AppID, 这里需要替换成你注册的AppID
+        String appId = "wx967daebe835fbeac";
+        String appSecret = "5bb696d9ccd75a38c8a0bfe0675559b3";
+        // 添加微信平台
+        UMWXHandler wxHandler = new UMWXHandler(LoginActivity.this, appId,
+                appSecret);
+        wxHandler.addToSocialSDK();
+
+        // 支持微信朋友圈
+        UMWXHandler wxCircleHandler = new UMWXHandler(LoginActivity.this,
+                appId, appSecret);
+        wxCircleHandler.setToCircle(true);
+        wxCircleHandler.addToSocialSDK();
+    }
+
+    // 如果有使用任一平台的SSO授权, 则必须在对应的activity中实现onActivityResult方法, 并添加如下代码
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        mShareAPI.onActivityResult(requestCode, resultCode, data);
+        // 根据requestCode获取对应的SsoHandler
+        UMSsoHandler ssoHandler = mController.getConfig().getSsoHandler(
+                resultCode);
+        if (ssoHandler != null) {
+            ssoHandler.authorizeCallBack(requestCode, resultCode, data);
+        }
     }
 
     /**
@@ -273,22 +355,22 @@ public class LoginActivity extends BaseActivity implements OnClickListener {
      * @param platform
      */
     private void getUserInfo(SHARE_MEDIA platform) {
-        mShareAPI.getPlatformInfo(this, platform, new UMAuthListener() {
-            @Override
-            public void onComplete(SHARE_MEDIA share_media, int i, Map<String, String> map) {
-                Toast.makeText(getApplicationContext(), map.toString(), Toast.LENGTH_SHORT).show();
-            }
+        mController.getPlatformInfo(LoginActivity.this, platform,
+                new UMDataListener() {
+                    @Override
+                    public void onStart() {
 
-            @Override
-            public void onError(SHARE_MEDIA share_media, int i, Throwable throwable) {
+                    }
 
-            }
-
-            @Override
-            public void onCancel(SHARE_MEDIA share_media, int i) {
-
-            }
-        });
+                    @Override
+                    public void onComplete(int status, Map<String, Object> info) {
+                        if (info != null) {
+                            Toast.makeText(LoginActivity.this, info.toString(),
+                                    Toast.LENGTH_SHORT).show();
+                            Log.i(info.toString());
+                        }
+                    }
+                });
     }
 
     /**
@@ -296,6 +378,7 @@ public class LoginActivity extends BaseActivity implements OnClickListener {
      */
     @Override
     public void onBackPressed() {
+        //  startActivity(new Intent(getApplicationContext(), HomeActivity.class));
         finish();
     }
 }

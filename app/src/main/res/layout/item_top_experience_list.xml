@@ -47,7 +47,8 @@
             android:layout_marginEnd="10dp"
             android:layout_marginRight="10dp"
             android:layout_marginTop="12dp"
-            android:text="进行中" />
+            android:text="进行中"
+            android:visibility="invisible" />
 
         <TextView
             android:id="@+id/tv_experience_content"

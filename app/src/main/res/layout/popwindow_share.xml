@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!--分享按钮-->
+    <Button
+        android:id="@+id/btn_top_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:text="分享" />
+
+    <!--分割线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#bfbfbf" />
+
+    <!--收藏按钮-->
+    <Button
+        android:id="@+id/btn_top_collect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:text="收藏" />
+
+</LinearLayout>

@@ -45,3 +45,5 @@
 -keep public class [your_pkg].R$*{
     public static final int *;
 }
+
+

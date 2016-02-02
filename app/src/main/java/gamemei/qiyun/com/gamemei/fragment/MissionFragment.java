@@ -9,6 +9,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import gamemei.qiyun.com.gamemei.R;
@@ -35,6 +37,10 @@ public class MissionFragment extends BaseFragment implements XListView.IXListVie
      * 界面适配器
      */
     private MyAdapter madapter;
+    /**
+     * 任务类型
+     */
+    private ImageView iv_mission_type;
 
     private Handler mHandler;
 
@@ -172,6 +178,15 @@ public class MissionFragment extends BaseFragment implements XListView.IXListVie
         public View getView(final int position, View convertView,
                             ViewGroup parent) {
             convertView = mInflater.inflate(R.layout.item_top_mission_list, null);
+            iv_mission_type = (ImageView) convertView.findViewById(R.id.iv_mission_type);
+
+            for (int i = 0; i < 10; i++) {
+                if (i % 2 == 1) {
+                    iv_mission_type.setImageResource(R.mipmap.mission_underway);
+                } else {
+                    iv_mission_type.setImageResource(R.mipmap.mission_finish);
+                }
+            }
             return convertView;
         }
     }

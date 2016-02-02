@@ -4,16 +4,24 @@
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\com_facebook_button_like_icon_selected.png"
     },
     {
-        "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\messenger_bubble_large_blue.png",
-        "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\messenger_bubble_large_blue.png"
-    },
-    {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\com_facebook_button_icon.png",
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\com_facebook_button_icon.png"
     },
     {
+        "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\messenger_bubble_large_blue.png",
+        "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\messenger_bubble_large_blue.png"
+    },
+    {
+        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\messenger_bubble_small_blue.png",
+        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\messenger_bubble_small_blue.png"
+    },
+    {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\messenger_bubble_large_white.png",
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\messenger_bubble_large_white.png"
+    },
+    {
+        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\messenger_bubble_small_white.png",
+        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\messenger_bubble_small_white.png"
     },
     {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\messenger_bubble_small_blue.png",
@@ -24,43 +32,67 @@
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\com_facebook_button_send_icon.png"
     },
     {
-        "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\messenger_bubble_small_blue.png",
-        "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\messenger_bubble_small_blue.png"
+        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\com_facebook_button_icon.png",
+        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\com_facebook_button_icon.png"
     },
     {
-        "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\messenger_bubble_small_white.png",
-        "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\messenger_bubble_small_white.png"
+        "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\messenger_bubble_small_blue.png",
+        "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\messenger_bubble_small_blue.png"
     },
     {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\messenger_bubble_large_blue.png",
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\messenger_bubble_large_blue.png"
     },
     {
+        "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\messenger_bubble_small_white.png",
+        "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\messenger_bubble_small_white.png"
+    },
+    {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\com_facebook_button_like_icon_selected.png",
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\com_facebook_button_like_icon_selected.png"
+    },
+    {
+        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\messenger_button_send_round_shadow.png",
+        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\messenger_button_send_round_shadow.png"
     },
     {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\com_facebook_button_send_icon.png",
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\com_facebook_button_send_icon.png"
     },
     {
-        "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\messenger_button_send_round_shadow.png",
-        "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\messenger_button_send_round_shadow.png"
+        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\com_facebook_button_like_icon_selected.png",
+        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\com_facebook_button_like_icon_selected.png"
     },
     {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\messenger_button_send_round_shadow.png",
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\messenger_button_send_round_shadow.png"
     },
     {
+        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\messenger_bubble_large_white.png",
+        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\messenger_bubble_large_white.png"
+    },
+    {
+        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\messenger_bubble_large_blue.png",
+        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\messenger_bubble_large_blue.png"
+    },
+    {
+        "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\messenger_button_send_round_shadow.png",
+        "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\messenger_button_send_round_shadow.png"
+    },
+    {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\messenger_bubble_small_white.png",
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\messenger_bubble_small_white.png"
     },
     {
-        "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\com_facebook_button_icon.png",
-        "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\com_facebook_button_icon.png"
+        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\com_facebook_button_send_icon.png",
+        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\com_facebook_button_send_icon.png"
     },
     {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\messenger_bubble_large_white.png",
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\messenger_bubble_large_white.png"
+    },
+    {
+        "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxhdpi-v4\\com_facebook_button_icon.png",
+        "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable-xxhdpi-v4\\com_facebook_button_icon.png"
     }
 ]
