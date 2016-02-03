@@ -29,7 +29,9 @@
             android:id="@+id/tv_mission_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="5dp"
             android:layout_toRightOf="@id/linearLayout"
             android:singleLine="true"
             android:text="芭芭拉"
@@ -67,7 +69,9 @@
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/tv_mission_name"
             android:layout_alignStart="@+id/tv_mission_name"
-            android:layout_below="@+id/tv_mission_name">
+            android:layout_below="@+id/tv_mission_name"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="5dp">
 
             <TextView
                 android:id="@+id/tv_mission_browse"

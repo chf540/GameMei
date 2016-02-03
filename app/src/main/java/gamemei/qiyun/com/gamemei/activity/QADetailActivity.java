@@ -5,7 +5,6 @@ import android.graphics.Color;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.text.Editable;
-import android.text.Layout;
 import android.text.TextUtils;
 import android.text.TextWatcher;
 import android.view.LayoutInflater;
@@ -38,11 +37,11 @@ import gamemei.qiyun.com.gamemei.widget.xlistview.XListView;
  * 经验详情界面
  * Created by hfcui on 2016/1/28.
  */
-public class ExperienceDetailActivity extends BaseActivity implements View.OnClickListener {
+public class QADetailActivity extends BaseActivity implements View.OnClickListener {
     /**
      * 日志标记
      */
-    private String TAG = "ExperienceDetailActivity";
+    private String TAG = "QADetailActivity";
     /**
      * 评论列表项
      */
@@ -54,11 +53,7 @@ public class ExperienceDetailActivity extends BaseActivity implements View.OnCli
     /**
      * ListView顶部的View
      */
-    private View activity_head_experience_view;
-    /**
-     * 视频缩略图
-     */
-    private ImageView iv_experience_picture;
+    private View activity_head_qa_view;
     /**
      * 返回按钮
      */
@@ -88,7 +83,7 @@ public class ExperienceDetailActivity extends BaseActivity implements View.OnCli
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_experience_detail);
+        setContentView(R.layout.activity_qa_detail);
         //设置分享和收藏
         setShareCollect();
         //设置XListView
@@ -122,16 +117,16 @@ public class ExperienceDetailActivity extends BaseActivity implements View.OnCli
 
         mController.setShareContent("GameMei游戏魅");
         // 设置分享图片, 参数2为图片的url地址
-        mController.setShareMedia(new UMImage(ExperienceDetailActivity.this,
+        mController.setShareMedia(new UMImage(QADetailActivity.this,
                 "http://www.gamemei.com/background/uploads/160125/2-1601251R5401b.png"));
 
         // 添加微信平台
-        UMWXHandler wxHandler = new UMWXHandler(ExperienceDetailActivity.this, appId,
+        UMWXHandler wxHandler = new UMWXHandler(QADetailActivity.this, appId,
                 appSecret);
         wxHandler.addToSocialSDK();
 
         // 支持微信朋友圈
-        UMWXHandler wxCircleHandler = new UMWXHandler(ExperienceDetailActivity.this,
+        UMWXHandler wxCircleHandler = new UMWXHandler(QADetailActivity.this,
                 appId, appSecret);
         wxCircleHandler.setToCircle(true);
         wxCircleHandler.addToSocialSDK();
@@ -149,14 +144,14 @@ public class ExperienceDetailActivity extends BaseActivity implements View.OnCli
         String appKey = "c7394704798a158208a74ab60104f0ba";
 
         // 添加QQ支持, 并且设置QQ分享内容的target url
-        UMQQSsoHandler qqSsoHandler = new UMQQSsoHandler(ExperienceDetailActivity.this,
+        UMQQSsoHandler qqSsoHandler = new UMQQSsoHandler(QADetailActivity.this,
                 appId, appKey);
         qqSsoHandler.setTargetUrl("http://www.umeng.com");
         qqSsoHandler.addToSocialSDK();
 
         // 添加QZone平台
         QZoneSsoHandler qZoneSsoHandler = new QZoneSsoHandler(
-                ExperienceDetailActivity.this, appId, appKey);
+                QADetailActivity.this, appId, appKey);
         qZoneSsoHandler.addToSocialSDK();
     }
 
@@ -191,7 +186,7 @@ public class ExperienceDetailActivity extends BaseActivity implements View.OnCli
         btn_top_share.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mController.openShare(ExperienceDetailActivity.this, false);
+                mController.openShare(QADetailActivity.this, false);
                 pop.dismiss();
             }
         });
@@ -224,17 +219,17 @@ public class ExperienceDetailActivity extends BaseActivity implements View.OnCli
      * 设置XListView
      */
     private void setXListView() {
-        xListView = (XListView) findViewById(R.id.experience_detail_listview);
+        xListView = (XListView) findViewById(R.id.qa_detail_listview);
         xListView.setAdapter(madapter);
         xListView.setPullLoadEnable(false);
         xListView.setPullRefreshEnable(false); // 设置不用下拉刷新和加载更多
-        xListView.addHeaderView(activity_head_experience_view); // listView添加头布局
+        xListView.addHeaderView(activity_head_qa_view); // listView添加头布局
         // 设置条目可以被点击
         xListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
-
+                Toast.makeText(getApplicationContext(), "hh", Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -245,9 +240,8 @@ public class ExperienceDetailActivity extends BaseActivity implements View.OnCli
     @Override
     protected void initView() {
         madapter = new MyAdapter();
-        activity_head_experience_view = View.inflate(getApplicationContext(), R.layout.activity_head_experience_view, null);
-        ViewUtils.inject(this, activity_head_experience_view);
-        iv_experience_picture = (ImageView) activity_head_experience_view.findViewById(R.id.iv_experience_picture);
+        activity_head_qa_view = View.inflate(getApplicationContext(), R.layout.activity_head_qa_view, null);
+        ViewUtils.inject(this, activity_head_qa_view);
         ll_title_bar_back = (LinearLayout) findViewById(R.id.ll_title_bar_back);
         ll_title_bar_more = (LinearLayout) findViewById(R.id.ll_title_bar_more);
         btn_issue = (Button) findViewById(R.id.btn_issue);
@@ -263,8 +257,7 @@ public class ExperienceDetailActivity extends BaseActivity implements View.OnCli
      */
     @Override
     protected void initData() {
-        //设置展示图片
-        iv_experience_picture.setImageResource(R.drawable.legend);
+
     }
 
     /**
@@ -362,7 +355,7 @@ public class ExperienceDetailActivity extends BaseActivity implements View.OnCli
         @Override
         public View getView(final int position, View convertView,
                             ViewGroup parent) {
-            convertView = mInflater.inflate(R.layout.item_comment_list, null);
+            convertView = mInflater.inflate(R.layout.item_qa_other_answer_list, null);
             return convertView;
         }
     }

@@ -1,0 +1,280 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_qa_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_experience_detail_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="表白神器《找情书》游戏求推广！"
+            android:textColor="#333333"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_qa_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/portrait"
+                android:text="会游泳的鱼"
+                android:textColor="#0ad9b2"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:src="@mipmap/dotted_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="问题类型："
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_qa_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="手机游戏"
+                        android:textColor="#333333"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="发布时间："
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_qa_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2016.2.4"
+                        android:textColor="#333333"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="悬赏："
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_qa_reward"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="100积分"
+                        android:textColor="#333333"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:src="@mipmap/dotted_line" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="详细说明："
+            android:textColor="#333333"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_qa_describe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/ta_qq_8m_20m"
+            android:textColor="#333333"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#eeeeee" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center"
+            android:background="#0ad9b2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="最佳答案"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_best_answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_best_answer_user_icon"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:layout_margin="8dp"
+                android:src="@mipmap/portrait" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_best_answer_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/linearLayout"
+            android:singleLine="true"
+            android:text="会游泳的鱼"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_best_answer_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_best_answer_user_name"
+            android:layout_alignStart="@+id/tv_best_answer_user_name"
+            android:layout_below="@+id/tv_best_answer_user_name"
+            android:layout_marginTop="5dp"
+            android:drawableLeft="@mipmap/time"
+            android:text="1个小时之前"
+            android:textColor="#8f949b"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/tv_best_answer_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_best_answer_time"
+            android:layout_alignStart="@+id/tv_best_answer_time"
+            android:layout_below="@+id/tv_best_answer_time"
+            android:layout_marginTop="5dp"
+            android:text="疯狂的小雨滴增长速度极快，它会淹没你的家园哦！它会淹没你的家园哦！"
+            android:textColor="#333333" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="57dp"
+            android:layout_marginRight="57dp"
+            android:layout_toLeftOf="@+id/button3"
+            android:layout_toStartOf="@+id/button3"
+            android:src="@mipmap/test111" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="45dp"
+            android:layout_height="20dp"
+            android:layout_alignEnd="@+id/tv_best_answer_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/tv_best_answer_content"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg_edittext"
+            android:text="回复"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="8dp"
+        android:background="#eeeeee" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center"
+            android:background="#0ad9b2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="其他答案"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

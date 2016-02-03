@@ -3,6 +3,7 @@ package gamemei.qiyun.com.gamemei.activity;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Message;
 import android.util.Log;
 import android.view.Menu;
 import android.view.View;
@@ -20,6 +21,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import java.util.TimerTask;
 
 import gamemei.qiyun.com.gamemei.R;
 import gamemei.qiyun.com.gamemei.activity.common.BaseActivity;
@@ -327,9 +329,28 @@ public class AttentionActivity extends BaseActivity implements OnItemClickListen
      */
     @Override
     public void onBackPressed() {
-        saveChannel();//保存关注的修改
+        showLoading();
         finish();
+        saveChannel();//保存关注的修改
+        TimerTask task = new TimerTask() {
+            @Override
+            public void run() {
+                // 需要做的事:发送消息
+                Message message = new Message();
+                message.what = 1;
+                handler.sendMessage(message);
+            }
+        };
     }
+
+    Handler handler = new Handler() {
+        public void handleMessage(Message msg) {
+            if (msg.what == 1) {
+                dismissLoading();
+            }
+            super.handleMessage(msg);
+        }
+    };
 
     /**
      * 处理点击事件
@@ -340,8 +361,18 @@ public class AttentionActivity extends BaseActivity implements OnItemClickListen
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.title_bar_back:
-                saveChannel();//更新我的关注
+                showLoading();
                 finish();
+                saveChannel();//更新我的关注
+                TimerTask task = new TimerTask() {
+                    @Override
+                    public void run() {
+                        // 需要做的事:发送消息
+                        Message message = new Message();
+                        message.what = 1;
+                        handler.sendMessage(message);
+                    }
+                };
         }
     }
 }

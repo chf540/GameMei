@@ -97,6 +97,7 @@ public class MissionDetailActivity extends BaseActivity implements View.OnClickL
         configPlatforms();
     }
 
+    /***************************** 友盟分享--开始 *********************************/
     /**
      * 配置分享平台参数
      */
@@ -168,6 +169,8 @@ public class MissionDetailActivity extends BaseActivity implements View.OnClickL
             ssoHandler.authorizeCallBack(requestCode, resultCode, data);
         }
     }
+    /***************************** 友盟分享--结束 *********************************/
+
 
     /**
      * 设置分享和收藏popwindow

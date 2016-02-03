@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_informations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_other_answer_user_icon"
+                android:layout_width="51dp"
+                android:layout_height="51dp"
+                android:layout_margin="8dp"
+                android:src="@mipmap/portrait" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_other_answer_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/linearLayout"
+            android:singleLine="true"
+            android:text="会游泳的鱼"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_other_answer_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_other_answer_user_name"
+            android:layout_below="@+id/tv_other_answer_user_name"
+            android:layout_marginTop="5dp"
+            android:drawableLeft="@mipmap/time"
+            android:text="1个小时之前"
+            android:textColor="#8f949b"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/tv_other_answer_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_other_answer_time"
+            android:layout_below="@+id/tv_other_answer_time"
+            android:layout_marginTop="5dp"
+            android:text="疯狂的小雨滴增长速度极快，它会淹没你的家园哦！它会淹没你的家园哦！"
+            android:textColor="#333333" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="45dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/tv_other_answer_content"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg_edittext"
+            android:focusable="false"
+            android:text="采纳"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+
+        <Button
+            android:layout_width="45dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/button2"
+            android:layout_toStartOf="@+id/button2"
+            android:background="@drawable/bg_edittext"
+            android:focusable="false"
+            android:text="回复"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="8dp"
+        android:background="#eeeeee" />
+
+</LinearLayout>

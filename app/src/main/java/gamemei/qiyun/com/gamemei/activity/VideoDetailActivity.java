@@ -100,6 +100,7 @@ public class VideoDetailActivity extends BaseActivity implements View.OnClickLis
         configPlatforms();
     }
 
+    /***************************** 友盟分享--开始 *********************************/
     /**
      * 配置分享平台参数
      */
@@ -171,6 +172,7 @@ public class VideoDetailActivity extends BaseActivity implements View.OnClickLis
             ssoHandler.authorizeCallBack(requestCode, resultCode, data);
         }
     }
+    /***************************** 友盟分享--结束 *********************************/
 
     /**
      * 设置分享和收藏popwindow
@@ -257,7 +259,7 @@ public class VideoDetailActivity extends BaseActivity implements View.OnClickLis
         iv_play.setOnClickListener(this);
         btn_issue.setOnClickListener(this);
         ll_title_bar_back.setOnClickListener(this);
-        ll_title_bar_back.setOnClickListener(this);
+        ll_title_bar_more.setOnClickListener(this);
     }
 
     /**
