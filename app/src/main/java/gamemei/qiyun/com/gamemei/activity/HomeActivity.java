@@ -23,6 +23,8 @@ import gamemei.qiyun.com.gamemei.fragment.menuFragment.HomeFragment;
 import gamemei.qiyun.com.gamemei.fragment.menuFragment.PersonalCenterFragment;
 import gamemei.qiyun.com.gamemei.fragment.menuFragment.PlayGameFragment;
 import gamemei.qiyun.com.gamemei.utils.AppUtils;
+import gamemei.qiyun.com.gamemei.widget.dialog.CustomDialog;
+import gamemei.qiyun.com.gamemei.widget.dialog.QuitDialog;
 import io.rong.imkit.RongIM;
 import io.rong.imlib.RongIMClient;
 
@@ -255,39 +257,24 @@ public class HomeActivity extends BaseActivity {
      */
     @SuppressWarnings("deprecation")
     public boolean onKeyDown(int keyCode, KeyEvent event) {
-        if (keyCode == KeyEvent.KEYCODE_BACK) {
-            // 创建退出对话框
-            AlertDialog isExit = new AlertDialog.Builder(this).create();
-            // 设置对话框消息
-            isExit.setMessage("确定要退出吗");
-            // 添加选择按钮并注册监听
-            isExit.setButton("确定", listener);
-            isExit.setButton2("取消", listener);
-            // 显示对话框
-            isExit.show();
-        }
-        if (keyCode == KeyEvent.KEYCODE_MENU) {
-            return true;
-        }
-        return super.onKeyDown(keyCode, event);
-    }
-
-    /**
-     * 弹框选择是否退出应用
-     */
-    DialogInterface.OnClickListener listener = new DialogInterface.OnClickListener() {
-        public void onClick(DialogInterface dialog, int which) {
-            switch (which) {
-                case AlertDialog.BUTTON_POSITIVE:// "确认"按钮退出程序
-                    finish();
-                    break;
-                case AlertDialog.BUTTON_NEGATIVE:// "取消"第二个按钮取消对话框
-                    break;
-                default:
-                    break;
+        // 取回密码成功弹框
+        QuitDialog.Builder quitDialog = new QuitDialog.Builder(this);
+        quitDialog.setMessage(" 确定退出游戏魅APP?");
+        quitDialog.setPositiveButton("确定退出", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+                //TODO
+                finish();
             }
-        }
-    };
+        });
+        quitDialog.setNegativeButton("", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+        });
+        quitDialog.create().show();
+        return false;
+    }
 
     /**
      * 连续双击两次退出程序

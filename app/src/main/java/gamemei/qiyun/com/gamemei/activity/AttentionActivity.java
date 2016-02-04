@@ -19,8 +19,10 @@ import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.Timer;
 import java.util.TimerTask;
 
 import gamemei.qiyun.com.gamemei.R;
@@ -30,6 +32,7 @@ import gamemei.qiyun.com.gamemei.adapter.ChannelOtherAdapter;
 import gamemei.qiyun.com.gamemei.app.AppApplication;
 import gamemei.qiyun.com.gamemei.bean.ChannelItem;
 import gamemei.qiyun.com.gamemei.bean.ChannelManage;
+import gamemei.qiyun.com.gamemei.utils.AppUtils;
 import gamemei.qiyun.com.gamemei.widget.draggridview.DragGrid;
 import gamemei.qiyun.com.gamemei.widget.draggridview.OtherGridView;
 
@@ -47,7 +50,7 @@ public class AttentionActivity extends BaseActivity implements OnItemClickListen
     /**
      * 顶部后退按钮
      */
-    private ImageView title_bar_back;
+    private LinearLayout ll_top_back;
     /**
      * 用户关注的GRIDVIEW
      */
@@ -95,7 +98,7 @@ public class AttentionActivity extends BaseActivity implements OnItemClickListen
                 AppApplication.getApp().getSQLHelper()).getOtherChannel());
         userGridView = (DragGrid) findViewById(R.id.userGridView);
         otherGridView = (OtherGridView) findViewById(R.id.otherGridView);
-        title_bar_back = (ImageView) findViewById(R.id.title_bar_back);
+        ll_top_back = (LinearLayout) findViewById(R.id.ll_top_back);
         userAdapter = new ChannelDragAdapter(this, userChannelList);
         channelOtherAdapter = new ChannelOtherAdapter(this, otherChannelList);
         userGridView.setAdapter(userAdapter);
@@ -103,7 +106,7 @@ public class AttentionActivity extends BaseActivity implements OnItemClickListen
         // 设置GRIDVIEW的ITEM的点击监听
         otherGridView.setOnItemClickListener(this);
         userGridView.setOnItemClickListener(this);
-        title_bar_back.setOnClickListener(this);
+        ll_top_back.setOnClickListener(this);
     }
 
     /**
@@ -329,50 +332,21 @@ public class AttentionActivity extends BaseActivity implements OnItemClickListen
      */
     @Override
     public void onBackPressed() {
-        showLoading();
+        AppUtils.showTips(this, R.mipmap.tips_smile, "已保存订阅内容");
         finish();
         saveChannel();//保存关注的修改
-        TimerTask task = new TimerTask() {
-            @Override
-            public void run() {
-                // 需要做的事:发送消息
-                Message message = new Message();
-                message.what = 1;
-                handler.sendMessage(message);
-            }
-        };
     }
-
-    Handler handler = new Handler() {
-        public void handleMessage(Message msg) {
-            if (msg.what == 1) {
-                dismissLoading();
-            }
-            super.handleMessage(msg);
-        }
-    };
 
     /**
      * 处理点击事件
-     *
-     * @param v
      */
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.title_bar_back:
-                showLoading();
+            case R.id.ll_top_back:
+                AppUtils.showTips(this, R.mipmap.tips_smile, "订阅内容已保存");
                 finish();
                 saveChannel();//更新我的关注
-                TimerTask task = new TimerTask() {
-                    @Override
-                    public void run() {
-                        // 需要做的事:发送消息
-                        Message message = new Message();
-                        message.what = 1;
-                        handler.sendMessage(message);
-                    }
-                };
         }
     }
 }

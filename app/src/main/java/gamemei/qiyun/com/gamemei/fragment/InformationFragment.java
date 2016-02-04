@@ -1,6 +1,7 @@
 package gamemei.qiyun.com.gamemei.fragment;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.LayoutInflater;
@@ -19,6 +20,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import gamemei.qiyun.com.gamemei.R;
+import gamemei.qiyun.com.gamemei.activity.InformationDetailActivity;
+import gamemei.qiyun.com.gamemei.activity.MissionDetailActivity;
 import gamemei.qiyun.com.gamemei.fragment.common.BaseFragment;
 import gamemei.qiyun.com.gamemei.widget.rollviewpager.BinnerPlugin;
 import gamemei.qiyun.com.gamemei.widget.xlistview.XListView;
@@ -106,7 +109,9 @@ public class InformationFragment extends BaseFragment implements XListView.IXLis
                                     int position, long id) {
                 Toast.makeText(getActivity(), "点击的是" + position,
                         Toast.LENGTH_SHORT).show();
-                // TODO 点击跳转到游戏明细页面
+                // TODO 点击跳转到资讯明细页面
+                Intent detailIntent = new Intent(getActivity(), InformationDetailActivity.class);
+                startActivity(detailIntent);
             }
         });
     }

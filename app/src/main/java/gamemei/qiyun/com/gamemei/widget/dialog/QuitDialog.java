@@ -1,8 +1,8 @@
 package gamemei.qiyun.com.gamemei.widget.dialog;
 
 /**
- * 公共弹框
- * Created by hfcui on 2016/1/27.
+ * 退出APP弹框
+ * Created by hfcui on 2016/2/3.
  */
 
 import android.app.Dialog;
@@ -12,18 +12,17 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.Button;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import gamemei.qiyun.com.gamemei.R;
 
-public class CustomDialog extends Dialog {
+public class QuitDialog extends Dialog {
 
-    public CustomDialog(Context context) {
+    public QuitDialog(Context context) {
         super(context);
     }
 
-    public CustomDialog(Context context, int theme) {
+    public QuitDialog(Context context, int theme) {
         super(context, theme);
     }
 
@@ -34,8 +33,8 @@ public class CustomDialog extends Dialog {
         private String positiveButtonText;
         private String negativeButtonText;
         private View contentView;
-        private DialogInterface.OnClickListener positiveButtonClickListener;
-        private DialogInterface.OnClickListener negativeButtonClickListener;
+        private OnClickListener positiveButtonClickListener;
+        private OnClickListener negativeButtonClickListener;
 
         public Builder(Context context) {
             this.context = context;
@@ -91,7 +90,7 @@ public class CustomDialog extends Dialog {
          * @return
          */
         public Builder setPositiveButton(int positiveButtonText,
-                                         DialogInterface.OnClickListener listener) {
+                                         OnClickListener listener) {
             this.positiveButtonText = (String) context
                     .getText(positiveButtonText);
             this.positiveButtonClickListener = listener;
@@ -99,14 +98,14 @@ public class CustomDialog extends Dialog {
         }
 
         public Builder setPositiveButton(String positiveButtonText,
-                                         DialogInterface.OnClickListener listener) {
+                                         OnClickListener listener) {
             this.positiveButtonText = positiveButtonText;
             this.positiveButtonClickListener = listener;
             return this;
         }
 
         public Builder setNegativeButton(int negativeButtonText,
-                                         DialogInterface.OnClickListener listener) {
+                                         OnClickListener listener) {
             this.negativeButtonText = (String) context
                     .getText(negativeButtonText);
             this.negativeButtonClickListener = listener;
@@ -114,19 +113,19 @@ public class CustomDialog extends Dialog {
         }
 
         public Builder setNegativeButton(String negativeButtonText,
-                                         DialogInterface.OnClickListener listener) {
+                                         OnClickListener listener) {
             this.negativeButtonText = negativeButtonText;
             this.negativeButtonClickListener = listener;
             return this;
         }
 
-        public CustomDialog create() {
+        public QuitDialog create() {
             LayoutInflater inflater = (LayoutInflater) context
                     .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             // instantiate the dialog with the custom Theme
-            final CustomDialog dialog = new CustomDialog(context, R.style.Dialog);
+            final QuitDialog dialog = new QuitDialog(context, R.style.Dialog);
             //设置弹框的布局
-            View layout = inflater.inflate(R.layout.dialog_normal_layout, null);
+            View layout = inflater.inflate(R.layout.dialog_quit_layout, null);
             dialog.addContentView(layout, new LayoutParams(
                     LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT));
             // set the dialog title
