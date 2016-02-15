@@ -54,10 +54,6 @@ public class HotFragment extends BaseFragment implements XListView.IXListViewLis
     @ViewInject(R.id.top_viewpager)
     private LinearLayout top_viewpager;
     /**
-     * 放置点所在的集合
-     */
-    private List<View> viewList = new ArrayList<View>();
-    /**
      * 放置轮播图文字所在的textView
      */
     @ViewInject(R.id.top_hot_title)
@@ -210,7 +206,7 @@ public class HotFragment extends BaseFragment implements XListView.IXListViewLis
     public View initView() {
         mHandler = new Handler();
         madapter = new MyAdapter();
-        // 关联顶部内容的布局文件
+        // 顶部内容的布局文件
         hot_roll_view = View.inflate(context, R.layout.layout_hot_head_view, null);
         ViewUtils.inject(this, hot_roll_view);
         header_ll = (LinearLayout) hot_roll_view.findViewById(R.id.header_ll);

@@ -13,7 +13,7 @@ import gamemei.qiyun.com.gamemei.R;
 
 
 /**
- * binner 插件 控制 RollViewPager2 ，dotsview , 等其他控件显示
+ * binner 插件 控制 RollViewPager ，dotsview , 等其他控件显示
  * Created by leo on 16/1/18.
  */
 public class BinnerPlugin {

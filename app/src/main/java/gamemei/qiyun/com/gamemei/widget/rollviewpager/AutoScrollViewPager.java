@@ -18,11 +18,10 @@ import java.lang.reflect.Field;
  */
 public class AutoScrollViewPager extends ViewPager {
 
-    public static final int DEFAULT_INTERVAL = 1500;
-
+    //设置轮播图自动跳转的时间
+    public static final int DEFAULT_INTERVAL = 3500;
     public static final int LEFT = 0;
     public static final int RIGHT = 1;
-
 
     public static final int SLIDE_BORDER_MODE_NONE = 0;
 
@@ -116,7 +115,6 @@ public class AutoScrollViewPager extends ViewPager {
             e.printStackTrace();
         }
     }
-
 
     public void scrollOnce() {
         try {

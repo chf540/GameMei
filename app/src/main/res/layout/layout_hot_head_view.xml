@@ -7,12 +7,12 @@
     <RelativeLayout
         android:id="@+id/rl_top_news_viewpager"
         android:layout_width="match_parent"
-        android:layout_height="140dp">
+        android:layout_height="150dp">
 
         <LinearLayout
             android:id="@+id/top_viewpager"
             android:layout_width="fill_parent"
-            android:layout_height="140dp"
+            android:layout_height="150dp"
             android:orientation="horizontal" />
 
         <LinearLayout
@@ -29,7 +29,7 @@
                 android:id="@+id/top_hot_title"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="17dp"
+                android:layout_marginLeft="18dp"
                 android:layout_marginRight="8dp"
                 android:layout_weight="1"
                 android:singleLine="true"

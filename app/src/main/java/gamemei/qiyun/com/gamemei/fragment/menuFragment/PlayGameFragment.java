@@ -26,13 +26,11 @@ import android.widget.Toast;
 import com.google.gson.Gson;
 import com.lidroid.xutils.BitmapUtils;
 import com.lidroid.xutils.HttpUtils;
-import com.lidroid.xutils.ViewUtils;
 import com.lidroid.xutils.exception.HttpException;
 import com.lidroid.xutils.http.HttpHandler;
 import com.lidroid.xutils.http.ResponseInfo;
 import com.lidroid.xutils.http.callback.RequestCallBack;
 import com.lidroid.xutils.http.client.HttpRequest.HttpMethod;
-import com.lidroid.xutils.view.annotation.ViewInject;
 import com.qiyun.sdk.GMSdk;
 
 import gamemei.qiyun.com.gamemei.R;
@@ -41,10 +39,15 @@ import gamemei.qiyun.com.gamemei.fragment.common.BaseFragment;
 import gamemei.qiyun.com.gamemei.utils.AppUtils;
 import gamemei.qiyun.com.gamemei.utils.MyHttpUtils;
 import gamemei.qiyun.com.gamemei.utils.SharedPreferencesUitl;
-import gamemei.qiyun.com.gamemei.widget.rollviewpager.BinnerPlugin;
+import gamemei.qiyun.com.gamemei.widget.roundrectimageview.RoundRectImageView;
 import gamemei.qiyun.com.gamemei.widget.xlistview.XListView;
 
-public class PlayGameFragment extends BaseFragment implements XListView.IXListViewListener {
+/**
+ * 玩游戏界面
+ *
+ * @author hfcui 2016年2月15日
+ */
+public class PlayGameFragment extends BaseFragment implements XListView.IXListViewListener, OnClickListener {
     /**
      * 日志标记
      */
@@ -55,37 +58,6 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
      */
     private XListView xListView;
     /**
-     * 放置顶部轮播图所在的线性布局
-     */
-    @ViewInject(R.id.top_news_viewpager)
-    private LinearLayout top_news_viewpager;
-    /**
-     * 放置轮播图文字所在的textView
-     */
-    @ViewInject(R.id.top_news_title)
-    private TextView top_news_title;
-    /**
-     * 放置轮播点所在的线性布局
-     */
-    @ViewInject(R.id.dots_ll)
-    private LinearLayout dots_ll;
-    /**
-     * 存放轮播图文字的集合
-     */
-    private List<String> titleList = new ArrayList<String>();
-    /**
-     * 存放轮播图图片链接地址的集合
-     */
-    private List<String> imgUrlList = new ArrayList<String>();
-    /**
-     * 放置点所在的集合
-     */
-    private List<View> viewList = new ArrayList<View>();
-    /**
-     * 顶部轮播图的View
-     */
-    private View layout_roll_view;
-    /**
      * 游戏列表
      */
     private List<PlayGameInfoBean> gameList = new ArrayList<PlayGameInfoBean>();
@@ -93,6 +65,15 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
      * Xutils的Bitmap工具类
      */
     private BitmapUtils bitmapUtils;
+    /**
+     * 在线即玩
+     */
+    private TextView game_on_line;
+    /**
+     * 精选下载
+     */
+    private TextView game_choiceness;
+
     private MyAdapter madapter;
     private HttpHandler handler;
     private Handler mHandler;
@@ -121,11 +102,67 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
         mHandler = new Handler();
         madapter = new MyAdapter(this);
         bitmapUtils = new BitmapUtils(context);
-        // 关联顶部轮播图所在的布局文件
-        layout_roll_view = View.inflate(context, R.layout.layout_roll_view, null);
-        ViewUtils.inject(this, layout_roll_view);
-        //关联顶部热推手游布局文件
+
+        game_on_line = (TextView) view.findViewById(R.id.game_on_line);
+        game_choiceness = (TextView) view.findViewById(R.id.game_choiceness);
+        game_on_line.setOnClickListener(this);
+        game_choiceness.setOnClickListener(this);
+        initFilter();
+
         return null;
+    }
+
+    /**
+     * 初始化导航过滤器
+     */
+    private void initFilter() {
+        game_on_line.setTextColor(context.getResources().getColor(R.color.white));
+        game_on_line.setBackgroundResource(R.drawable.nofinish_filter_pressed_bg);
+
+        game_choiceness.setTextColor(context.getResources().getColor(R.color.white));
+        game_choiceness.setBackgroundResource(R.drawable.finished_filter_normal_bg);
+    }
+
+    /**
+     * 处理选中的导航过滤器
+     *
+     * @param position
+     */
+    private void handlerFilter(int position) {
+        switch (position) {
+            case 0:
+                game_on_line.setTextColor(context.getResources().getColor(R.color.white));
+                game_on_line.setBackgroundResource(R.drawable.nofinish_filter_pressed_bg);
+                game_choiceness.setTextColor(context.getResources().getColor(R.color.white));
+                game_choiceness.setBackgroundResource(R.drawable.finished_filter_normal_bg);
+                break;
+            case 1:
+                game_on_line.setTextColor(context.getResources().getColor(R.color.white));
+                game_on_line.setBackgroundResource(R.drawable.nofinish_filter_normal_bg);
+                game_choiceness.setTextColor(context.getResources().getColor(R.color.white));
+                game_choiceness.setBackgroundResource(R.drawable.finished_filter_pressed_bg);
+                break;
+            default:
+                break;
+        }
+    }
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.game_on_line:
+                handlerFilter(0);
+                getDate();
+                madapter.notifyDataSetChanged();
+                break;
+            case R.id.game_choiceness:
+                handlerFilter(1);
+                getDate();
+                madapter.notifyDataSetChanged();
+                break;
+            default:
+                break;
+        }
     }
 
     /**
@@ -140,7 +177,6 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
             xListView.setPullLoadEnable(false);
         }
         xListView.setXListViewListener(this); // 设置监听事件
-        xListView.addHeaderView(layout_roll_view); // listView头的添加过程
         // 设置条目可以被点击
         xListView.setOnItemClickListener(new OnItemClickListener() {
             @Override
@@ -177,7 +213,6 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
         showLoading();
         requestData(HttpMethod.GET, MyHttpUtils.PLAY_GAME_LIST, null,
                 new RequestCallBack<String>() {
-
                     @Override
                     public void onFailure(HttpException arg0,
                                           String responseInfo) {
@@ -200,11 +235,6 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
     }
 
     /**
-     * 轮播图插件
-     */
-    BinnerPlugin binnerPlugin;
-
-    /**
      * 解析数据 ----GSON
      */
     private void processData(String result, boolean a) {
@@ -216,32 +246,9 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
         for (int i = 0; i < infoBean.games.size(); i++) {
             gameList.add(i, infoBean);
         }
-        // 轮播图逻辑代码块
-        if (infoBean.games.size() > 0) {
-            if (a) {
-                titleList.clear();
-                imgUrlList.clear();
-                for (int i = 0; i < infoBean.games.size(); i++) {
-                    titleList.add(infoBean.games.get(i).game_name);
-                    imgUrlList.add(MyHttpUtils.PHOTOS_URL
-                            + infoBean.games.get(i).game_image_url);
-                }
-
-                // 设置轮播图
-                /***************************** view *********************************/
-                binnerPlugin = new BinnerPlugin(getActivity());
-                binnerPlugin.init(top_news_viewpager);
-                binnerPlugin.initDotView(imgUrlList.size(), dots_ll);
-                binnerPlugin.initTitleList(titleList, top_news_title);
-                binnerPlugin.setBinnerData(imgUrlList);
-                binnerPlugin.start();
-
-                /****************************** view ********************************/
-            }
-        }
         madapter.notifyDataSetChanged();
     }
-    
+
     /**
      * 下载游戏
      */
@@ -367,10 +374,6 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
                         .findViewById(R.id.game_name);
                 holder.game_desc = (TextView) convertView
                         .findViewById(R.id.game_desc);
-                holder.game_heat = (RatingBar) convertView
-                        .findViewById(R.id.game_heat);
-                holder.download = (LinearLayout) convertView
-                        .findViewById(R.id.download_ll);
                 // 将设置好的布局保存到缓存中，并将其设置在Tag里，以便后面方便取出Tag
                 convertView.setTag(holder);
             } else {
@@ -389,35 +392,35 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
 
             }
             // 下载游戏
-            holder.download.setOnClickListener(new OnClickListener() {
-                @Override
-                public void onClick(View v) {
-
-                    try {
-                        String gameName = AppUtils.getSDPath() + "/gameMei/"
-                                + info.games.get(position).game_name + ".zip";
-                        File file = new File(gameName);
-                        Log.i("hfcui----file", file.toString());
-                        if (!file.exists()) {
-                            DownLoadFiles(
-                                    MyHttpUtils.DOWNLOAD_URL
-                                            + info.games.get(position).game_download_url,
-                                    gameName);
-                        } else {
-                            Toast.makeText(context, "正在加载游戏",
-                                    Toast.LENGTH_SHORT).show();
-                            if (GMSdk.share().initRuntime()
-                                    && GMSdk.share().installGameZip(
-                                    info.games.get(position).game_name,
-                                    gameName)) {
-                                GMSdk.share().runGame(
-                                        info.games.get(position).game_name);
-                            }
-                        }
-                    } catch (Exception e) {
-                    }
-                }
-            });
+//            holder.download.setOnClickListener(new OnClickListener() {
+//                @Override
+//                public void onClick(View v) {
+//
+//                    try {
+//                        String gameName = AppUtils.getSDPath() + "/gameMei/"
+//                                + info.games.get(position).game_name + ".zip";
+//                        File file = new File(gameName);
+//                        Log.i("hfcui----file", file.toString());
+//                        if (!file.exists()) {
+//                            DownLoadFiles(
+//                                    MyHttpUtils.DOWNLOAD_URL
+//                                            + info.games.get(position).game_download_url,
+//                                    gameName);
+//                        } else {
+//                            Toast.makeText(context, "正在加载游戏",
+//                                    Toast.LENGTH_SHORT).show();
+//                            if (GMSdk.share().initRuntime()
+//                                    && GMSdk.share().installGameZip(
+//                                    info.games.get(position).game_name,
+//                                    gameName)) {
+//                                GMSdk.share().runGame(
+//                                        info.games.get(position).game_name);
+//                            }
+//                        }
+//                    } catch (Exception e) {
+//                    }
+//                }
+//            });
             return convertView;
         }
     }
@@ -428,8 +431,6 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
         public TextView game_name;
         public TextView game_desc;
         public TextView game_author;
-        public RatingBar game_heat;
-        public LinearLayout download;
     }
 
     @Override
@@ -437,5 +438,4 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
         super.onDestroyView();
         Log.i("hfcui", "PlayGameView------onDestroyView");
     }
-
 }

@@ -57,7 +57,6 @@
             android:layout_below="@+id/ll_browse_time"
             android:layout_marginLeft="8dp"
             android:layout_marginRight="8dp"
-            android:layout_marginTop="5dp"
             android:layout_toEndOf="@id/linearLayout"
             android:layout_toRightOf="@id/linearLayout"
             android:text="疯狂的小雨滴增长速度极快，它会淹没你的家园哦！"
@@ -70,8 +69,7 @@
             android:layout_alignLeft="@+id/tv_mission_name"
             android:layout_alignStart="@+id/tv_mission_name"
             android:layout_below="@+id/tv_mission_name"
-            android:layout_marginRight="8dp"
-            android:layout_marginTop="5dp">
+            android:layout_marginRight="8dp">
 
             <TextView
                 android:id="@+id/tv_mission_browse"

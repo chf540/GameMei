@@ -107,8 +107,6 @@ public class InformationFragment extends BaseFragment implements XListView.IXLis
             @Override
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
-                Toast.makeText(getActivity(), "点击的是" + position,
-                        Toast.LENGTH_SHORT).show();
                 // TODO 点击跳转到资讯明细页面
                 Intent detailIntent = new Intent(getActivity(), InformationDetailActivity.class);
                 startActivity(detailIntent);

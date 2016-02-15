@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="46dp"
+    android:background="#242933"
+    android:orientation="horizontal"
+    android:splitMotionEvents="false">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/game_on_line"
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:background="@drawable/nofinish_filter_pressed_bg"
+        android:gravity="center"
+        android:text="在线即玩"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/game_choiceness"
+        android:layout_width="0dp"
+        android:layout_height="24sp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:background="@drawable/finished_filter_normal_bg"
+        android:gravity="center"
+        android:text="精选下载"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:src="@mipmap/menu_btn" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -5,6 +5,7 @@ import android.support.v4.view.PagerAdapter;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.lidroid.xutils.BitmapUtils;
 
@@ -53,9 +54,13 @@ public class BinnerAdapter extends PagerAdapter {
         bitmapUtils.display(image, imgUrlList.get(position));
         container.addView(view);
 
-        //点击事件。。。
-
+        //TODO 点击事件。。。
+        view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(context, "", Toast.LENGTH_SHORT).show();
+            }
+        });
         return view;
     }
-
 }
