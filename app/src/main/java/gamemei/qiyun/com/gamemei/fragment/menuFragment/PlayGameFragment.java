@@ -6,6 +6,8 @@ import java.util.List;
 
 import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
+import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.text.TextUtils;
@@ -39,6 +41,7 @@ import gamemei.qiyun.com.gamemei.fragment.common.BaseFragment;
 import gamemei.qiyun.com.gamemei.utils.AppUtils;
 import gamemei.qiyun.com.gamemei.utils.MyHttpUtils;
 import gamemei.qiyun.com.gamemei.utils.SharedPreferencesUitl;
+import gamemei.qiyun.com.gamemei.widget.draggridview.DragGrid;
 import gamemei.qiyun.com.gamemei.widget.roundrectimageview.RoundRectImageView;
 import gamemei.qiyun.com.gamemei.widget.xlistview.XListView;
 
@@ -73,6 +76,27 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
      * 精选下载
      */
     private TextView game_choiceness;
+    /**
+     * 全部分类
+     */
+    private TextView tv_game_all_classify;
+    /**
+     * 排行榜
+     */
+    private TextView tv_game_top;
+    /**
+     * 全部分类View
+     */
+    private LinearLayout ll_game_Ranking;
+    /**
+     * 排行榜View
+     */
+    private LinearLayout ll_game_type;
+    /**
+     * 游戏筛选，游戏类型的GRIDVIEW
+     */
+    private DragGrid game_search_type;
+
 
     private MyAdapter madapter;
     private HttpHandler handler;
@@ -103,8 +127,15 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
         madapter = new MyAdapter(this);
         bitmapUtils = new BitmapUtils(context);
 
+        tv_game_all_classify = (TextView) view.findViewById(R.id.tv_game_all_classify);
+        tv_game_top = (TextView) view.findViewById(R.id.tv_game_top);
         game_on_line = (TextView) view.findViewById(R.id.game_on_line);
         game_choiceness = (TextView) view.findViewById(R.id.game_choiceness);
+        ll_game_type = (LinearLayout) view.findViewById(R.id.ll_game_type);
+        ll_game_Ranking = (LinearLayout) view.findViewById(R.id.ll_game_Ranking);
+
+        tv_game_all_classify.setOnClickListener(this);
+        tv_game_top.setOnClickListener(this);
         game_on_line.setOnClickListener(this);
         game_choiceness.setOnClickListener(this);
         initFilter();
@@ -160,6 +191,46 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
                 getDate();
                 madapter.notifyDataSetChanged();
                 break;
+            case R.id.tv_game_all_classify:
+                ll_game_Ranking.setVisibility(View.GONE);
+                //判断控件是否已展示
+                int isVisibel = ll_game_type.getVisibility();
+                if (isVisibel == 0) {
+                    ll_game_type.setVisibility(View.GONE);
+                    tv_game_all_classify.setTextColor(Color.rgb(36, 41, 51));
+                    //设置箭头
+                    Drawable drawable = getResources().getDrawable(R.mipmap.screen);
+                    drawable.setBounds(0, 0, drawable.getMinimumWidth(), drawable.getMinimumHeight());
+                    tv_game_all_classify.setCompoundDrawables(null, null, drawable, null);
+                } else {
+                    ll_game_type.setVisibility(View.VISIBLE);
+                    tv_game_all_classify.setTextColor(Color.rgb(10, 217, 178));
+                    //设置箭头
+                    Drawable drawable = getResources().getDrawable(R.mipmap.screen_pre);
+                    drawable.setBounds(0, 0, drawable.getMinimumWidth(), drawable.getMinimumHeight());
+                    tv_game_all_classify.setCompoundDrawables(null, null, drawable, null);
+                }
+                break;
+            case R.id.tv_game_top:
+                ll_game_type.setVisibility(View.GONE);
+                //判断控件是否已展示
+                int isVisibel1 = ll_game_Ranking.getVisibility();
+                if (isVisibel1 == 0) {
+                    ll_game_Ranking.setVisibility(View.GONE);
+                    tv_game_top.setTextColor(Color.rgb(36, 41, 51));
+                    //设置箭头
+                    Drawable drawable = getResources().getDrawable(R.mipmap.screen);
+                    drawable.setBounds(0, 0, drawable.getMinimumWidth(), drawable.getMinimumHeight());
+                    tv_game_top.setCompoundDrawables(null, null, drawable, null);
+                } else {
+                    ll_game_Ranking.setVisibility(View.VISIBLE);
+                    tv_game_top.setTextColor(Color.rgb(10, 217, 178));
+                    //设置箭头
+                    Drawable drawable = getResources().getDrawable(R.mipmap.screen_pre);
+                    drawable.setBounds(0, 0, drawable.getMinimumWidth(), drawable.getMinimumHeight());
+                    tv_game_top.setCompoundDrawables(null, null, drawable, null);
+                }
+                break;
             default:
                 break;
         }
@@ -182,8 +253,6 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
             @Override
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
-                Toast.makeText(getActivity(), "点击的是" + position,
-                        Toast.LENGTH_SHORT).show();
                 // TODO 点击跳转到游戏明细页面
             }
         });
@@ -372,8 +441,9 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
                         .findViewById(R.id.game_image);
                 holder.game_name = (TextView) convertView
                         .findViewById(R.id.game_name);
-                holder.game_desc = (TextView) convertView
-                        .findViewById(R.id.game_desc);
+                holder.tv_game_desc = (TextView) convertView
+                        .findViewById(R.id.tv_game_desc);
+
                 // 将设置好的布局保存到缓存中，并将其设置在Tag里，以便后面方便取出Tag
                 convertView.setTag(holder);
             } else {
@@ -385,7 +455,7 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
                 info.games.get(position);
 
                 holder.game_name.setText(info.games.get(position).game_name);
-                holder.game_desc.setText(info.games.get(position).game_desc);
+                holder.tv_game_desc.setText(info.games.get(position).game_desc);
 
                 bitmapUtils.display(holder.game_image, MyHttpUtils.PHOTOS_URL
                         + info.games.get(position).getGame_image_url());
@@ -429,7 +499,7 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
     static class ViewHolder {
         public ImageView game_image;
         public TextView game_name;
-        public TextView game_desc;
+        public TextView tv_game_desc;
         public TextView game_author;
     }
 

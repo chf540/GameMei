@@ -10,12 +10,271 @@
         android:layout_width="match_parent"
         android:layout_height="46dp" />
 
-    <gamemei.qiyun.com.gamemei.widget.xlistview.XListView
-        android:id="@+id/game_listview"
+    <include
+        android:id="@+id/game_search_select"
+        layout="@layout/game_search_select"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:divider="@null"
-        android:dividerHeight="0dip"
-        android:scrollbars="none" />
+        android:layout_height="42dp" />
 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--游戏列表-->
+        <gamemei.qiyun.com.gamemei.widget.xlistview.XListView
+            android:id="@+id/game_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:dividerHeight="0dip"
+            android:scrollbars="none" />
+
+        <!--游戏筛选,排行榜-->
+        <LinearLayout
+            android:id="@+id/ll_game_Ranking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/top_1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="14dp"
+                    android:text="新游榜"
+                    android:textColor="#333333" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="#dedede" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/top_2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="14dp"
+                    android:text="好评榜"
+                    android:textColor="#333333" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:background="#dedede" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/top_3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="14dp"
+                    android:text="人气榜"
+                    android:textColor="#333333" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--游戏筛选,全部分类-->
+        <LinearLayout
+            android:id="@+id/ll_game_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <!--网络-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="网络"
+                    android:textColor="#0ad9b2"
+                    android:textSize="14dp" />
+
+                <TextView
+                    style="@style/TextView_game_all_type"
+                    android:layout_width="45dp"
+                    android:layout_marginLeft="14dp"
+                    android:text="单机" />
+
+                <TextView
+                    style="@style/TextView_game_all_type"
+                    android:layout_width="45dp"
+                    android:layout_marginLeft="7dp"
+                    android:text="网游" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#dedede" />
+
+            <!--类型-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="类型"
+                    android:textColor="#0ad9b2"
+                    android:textSize="14dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/TextView_game_all_type"
+                            android:layout_marginLeft="14dp"
+                            android:text="角色扮演" />
+
+                        <TextView
+                            style="@style/TextView_game_all_type"
+                            android:text="飞行射击" />
+
+                        <TextView
+                            style="@style/TextView_game_all_type"
+                            android:text="战旗卡牌" />
+
+                        <TextView
+                            style="@style/TextView_game_all_type"
+                            android:text="经营策略" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/TextView_game_all_type"
+                            android:layout_marginLeft="14dp"
+                            android:text="休闲益智" />
+
+                        <TextView
+                            style="@style/TextView_game_all_type"
+                            android:text="体育竞速" />
+
+                        <TextView
+                            style="@style/TextView_game_all_type"
+                            android:text="音乐舞蹈" />
+
+                        <TextView
+                            style="@style/TextView_game_all_type"
+                            android:text="棋牌游戏" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/TextView_game_all_type"
+                            android:layout_marginLeft="15dp"
+                            android:text="儿童游戏" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#dedede" />
+
+            <!--热门游戏-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="热门游戏"
+                    android:textColor="#0ad9b2"
+                    android:textSize="14dp" />
+
+                <TextView
+                    style="@style/TextView_game_all_type"
+                    android:layout_width="45dp"
+                    android:layout_marginLeft="15dp"
+                    android:text="单机" />
+
+                <TextView
+                    style="@style/TextView_game_all_type"
+                    android:layout_width="45dp"
+                    android:text="网游" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
 </LinearLayout>

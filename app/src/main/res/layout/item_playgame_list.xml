@@ -4,91 +4,116 @@
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
-    <RelativeLayout
+    <LinearLayout
         android:id="@+id/game_info_rl"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:padding="10dp">
 
-        <ImageView
-            android:id="@+id/game_image"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:src="@drawable/ic_back" />
+            android:layout_weight="1.2">
+
+            <!--游戏icon-->
+            <ImageView
+                android:id="@+id/game_image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_back" />
+        </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/linearLayout3"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
             android:layout_gravity="center"
-            android:layout_toEndOf="@+id/game_image"
-            android:layout_toRightOf="@+id/game_image"
+            android:layout_marginLeft="12dp"
+            android:layout_weight="4"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/game_name"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="天天跑酷"
-                android:textSize="18sp" />
+                android:orientation="horizontal">
+
+                <!--游戏名称-->
+                <TextView
+                    android:id="@+id/game_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="天天跑酷"
+                    android:textColor="#333333"
+                    android:textSize="20sp" />
+
+                <!--游戏类型-->
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/label" />
+            </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/ll_data"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
+                <!--评分-->
                 <TextView
+                    android:id="@+id/tv_game_grade"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="100分"
                     android:textSize="14sp" />
 
+                <!--人数-->
                 <TextView
-                    android:id="@+id/tv_mission_browse"
+                    android:id="@+id/tv_game_population"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:text="180万人试玩"
                     android:textSize="14sp" />
 
+                <!--大小-->
                 <TextView
-                    android:id="@+id/tv_mission_time"
+                    android:id="@+id/tv_game_size"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:text="200MB"
                     android:textSize="14sp" />
-
             </LinearLayout>
 
+            <!--游戏介绍-->
             <TextView
-                android:id="@+id/game_desc"
+                android:id="@+id/tv_game_desc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:maxEms="13"
                 android:singleLine="true"
                 android:text="天天跑酷，又名天天酷跑，根据时下最火爆最流行的手机跑酷类游戏"
+                android:textColor="#333333"
                 android:textSize="16sp" />
-
-
         </LinearLayout>
 
-        <ImageView
-            android:id="@+id/iv_play_game"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
             android:layout_gravity="center"
-            android:layout_marginLeft="32dp"
-            android:layout_marginStart="32dp"
-            android:layout_toEndOf="@+id/linearLayout3"
-            android:layout_toRightOf="@+id/linearLayout3"
-            android:src="@drawable/ic_download" />
+            android:layout_weight="1">
 
-    </RelativeLayout>
+            <ImageView
+                android:id="@+id/iv_play_game"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/button_play" />
+        </LinearLayout>
+    </LinearLayout>
 
     <!--分割线-->
     <ImageView
