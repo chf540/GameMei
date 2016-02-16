@@ -4,32 +4,40 @@
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_action_share_icon.xml"
     },
     {
-        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_location_ic.png",
-        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_location_ic.png"
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_facebook.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_facebook.png"
     },
     {
-        "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_location_off.png",
-        "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_location_off.png"
-    },
-    {
-        "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\com_facebook_button_login_silver_background.xml",
-        "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\com_facebook_button_login_silver_background.xml"
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\shake_umeng_socialize_close_pressed.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\shake_umeng_socialize_close_pressed.png"
     },
     {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_kakao.png",
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_kakao.png"
     },
     {
+        "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\com_facebook_button_login_silver_background.xml",
+        "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\com_facebook_button_login_silver_background.xml"
+    },
+    {
+        "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_location_off.png",
+        "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_location_off.png"
+    },
+    {
+        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_location_ic.png",
+        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_location_ic.png"
+    },
+    {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_wechat.png",
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_wechat.png"
     },
     {
-        "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_comment_item_bg_shape.xml",
-        "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_comment_item_bg_shape.xml"
-    },
-    {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_title_right_bt_normal.png",
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_title_right_bt_normal.png"
+    },
+    {
+        "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_comment_item_bg_shape.xml",
+        "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_comment_item_bg_shape.xml"
     },
     {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_facebook_off.png",
@@ -48,16 +56,28 @@
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_kakao_gray.png"
     },
     {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_action_personal_icon.xml",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_action_personal_icon.xml"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_share_to_button.xml",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_share_to_button.xml"
+    },
+    {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_location_grey.png",
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_location_grey.png"
     },
     {
-        "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_twitter.png",
-        "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_twitter.png"
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_comment_icon.xml",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_comment_icon.xml"
     },
     {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_yixin_circle.png",
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_yixin_circle.png"
+    },
+    {
+        "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_twitter.png",
+        "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_twitter.png"
     },
     {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_button_login_pressed.png",
@@ -72,20 +92,36 @@
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_action_back_normal.png"
     },
     {
-        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_button_white.9.png",
-        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_button_white.9.png"
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_button_grey_blue.xml",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_button_grey_blue.xml"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\com_facebook_button_login_silver_background.xml",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\com_facebook_button_login_silver_background.xml"
     },
     {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_linkedin.png",
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_linkedin.png"
     },
     {
-        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_whatsapp_gray.png",
-        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_whatsapp_gray.png"
+        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_button_white.9.png",
+        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_button_white.9.png"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\messenger_button_white_bg_round.xml",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\messenger_button_white_bg_round.xml"
     },
     {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_fetch_location_disabled.png",
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_fetch_location_disabled.png"
+    },
+    {
+        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_whatsapp_gray.png",
+        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_whatsapp_gray.png"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_linkedin_gray.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_linkedin_gray.png"
     },
     {
         "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_x_button.png",
@@ -116,28 +152,36 @@
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_line.png"
     },
     {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_bind_bg.9.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_bind_bg.9.png"
+    },
+    {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_evernote_gray.png",
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_evernote_gray.png"
     },
     {
-        "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_ynote_gray.png",
-        "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_ynote_gray.png"
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_tx_on.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_tx_on.png"
     },
     {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_sidebar_selected.xml",
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_sidebar_selected.xml"
     },
     {
+        "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_ynote_gray.png",
+        "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_ynote_gray.png"
+    },
+    {
         "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_title_tab_left_pressed.png",
         "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_title_tab_left_pressed.png"
     },
     {
-        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_evernote.png",
-        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_evernote.png"
-    },
-    {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_sidebar_normal.xml",
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_sidebar_normal.xml"
+    },
+    {
+        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_evernote.png",
+        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_evernote.png"
     },
     {
         "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\shake_umeng_socialize_close_pressed.png",
@@ -156,6 +200,10 @@
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_flickr_gray.png"
     },
     {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_search_icon.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_search_icon.png"
+    },
+    {
         "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_douban_off.png",
         "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_douban_off.png"
     },
@@ -168,20 +216,20 @@
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_checked.png"
     },
     {
-        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_laiwang.png",
-        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_laiwang.png"
-    },
-    {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_douban_off.png",
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_douban_off.png"
     },
     {
-        "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_button_login.xml",
-        "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_button_login.xml"
+        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_laiwang.png",
+        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_laiwang.png"
     },
     {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_commnet_header_bg.xml",
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_commnet_header_bg.xml"
+    },
+    {
+        "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_button_login.xml",
+        "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_button_login.xml"
     },
     {
         "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_divider_line.png",
@@ -196,32 +244,48 @@
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_sidebar_selected.xml"
     },
     {
-        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_foursquare_gray.png",
-        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_foursquare_gray.png"
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_action_like.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_action_like.png"
     },
     {
-        "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_at_button.xml",
-        "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_at_button.xml"
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\shake_umeng_socialize_shake_layout_corner.xml",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\shake_umeng_socialize_shake_layout_corner.xml"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_evernote.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_evernote.png"
     },
     {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_title_right_bt.xml",
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_title_right_bt.xml"
     },
     {
+        "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_at_button.xml",
+        "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_at_button.xml"
+    },
+    {
+        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_foursquare_gray.png",
+        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_foursquare_gray.png"
+    },
+    {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_button_login_normal.png",
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_button_login_normal.png"
     },
     {
-        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\com_facebook_button_like_background.xml",
-        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\com_facebook_button_like_background.xml"
+        "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_title_tab_right_pressed.png",
+        "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_title_tab_right_pressed.png"
     },
     {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_title_tab_button_left.xml",
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_title_tab_button_left.xml"
     },
     {
-        "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_title_tab_right_pressed.png",
-        "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_title_tab_right_pressed.png"
+        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\com_facebook_button_like_background.xml",
+        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\com_facebook_button_like_background.xml"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_title_back_bt.xml",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_title_back_bt.xml"
     },
     {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_title_tab_right_normal.png",
@@ -240,12 +304,20 @@
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\com_facebook_button_send_background.xml"
     },
     {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_at_button.xml",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_at_button.xml"
+    },
+    {
         "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_button_login_normal.png",
         "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_button_login_normal.png"
     },
     {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_laiwang_dynamic.png",
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_laiwang_dynamic.png"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_fetch_image.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_fetch_image.png"
     },
     {
         "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_google.png",
@@ -260,12 +332,24 @@
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_fetch_image.png"
     },
     {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_sina_off.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_sina_off.png"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_sms_off.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_sms_off.png"
+    },
+    {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_checked.png",
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_checked.png"
     },
     {
         "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_evernote_gray.png",
         "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_evernote_gray.png"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_sidebar_normal.xml",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_sidebar_normal.xml"
     },
     {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_x_button.png",
@@ -276,20 +360,20 @@
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_bind_bg.9.png"
     },
     {
-        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_oauth_check.xml",
-        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_oauth_check.xml"
-    },
-    {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_twitter.png",
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_twitter.png"
     },
     {
-        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_comment_selected.png",
-        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_comment_selected.png"
+        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_oauth_check.xml",
+        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_oauth_check.xml"
     },
     {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_follow_off.png",
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_follow_off.png"
+    },
+    {
+        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_comment_selected.png",
+        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_comment_selected.png"
     },
     {
         "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_action_like.png",
@@ -298,6 +382,10 @@
     {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_bind_bg.9.png",
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_bind_bg.9.png"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\messenger_button_white_bg_selector.xml",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\messenger_button_white_bg_selector.xml"
     },
     {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_shape_solid_black.xml",
@@ -316,16 +404,36 @@
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_title_back_bt_selected.png"
     },
     {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_at_selected.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_at_selected.png"
+    },
+    {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_button_red_blue.xml",
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_button_red_blue.xml"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_facebook_off.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_facebook_off.png"
     },
     {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_laiwang.png",
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_laiwang.png"
     },
     {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_default_avatar.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_default_avatar.png"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_refersh.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_refersh.png"
+    },
+    {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_at_normal.png",
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_at_normal.png"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_pocket.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_pocket.png"
     },
     {
         "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_bind_bg.9.png",
@@ -336,20 +444,32 @@
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_qzone_off.png"
     },
     {
-        "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_comment_selected.png",
-        "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_comment_selected.png"
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_button_login_pressed.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_button_login_pressed.png"
     },
     {
-        "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\shake_umeng_socialize_imgview_border.xml",
-        "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\shake_umeng_socialize_imgview_border.xml"
+        "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_comment_selected.png",
+        "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_comment_selected.png"
     },
     {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_action_like.png",
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_action_like.png"
     },
     {
+        "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\shake_umeng_socialize_imgview_border.xml",
+        "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\shake_umeng_socialize_imgview_border.xml"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_comment_selected.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_comment_selected.png"
+    },
+    {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_foursquare_gray.png",
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_foursquare_gray.png"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_facebook_close.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_facebook_close.png"
     },
     {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_refersh.png",
@@ -360,20 +480,36 @@
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\com_facebook_button_background.xml"
     },
     {
-        "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\shake_umeng_socialize_close.png",
-        "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\shake_umeng_socialize_close.png"
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_sidebar_selected.xml",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_sidebar_selected.xml"
     },
     {
-        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_button_red_blue.xml",
-        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_button_red_blue.xml"
+        "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\shake_umeng_socialize_close.png",
+        "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\shake_umeng_socialize_close.png"
     },
     {
         "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_refersh.png",
         "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_refersh.png"
     },
     {
+        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_button_red_blue.xml",
+        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_button_red_blue.xml"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_share_transparent_corner.xml",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_share_transparent_corner.xml"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_whatsapp.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_whatsapp.png"
+    },
+    {
         "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_shape_solid_grey.xml",
         "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_shape_solid_grey.xml"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_line_gray.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_line_gray.png"
     },
     {
         "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_at_selected.png",
@@ -400,48 +536,76 @@
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_commnet_header_bg.xml"
     },
     {
-        "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_fetch_image.png",
-        "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_fetch_image.png"
+        "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_pocket_gray.png",
+        "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_pocket_gray.png"
     },
     {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_divider_line.png",
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_divider_line.png"
     },
     {
-        "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_pocket_gray.png",
-        "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_pocket_gray.png"
+        "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_fetch_image.png",
+        "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_fetch_image.png"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_laiwang_dynamic_gray.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_laiwang_dynamic_gray.png"
     },
     {
         "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_yixin_circle_gray.png",
         "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_yixin_circle_gray.png"
     },
     {
-        "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_wxcircle_gray.png",
-        "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_wxcircle_gray.png"
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_kakao_gray.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_kakao_gray.png"
     },
     {
         "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\messenger_button_white_bg_selector.xml",
         "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\messenger_button_white_bg_selector.xml"
     },
     {
-        "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_title_right_bt_selected.png",
-        "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_title_right_bt_selected.png"
+        "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_wxcircle_gray.png",
+        "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_wxcircle_gray.png"
     },
     {
-        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_tumblr_gray.png",
-        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_tumblr_gray.png"
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_location_off.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_location_off.png"
+    },
+    {
+        "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_title_right_bt_selected.png",
+        "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_title_right_bt_selected.png"
     },
     {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_qq_on.png",
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_qq_on.png"
     },
     {
+        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_tumblr_gray.png",
+        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_tumblr_gray.png"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_wechat_gray.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_wechat_gray.png"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_location_on.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_location_on.png"
+    },
+    {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\messenger_button_blue_bg_round.xml",
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\messenger_button_blue_bg_round.xml"
     },
     {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_follow_on.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_follow_on.png"
+    },
+    {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_title_right_bt.xml",
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_title_right_bt.xml"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_action_back_normal.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_action_back_normal.png"
     },
     {
         "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_comment_item_bg_shape.xml",
@@ -452,12 +616,12 @@
         "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_pulltorefresh_arrow.png"
     },
     {
-        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_foursquare.png",
-        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_foursquare.png"
-    },
-    {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\com_facebook_button_login_silver_background.xml",
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\com_facebook_button_login_silver_background.xml"
+    },
+    {
+        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_foursquare.png",
+        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_foursquare.png"
     },
     {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_title_tab_right_normal.png",
@@ -468,12 +632,24 @@
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_wechat.png"
     },
     {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_shape_solid_black.xml",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_shape_solid_black.xml"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\messenger_button_blue_bg_round.xml",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\messenger_button_blue_bg_round.xml"
+    },
+    {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_follow_off.png",
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_follow_off.png"
     },
     {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_follow_check.xml",
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_follow_check.xml"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_shape_solid_grey.xml",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_shape_solid_grey.xml"
     },
     {
         "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_wxcircle.png",
@@ -488,6 +664,10 @@
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_at_button.xml"
     },
     {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_title_right_bt_normal.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_title_right_bt_normal.png"
+    },
+    {
         "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_ynote_gray.png",
         "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_ynote_gray.png"
     },
@@ -500,16 +680,24 @@
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_wxcircle.png"
     },
     {
-        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_title_tab_right_normal.png",
-        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_title_tab_right_normal.png"
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_action_personal_normal.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_action_personal_normal.png"
     },
     {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_sina_off.png",
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_sina_off.png"
     },
     {
+        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_title_tab_right_normal.png",
+        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_title_tab_right_normal.png"
+    },
+    {
         "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_wechat_gray.png",
         "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_wechat_gray.png"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_button_grey.9.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_button_grey.9.png"
     },
     {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_at_normal.png",
@@ -520,12 +708,16 @@
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_laiwang.png"
     },
     {
+        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_comment_bg.png",
+        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_comment_bg.png"
+    },
+    {
         "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\com_facebook_button_background.xml",
         "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\com_facebook_button_background.xml"
     },
     {
-        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_comment_bg.png",
-        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_comment_bg.png"
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_laiwang.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_laiwang.png"
     },
     {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\shake_umeng_socialize_preview_edit_corners_style.xml",
@@ -540,8 +732,24 @@
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_actionbar_bg.9.png"
     },
     {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_location_ic.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_location_ic.png"
+    },
+    {
         "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_instagram_off.png",
         "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_instagram_off.png"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_whatsapp_gray.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_whatsapp_gray.png"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_title_right_bt.xml",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_title_right_bt.xml"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_linkedin.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_linkedin.png"
     },
     {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\shake_umeng_socialize_preview_edit_corners_style.xml",
@@ -564,6 +772,10 @@
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_line_gray.png"
     },
     {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_action_share_selected.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_action_share_selected.png"
+    },
+    {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_gmail_on.png",
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_gmail_on.png"
     },
@@ -576,8 +788,16 @@
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_action_share_normal.png"
     },
     {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\shake_umeng_socialize_imgview_border.xml",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\shake_umeng_socialize_imgview_border.xml"
+    },
+    {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_button_login.xml",
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_button_login.xml"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_wechat.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_wechat.png"
     },
     {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\shake_umeng_socialize_close.png",
@@ -604,6 +824,18 @@
         "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_gmail_on.png"
     },
     {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_sidebar_selector.xml",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_sidebar_selector.xml"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_laiwang_gray.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_laiwang_gray.png"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_follow_check.xml",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_follow_check.xml"
+    },
+    {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_action_personal_selected.png",
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_action_personal_selected.png"
     },
@@ -620,56 +852,68 @@
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_title_back_bt_normal.png"
     },
     {
-        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_gmail_off.png",
-        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_gmail_off.png"
-    },
-    {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_instagram_off.png",
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_instagram_off.png"
+    },
+    {
+        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_gmail_off.png",
+        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_gmail_off.png"
     },
     {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_pocket.png",
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_pocket.png"
     },
     {
-        "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_sms_off.png",
-        "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_sms_off.png"
+        "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_whatsapp_gray.png",
+        "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_whatsapp_gray.png"
     },
     {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_instagram_on.png",
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_instagram_on.png"
     },
     {
-        "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_whatsapp_gray.png",
-        "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_whatsapp_gray.png"
+        "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_sms_off.png",
+        "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_sms_off.png"
     },
     {
         "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_action_share_selected.png",
         "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_action_share_selected.png"
     },
     {
-        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_button_grey_blue.xml",
-        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_button_grey_blue.xml"
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_yixin_circle_gray.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_yixin_circle_gray.png"
     },
     {
-        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_pv.png",
-        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_pv.png"
+        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_button_grey_blue.xml",
+        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_button_grey_blue.xml"
     },
     {
         "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_title_tab_button_left.xml",
         "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_title_tab_button_left.xml"
     },
     {
-        "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_flickr.png",
-        "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_flickr.png"
+        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_pv.png",
+        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_pv.png"
     },
     {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_ynote.png",
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_ynote.png"
     },
     {
+        "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_flickr.png",
+        "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_flickr.png"
+    },
+    {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\com_facebook_button_send_background.xml",
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\com_facebook_button_send_background.xml"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_oauth_check.xml",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_oauth_check.xml"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_button_red.9.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_button_red.9.png"
     },
     {
         "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_facebook_close.png",
@@ -678,6 +922,10 @@
     {
         "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_wxcircle_gray.png",
         "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_wxcircle_gray.png"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_instagram_off.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_instagram_off.png"
     },
     {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_yixin_circle.png",
@@ -696,32 +944,52 @@
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_action_back_selected.png"
     },
     {
-        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_button_grey.9.png",
-        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_button_grey.9.png"
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_renren_off.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_renren_off.png"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_action_unlike.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_action_unlike.png"
     },
     {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_sidebar_normal.xml",
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_sidebar_normal.xml"
     },
     {
-        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_yixin_gray.png",
-        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_yixin_gray.png"
+        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_button_grey.9.png",
+        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_button_grey.9.png"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_douban_on.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_douban_on.png"
     },
     {
         "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\shake_umeng_socialize_close_button_style.xml",
         "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\shake_umeng_socialize_close_button_style.xml"
     },
     {
+        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_yixin_gray.png",
+        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_yixin_gray.png"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_action_share_normal.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_action_share_normal.png"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_qq_on.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_qq_on.png"
+    },
+    {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_button_blue.9.png",
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_button_blue.9.png"
     },
     {
-        "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_location_mark.png",
-        "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_location_mark.png"
-    },
-    {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_ynote.png",
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_ynote.png"
+    },
+    {
+        "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_location_mark.png",
+        "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_location_mark.png"
     },
     {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_sms_on.png",
@@ -744,16 +1012,20 @@
         "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_nav_bar_bg.png"
     },
     {
-        "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_laiwang_gray.png",
-        "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_laiwang_gray.png"
-    },
-    {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\messenger_button_blue_bg_selector.xml",
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\messenger_button_blue_bg_selector.xml"
     },
     {
+        "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_laiwang_gray.png",
+        "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_laiwang_gray.png"
+    },
+    {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_facebook.png",
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_facebook.png"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_light_bar_bg.9.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_light_bar_bg.9.png"
     },
     {
         "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_follow_off.png",
@@ -762,6 +1034,10 @@
     {
         "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_share_to_button.xml",
         "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_share_to_button.xml"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\com_facebook_button_like_background.xml",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\com_facebook_button_like_background.xml"
     },
     {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_title_tab_button_left.xml",
@@ -788,6 +1064,10 @@
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_linkedin_gray.png"
     },
     {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_divider_line.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_divider_line.png"
+    },
+    {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_button_grey.9.png",
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_button_grey.9.png"
     },
@@ -798,6 +1078,10 @@
     {
         "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_location_on.png",
         "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_location_on.png"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_comment_bg.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_comment_bg.png"
     },
     {
         "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_pocket.png",
@@ -828,6 +1112,10 @@
         "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_location_mark.png"
     },
     {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_gmail_off.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_gmail_off.png"
+    },
+    {
         "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\messenger_button_white_bg_round.xml",
         "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\messenger_button_white_bg_round.xml"
     },
@@ -836,28 +1124,28 @@
         "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_tx_on.png"
     },
     {
-        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_at_normal.png",
-        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_at_normal.png"
-    },
-    {
         "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_whatsapp.png",
         "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_whatsapp.png"
     },
     {
-        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_action_personal_icon.xml",
-        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_action_personal_icon.xml"
+        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_at_normal.png",
+        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_at_normal.png"
     },
     {
-        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_action_back_selected.png",
-        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_action_back_selected.png"
+        "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_button_white.9.png",
+        "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_button_white.9.png"
     },
     {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_nav_bar_bg.png",
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_nav_bar_bg.png"
     },
     {
-        "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_button_white.9.png",
-        "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_button_white.9.png"
+        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_action_back_selected.png",
+        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_action_back_selected.png"
+    },
+    {
+        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_action_personal_icon.xml",
+        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_action_personal_icon.xml"
     },
     {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_light_bar_bg.9.png",
@@ -872,8 +1160,16 @@
         "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_ynote.png"
     },
     {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_kakao.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_kakao.png"
+    },
+    {
         "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_title_tab_button_right.xml",
         "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_title_tab_button_right.xml"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_gmail_on.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_gmail_on.png"
     },
     {
         "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_qzone_on.png",
@@ -888,8 +1184,16 @@
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_follow_on.png"
     },
     {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_tumblr.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_tumblr.png"
+    },
+    {
         "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_title_right_bt_selected.png",
         "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_title_right_bt_selected.png"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_button_red_blue.xml",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_button_red_blue.xml"
     },
     {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_gmail_off.png",
@@ -904,24 +1208,24 @@
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_tx_off.png"
     },
     {
-        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_laiwang_gray.png",
-        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_laiwang_gray.png"
-    },
-    {
-        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_kakao.png",
-        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_kakao.png"
-    },
-    {
-        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_qq_on.png",
-        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_qq_on.png"
+        "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_sina_on.png",
+        "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_sina_on.png"
     },
     {
         "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_wechat.png",
         "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_wechat.png"
     },
     {
-        "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_sina_on.png",
-        "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_sina_on.png"
+        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_qq_on.png",
+        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_qq_on.png"
+    },
+    {
+        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_kakao.png",
+        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_kakao.png"
+    },
+    {
+        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_laiwang_gray.png",
+        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_laiwang_gray.png"
     },
     {
         "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_light_bar_bg.9.png",
@@ -930,6 +1234,10 @@
     {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_linkedin.png",
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_linkedin.png"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_title_back_bt_selected.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_title_back_bt_selected.png"
     },
     {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_title_tab_left_normal.png",
@@ -952,12 +1260,20 @@
         "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_at_button.xml"
     },
     {
-        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_action_share_icon.xml",
-        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_action_share_icon.xml"
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_pocket_gray.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_pocket_gray.png"
     },
     {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_comment_normal.png",
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_comment_normal.png"
+    },
+    {
+        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_action_share_icon.xml",
+        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_action_share_icon.xml"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_checked.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_checked.png"
     },
     {
         "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_button_red.9.png",
@@ -968,16 +1284,28 @@
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_shareboard_item_background.xml"
     },
     {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_title_tab_left_pressed.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_title_tab_left_pressed.png"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_qq_off.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_qq_off.png"
+    },
+    {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\com_facebook_button_like_background.xml",
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\com_facebook_button_like_background.xml"
     },
     {
-        "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_share_to_button.xml",
-        "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_share_to_button.xml"
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_flickr.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_flickr.png"
     },
     {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_title_tab_right_pressed.png",
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_title_tab_right_pressed.png"
+    },
+    {
+        "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_share_to_button.xml",
+        "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_share_to_button.xml"
     },
     {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_oauth_check_on.png",
@@ -988,12 +1316,16 @@
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\messenger_button_blue_bg_selector.xml"
     },
     {
-        "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_wxcircle.png",
-        "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_wxcircle.png"
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_evernote_gray.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_evernote_gray.png"
     },
     {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_button_red.9.png",
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_button_red.9.png"
+    },
+    {
+        "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_wxcircle.png",
+        "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_wxcircle.png"
     },
     {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_gmail_off.png",
@@ -1024,6 +1356,10 @@
         "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\com_facebook_button_send_background.xml"
     },
     {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_pinterest.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_pinterest.png"
+    },
+    {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_douban_on.png",
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_douban_on.png"
     },
@@ -1040,24 +1376,28 @@
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_location_mark.png"
     },
     {
-        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_sidebar_selected.xml",
-        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_sidebar_selected.xml"
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_actionbar_bg.9.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_actionbar_bg.9.png"
     },
     {
-        "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_action_personal_icon.xml",
-        "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_action_personal_icon.xml"
+        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_sidebar_selected.xml",
+        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_sidebar_selected.xml"
     },
     {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_sina_on.png",
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_sina_on.png"
     },
     {
-        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_commnet_header_bg.xml",
-        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_commnet_header_bg.xml"
+        "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_action_personal_icon.xml",
+        "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_action_personal_icon.xml"
     },
     {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_share_to_button.xml",
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_share_to_button.xml"
+    },
+    {
+        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_commnet_header_bg.xml",
+        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_commnet_header_bg.xml"
     },
     {
         "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_flickr.png",
@@ -1068,6 +1408,18 @@
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_oauth_check.xml"
     },
     {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\shake_umeng_socialize_edittext_corner.xml",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\shake_umeng_socialize_edittext_corner.xml"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_renren_on.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_renren_on.png"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_tumblr_gray.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_tumblr_gray.png"
+    },
+    {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_comment_normal.png",
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_comment_normal.png"
     },
@@ -1076,20 +1428,56 @@
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_action_share_icon.xml"
     },
     {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_yixin_gray.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_yixin_gray.png"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_wxcircle_gray.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_wxcircle_gray.png"
+    },
+    {
         "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_sidebar_normal.xml",
         "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_sidebar_normal.xml"
     },
     {
-        "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_shape_solid_black.xml",
-        "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_shape_solid_black.xml"
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_ynote_gray.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_ynote_gray.png"
     },
     {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\shake_umeng_socialize_edittext_corner.xml",
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\shake_umeng_socialize_edittext_corner.xml"
     },
     {
+        "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_shape_solid_black.xml",
+        "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_shape_solid_black.xml"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_title_tab_left_normal.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_title_tab_left_normal.png"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\messenger_button_blue_bg_selector.xml",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\messenger_button_blue_bg_selector.xml"
+    },
+    {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\shake_umeng_socialize_share_btn_style.xml",
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\shake_umeng_socialize_share_btn_style.xml"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_google.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_google.png"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_laiwang_dynamic.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_laiwang_dynamic.png"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_commnet_header_bg.xml",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_commnet_header_bg.xml"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_sina_on.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_sina_on.png"
     },
     {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_button_white_blue.xml",
@@ -1104,24 +1492,32 @@
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_title_back_bt_normal.png"
     },
     {
-        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_action_back.xml",
-        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_action_back.xml"
+        "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_flickr_gray.png",
+        "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_flickr_gray.png"
     },
     {
         "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_comment_icon.xml",
         "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_comment_icon.xml"
     },
     {
-        "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_flickr_gray.png",
-        "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_flickr_gray.png"
+        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_action_back.xml",
+        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_action_back.xml"
     },
     {
         "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_sms_on.png",
         "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_sms_on.png"
     },
     {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\shake_umeng_socialize_close_button_style.xml",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\shake_umeng_socialize_close_button_style.xml"
+    },
+    {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_title_back_bt.xml",
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_title_back_bt.xml"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_oauth_check_off.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_oauth_check_off.png"
     },
     {
         "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\shake_umeng_socialize_shake_layout_corner.xml",
@@ -1136,16 +1532,20 @@
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_title_right_bt_selected.png"
     },
     {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\shake_umeng_socialize_share_btn_style.xml",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\shake_umeng_socialize_share_btn_style.xml"
+    },
+    {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_tx_off.png",
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_tx_off.png"
     },
     {
-        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_facebook.png",
-        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_facebook.png"
-    },
-    {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_tx_on.png",
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_tx_on.png"
+    },
+    {
+        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_facebook.png",
+        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_facebook.png"
     },
     {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_sidebar_selector.xml",
@@ -1160,32 +1560,40 @@
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\messenger_button_white_bg_selector.xml"
     },
     {
-        "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_yixin_circle_gray.png",
-        "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_yixin_circle_gray.png"
-    },
-    {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_fetch_location_disabled.png",
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_fetch_location_disabled.png"
+    },
+    {
+        "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_yixin_circle_gray.png",
+        "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_yixin_circle_gray.png"
     },
     {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_default_avatar.png",
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_default_avatar.png"
     },
     {
-        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_title_tab_left_normal.png",
-        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_title_tab_left_normal.png"
+        "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_button_grey_blue.xml",
+        "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_button_grey_blue.xml"
     },
     {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_foursquare.png",
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_foursquare.png"
     },
     {
-        "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_button_grey_blue.xml",
-        "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_button_grey_blue.xml"
+        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_title_tab_left_normal.png",
+        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_title_tab_left_normal.png"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_pulltorefresh_arrow.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_pulltorefresh_arrow.png"
     },
     {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_laiwang_dynamic.png",
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_laiwang_dynamic.png"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_at_normal.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_at_normal.png"
     },
     {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\shake_umeng_socialize_shake_layout_corner.xml",
@@ -1200,16 +1608,24 @@
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_x_button.png"
     },
     {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_line.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_line.png"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_button_white_blue.xml",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_button_white_blue.xml"
+    },
+    {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_yixin_gray.png",
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_yixin_gray.png"
     },
     {
-        "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_actionbar_bg.9.png",
-        "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_actionbar_bg.9.png"
-    },
-    {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_renren_on.png",
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_renren_on.png"
+    },
+    {
+        "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_actionbar_bg.9.png",
+        "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_actionbar_bg.9.png"
     },
     {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_search_icon.png",
@@ -1228,6 +1644,14 @@
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_action_share_selected.png"
     },
     {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\shake_umeng_socialize_preview_edit_corners_style.xml",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\shake_umeng_socialize_preview_edit_corners_style.xml"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_ynote.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_ynote.png"
+    },
+    {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_action_personal_normal.png",
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_action_personal_normal.png"
     },
@@ -1240,16 +1664,20 @@
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_wechat_gray.png"
     },
     {
-        "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_renren_on.png",
-        "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_renren_on.png"
+        "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_pinterest.png",
+        "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_pinterest.png"
     },
     {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_laiwang_dynamic_gray.png",
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_laiwang_dynamic_gray.png"
     },
     {
-        "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_pinterest.png",
-        "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_pinterest.png"
+        "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_renren_on.png",
+        "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_renren_on.png"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_nav_bar_bg.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_nav_bar_bg.png"
     },
     {
         "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_button_login.xml",
@@ -1268,8 +1696,16 @@
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_wechat_gray.png"
     },
     {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_button_login.xml",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_button_login.xml"
+    },
+    {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_action_share_selected.png",
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_action_share_selected.png"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_follow_off.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_follow_off.png"
     },
     {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_shape_solid_grey.xml",
@@ -1304,12 +1740,28 @@
         "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_fetch_image.png"
     },
     {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_sms_on.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_sms_on.png"
+    },
+    {
         "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_oauth_check_off.png",
         "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_oauth_check_off.png"
     },
     {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_pinterest_gray.png",
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_pinterest_gray.png"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_action_back_selected.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_action_back_selected.png"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_yixin_circle.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_yixin_circle.png"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_action_back.xml",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_action_back.xml"
     },
     {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_button_login_pressed.png",
@@ -1320,12 +1772,24 @@
         "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_qzone_off.png"
     },
     {
-        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\shake_umeng_socialize_edittext_corner.xml",
-        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\shake_umeng_socialize_edittext_corner.xml"
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\com_facebook_button_background.xml",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\com_facebook_button_background.xml"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_oauth_check_on.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_oauth_check_on.png"
     },
     {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\messenger_button_white_bg_round.xml",
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\messenger_button_white_bg_round.xml"
+    },
+    {
+        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\shake_umeng_socialize_edittext_corner.xml",
+        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\shake_umeng_socialize_edittext_corner.xml"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_button_white.9.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_button_white.9.png"
     },
     {
         "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_sina_on.png",
@@ -1344,8 +1808,20 @@
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\shake_umeng_socialize_imgview_border.xml"
     },
     {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_flickr_gray.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_flickr_gray.png"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_title_right_bt_selected.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_title_right_bt_selected.png"
+    },
+    {
         "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_button_login_pressed.png",
         "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_button_login_pressed.png"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_shareboard_item_background.xml",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_shareboard_item_background.xml"
     },
     {
         "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_fetch_location_disabled.png",
@@ -1376,84 +1852,116 @@
         "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\messenger_button_blue_bg_round.xml"
     },
     {
-        "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_action_unlike.png",
-        "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_action_unlike.png"
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_button_blue.9.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_button_blue.9.png"
     },
     {
         "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_qq_off.png",
         "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_qq_off.png"
     },
     {
-        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_pinterest.png",
-        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_pinterest.png"
+        "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_action_unlike.png",
+        "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_action_unlike.png"
     },
     {
-        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_follow_check.xml",
-        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_follow_check.xml"
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_button_login_normal.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_button_login_normal.png"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_pinterest_gray.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_pinterest_gray.png"
+    },
+    {
+        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_pinterest.png",
+        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_pinterest.png"
     },
     {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_linkedin_gray.png",
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_linkedin_gray.png"
     },
     {
-        "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_oauth_check_off.png",
-        "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_oauth_check_off.png"
+        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_follow_check.xml",
+        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_follow_check.xml"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_title_tab_button_left.xml",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_title_tab_button_left.xml"
     },
     {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_action_back.xml",
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_action_back.xml"
     },
     {
-        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_location_off.png",
-        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_location_off.png"
+        "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_oauth_check_off.png",
+        "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_oauth_check_off.png"
     },
     {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_comment_icon.xml",
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_comment_icon.xml"
     },
     {
-        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_pocket_gray.png",
-        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_pocket_gray.png"
-    },
-    {
-        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_line.png",
-        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_line.png"
+        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_location_off.png",
+        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_location_off.png"
     },
     {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_window_shadow_pad.xml",
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_window_shadow_pad.xml"
     },
     {
-        "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_laiwang_gray.png",
-        "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_laiwang_gray.png"
+        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_line.png",
+        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_line.png"
+    },
+    {
+        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_pocket_gray.png",
+        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_pocket_gray.png"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_twitter.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_twitter.png"
     },
     {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_title_back_bt.xml",
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_title_back_bt.xml"
     },
     {
-        "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_douban_off.png",
-        "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_douban_off.png"
+        "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_laiwang_gray.png",
+        "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_laiwang_gray.png"
     },
     {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_divider_line.png",
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_divider_line.png"
     },
     {
+        "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_douban_off.png",
+        "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_douban_off.png"
+    },
+    {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_share_transparent_corner.xml",
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_share_transparent_corner.xml"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_yixin.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_yixin.png"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_fetch_location_disabled.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_fetch_location_disabled.png"
     },
     {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_comment_bg.png",
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_comment_bg.png"
     },
     {
-        "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_window_shadow_pad.xml",
-        "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_window_shadow_pad.xml"
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_foursquare_gray.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_foursquare_gray.png"
     },
     {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_shape_solid_grey.xml",
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_shape_solid_grey.xml"
+    },
+    {
+        "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_window_shadow_pad.xml",
+        "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_window_shadow_pad.xml"
     },
     {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_kakao.png",
@@ -1468,8 +1976,16 @@
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_tumblr_gray.png"
     },
     {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_wxcircle.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_wxcircle.png"
+    },
+    {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\shake_umeng_socialize_shake_layout_corner.xml",
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\shake_umeng_socialize_shake_layout_corner.xml"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_comment_normal.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_comment_normal.png"
     },
     {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_gmail_on.png",
@@ -1488,6 +2004,10 @@
         "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_action_personal_selected.png"
     },
     {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_foursquare.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_foursquare.png"
+    },
+    {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_sidebar_selector.xml",
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_sidebar_selector.xml"
     },
@@ -1500,6 +2020,10 @@
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_nav_bar_bg.png"
     },
     {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_tx_off.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_tx_off.png"
+    },
+    {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_pulltorefresh_arrow.png",
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_pulltorefresh_arrow.png"
     },
@@ -1508,20 +2032,32 @@
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_oauth_check.xml"
     },
     {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_comment_item_bg_shape.xml",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_comment_item_bg_shape.xml"
+    },
+    {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\messenger_button_white_bg_selector.xml",
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\messenger_button_white_bg_selector.xml"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_location_grey.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_location_grey.png"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_title_tab_button_right.xml",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_title_tab_button_right.xml"
     },
     {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\shake_umeng_socialize_share_btn_style.xml",
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\shake_umeng_socialize_share_btn_style.xml"
     },
     {
-        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_checked.png",
-        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_checked.png"
-    },
-    {
         "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_yixin.png",
         "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_yixin.png"
+    },
+    {
+        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_checked.png",
+        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_checked.png"
     },
     {
         "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_button_white_blue.xml",
@@ -1536,24 +2072,32 @@
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_title_tab_left_normal.png"
     },
     {
-        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_share_transparent_corner.xml",
-        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_share_transparent_corner.xml"
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_action_personal_selected.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_action_personal_selected.png"
     },
     {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_tumblr.png",
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_tumblr.png"
     },
     {
+        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_share_transparent_corner.xml",
+        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_share_transparent_corner.xml"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\shake_umeng_socialize_close.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\shake_umeng_socialize_close.png"
+    },
+    {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_instagram_on.png",
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_instagram_on.png"
     },
     {
-        "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_button_white.9.png",
-        "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_button_white.9.png"
-    },
-    {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_whatsapp.png",
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_whatsapp.png"
+    },
+    {
+        "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_button_white.9.png",
+        "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_button_white.9.png"
     },
     {
         "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_twitter.png",
@@ -1568,8 +2112,24 @@
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_light_bar_bg.9.png"
     },
     {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_qzone_on.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_qzone_on.png"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_pv.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_pv.png"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_title_back_bt_normal.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_title_back_bt_normal.png"
+    },
+    {
         "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_shareboard_item_background.xml",
         "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_shareboard_item_background.xml"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_location_mark.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_location_mark.png"
     },
     {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_title_tab_left_pressed.png",
@@ -1604,6 +2164,10 @@
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_pv.png"
     },
     {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_title_tab_right_pressed.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_title_tab_right_pressed.png"
+    },
+    {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_yixin_gray.png",
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_yixin_gray.png"
     },
@@ -1612,12 +2176,20 @@
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_foursquare_gray.png"
     },
     {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_action_share_icon.xml",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_action_share_icon.xml"
+    },
+    {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_flickr.png",
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_flickr.png"
     },
     {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_pv.png",
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_pv.png"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\com_facebook_button_send_background.xml",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\com_facebook_button_send_background.xml"
     },
     {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\shake_umeng_socialize_close_button_style.xml",
@@ -1636,12 +2208,20 @@
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_instagram_off.png"
     },
     {
+        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_follow_on.png",
+        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_follow_on.png"
+    },
+    {
         "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_kakao_gray.png",
         "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_kakao_gray.png"
     },
     {
-        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_follow_on.png",
-        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_follow_on.png"
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_window_shadow_pad.xml",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_window_shadow_pad.xml"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_title_tab_right_normal.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_title_tab_right_normal.png"
     },
     {
         "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_shape_solid_black.xml",
@@ -1660,12 +2240,12 @@
         "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_location_grey.png"
     },
     {
-        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_renren_on.png",
-        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_renren_on.png"
-    },
-    {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_at_selected.png",
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_at_selected.png"
+    },
+    {
+        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_renren_on.png",
+        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_renren_on.png"
     },
     {
         "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_action_personal_normal.png",
@@ -1684,6 +2264,10 @@
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_tx_on.png"
     },
     {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_qzone_off.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_qzone_off.png"
+    },
+    {
         "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_action_share_normal.png",
         "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_action_share_normal.png"
     },
@@ -1692,16 +2276,20 @@
         "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_sidebar_selector.xml"
     },
     {
-        "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_laiwang_dynamic_gray.png",
-        "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_laiwang_dynamic_gray.png"
-    },
-    {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_sina_off.png",
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_sina_off.png"
     },
     {
+        "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_laiwang_dynamic_gray.png",
+        "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_laiwang_dynamic_gray.png"
+    },
+    {
         "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_sina_off.png",
         "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_sina_off.png"
+    },
+    {
+        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_oauth_check_on.png",
+        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_oauth_check_on.png"
     },
     {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_action_personal_selected.png",
@@ -1712,16 +2300,20 @@
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_action_back_normal.png"
     },
     {
-        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_oauth_check_on.png",
-        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_oauth_check_on.png"
-    },
-    {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_button_login_normal.png",
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_button_login_normal.png"
     },
     {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_instagram_on.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_instagram_on.png"
+    },
+    {
         "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_button_blue.9.png",
         "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_button_blue.9.png"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_x_button.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_x_button.png"
     },
     {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_comment_bg.png",
@@ -1732,16 +2324,20 @@
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_whatsapp_gray.png"
     },
     {
-        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_yixin_circle.png",
-        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_yixin_circle.png"
-    },
-    {
         "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_default_avatar.png",
         "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_default_avatar.png"
     },
     {
+        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_yixin_circle.png",
+        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_yixin_circle.png"
+    },
+    {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_shareboard_item_background.xml",
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_shareboard_item_background.xml"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_douban_off.png",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_douban_off.png"
     },
     {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_action_back_selected.png",
@@ -1772,16 +2368,16 @@
         "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_tx_off.png"
     },
     {
-        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_actionbar_bg.9.png",
-        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_actionbar_bg.9.png"
+        "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_yixin.png",
+        "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_yixin.png"
     },
     {
         "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_linkedin.png",
         "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_linkedin.png"
     },
     {
-        "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_yixin.png",
-        "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_yixin.png"
+        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_actionbar_bg.9.png",
+        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\drawable\\umeng_socialize_actionbar_bg.9.png"
     },
     {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\umeng_socialize_search_icon.png",

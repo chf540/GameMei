@@ -12,16 +12,20 @@
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\anim\\umeng_socialize_slide_out_from_bottom.xml"
     },
     {
-        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\shake_umeng_socialize_imageview_rotate.xml",
-        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\anim\\shake_umeng_socialize_imageview_rotate.xml"
-    },
-    {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\umeng_socialize_shareboard_animation_out.xml",
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\anim\\umeng_socialize_shareboard_animation_out.xml"
     },
     {
+        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\shake_umeng_socialize_imageview_rotate.xml",
+        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\anim\\shake_umeng_socialize_imageview_rotate.xml"
+    },
+    {
         "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\umeng_socialize_fade_out.xml",
         "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\anim\\umeng_socialize_fade_out.xml"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\umeng_socialize_fade_in.xml",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\anim\\umeng_socialize_fade_in.xml"
     },
     {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\umeng_socialize_fade_out.xml",
@@ -36,20 +40,28 @@
         "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\anim\\shake_umeng_socialize_edit_anim.xml"
     },
     {
+        "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\shake_umeng_socialize_edit_anim.xml",
+        "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\anim\\shake_umeng_socialize_edit_anim.xml"
+    },
+    {
         "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\umeng_socialize_shareboard_animation_out.xml",
         "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\anim\\umeng_socialize_shareboard_animation_out.xml"
     },
     {
-        "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\shake_umeng_socialize_edit_anim.xml",
-        "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\anim\\shake_umeng_socialize_edit_anim.xml"
+        "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\shake_umeng_socialize_imageview_rotate.xml",
+        "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\anim\\shake_umeng_socialize_imageview_rotate.xml"
+    },
+    {
+        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\shake_umeng_socialize_scrshot_dlg.xml",
+        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\anim\\shake_umeng_socialize_scrshot_dlg.xml"
     },
     {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\umeng_socialize_shareboard_animation_in.xml",
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\anim\\umeng_socialize_shareboard_animation_in.xml"
     },
     {
-        "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\shake_umeng_socialize_imageview_rotate.xml",
-        "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\anim\\shake_umeng_socialize_imageview_rotate.xml"
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\shake_umeng_socialize_dlg_alpha.xml",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\anim\\shake_umeng_socialize_dlg_alpha.xml"
     },
     {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\umeng_socialize_fade_in.xml",
@@ -68,16 +80,20 @@
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\anim\\shake_umeng_socialize_cycle_5.xml"
     },
     {
-        "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\umeng_socialize_shareboard_animation_in.xml",
-        "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\anim\\umeng_socialize_shareboard_animation_in.xml"
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\umeng_socialize_slide_out_from_bottom.xml",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\anim\\umeng_socialize_slide_out_from_bottom.xml"
     },
     {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\umeng_socialize_fade_in.xml",
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\anim\\umeng_socialize_fade_in.xml"
     },
     {
-        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\shake_umeng_socialize_scrshot_dlg.xml",
-        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\anim\\shake_umeng_socialize_scrshot_dlg.xml"
+        "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\umeng_socialize_shareboard_animation_in.xml",
+        "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\anim\\umeng_socialize_shareboard_animation_in.xml"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\umeng_socialize_fade_out.xml",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\anim\\umeng_socialize_fade_out.xml"
     },
     {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\shake_umeng_socialize_imageview_rotate.xml",
@@ -88,28 +104,32 @@
         "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\anim\\shake_umeng_socialize_cycle_5.xml"
     },
     {
-        "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\shake_umeng_socialize_dlg_alpha.xml",
-        "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\anim\\shake_umeng_socialize_dlg_alpha.xml"
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\shake_umeng_socialize_scrshot_dlg.xml",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\anim\\shake_umeng_socialize_scrshot_dlg.xml"
     },
     {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\umeng_socialize_slide_in_from_bottom.xml",
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\anim\\umeng_socialize_slide_in_from_bottom.xml"
     },
     {
-        "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\shake_umeng_socialize_dlg_scale.xml",
-        "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\anim\\shake_umeng_socialize_dlg_scale.xml"
+        "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\shake_umeng_socialize_dlg_alpha.xml",
+        "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\anim\\shake_umeng_socialize_dlg_alpha.xml"
     },
     {
-        "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\shake_umeng_socialize_edit_anim.xml",
-        "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\anim\\shake_umeng_socialize_edit_anim.xml"
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\shake_umeng_socialize_edit_anim.xml",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\anim\\shake_umeng_socialize_edit_anim.xml"
     },
     {
-        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\shake_umeng_socialize_dlg_scale.xml",
-        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\anim\\shake_umeng_socialize_dlg_scale.xml"
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\shake_umeng_socialize_dlg_scale.xml",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\anim\\shake_umeng_socialize_dlg_scale.xml"
     },
     {
         "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\umeng_socialize_fade_out.xml",
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\anim\\umeng_socialize_fade_out.xml"
+    },
+    {
+        "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\shake_umeng_socialize_dlg_scale.xml",
+        "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\anim\\shake_umeng_socialize_dlg_scale.xml"
     },
     {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\shake_umeng_socialize_dlg_alpha.xml",
@@ -120,16 +140,44 @@
         "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\anim\\umeng_socialize_slide_in_from_bottom.xml"
     },
     {
-        "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\shake_umeng_socialize_scrshot_dlg.xml",
-        "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\anim\\shake_umeng_socialize_scrshot_dlg.xml"
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\umeng_socialize_slide_in_from_bottom.xml",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\anim\\umeng_socialize_slide_in_from_bottom.xml"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\umeng_socialize_shareboard_animation_in.xml",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\anim\\umeng_socialize_shareboard_animation_in.xml"
     },
     {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\shake_umeng_socialize_dlg_scale.xml",
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\anim\\shake_umeng_socialize_dlg_scale.xml"
     },
     {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\umeng_socialize_shareboard_animation_out.xml",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\anim\\umeng_socialize_shareboard_animation_out.xml"
+    },
+    {
         "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\shake_umeng_socialize_dlg_alpha.xml",
         "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\anim\\shake_umeng_socialize_dlg_alpha.xml"
+    },
+    {
+        "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\umeng_socialize_shareboard_animation_out.xml",
+        "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\anim\\umeng_socialize_shareboard_animation_out.xml"
+    },
+    {
+        "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\shake_umeng_socialize_edit_anim.xml",
+        "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\anim\\shake_umeng_socialize_edit_anim.xml"
+    },
+    {
+        "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\shake_umeng_socialize_dlg_scale.xml",
+        "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\anim\\shake_umeng_socialize_dlg_scale.xml"
+    },
+    {
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\shake_umeng_socialize_imageview_rotate.xml",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\anim\\shake_umeng_socialize_imageview_rotate.xml"
+    },
+    {
+        "merged": "C:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\shake_umeng_socialize_scrshot_dlg.xml",
+        "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\anim\\shake_umeng_socialize_scrshot_dlg.xml"
     },
     {
         "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\umeng_socialize_slide_in_from_bottom.xml",
@@ -140,7 +188,7 @@
         "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\anim\\shake_umeng_socialize_scrshot_dlg.xml"
     },
     {
-        "merged": "H:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\umeng_socialize_shareboard_animation_out.xml",
-        "source": "H:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\anim\\umeng_socialize_shareboard_animation_out.xml"
+        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\shake_umeng_socialize_cycle_5.xml",
+        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\anim\\shake_umeng_socialize_cycle_5.xml"
     }
 ]

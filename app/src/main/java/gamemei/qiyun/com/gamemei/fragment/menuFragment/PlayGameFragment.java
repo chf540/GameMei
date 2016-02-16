@@ -178,6 +178,11 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
         }
     }
 
+    /**
+     * 处理按钮的点击事件
+     *
+     * @param view
+     */
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
@@ -270,7 +275,7 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
         if (!TextUtils.isEmpty(result)) {
             processData(result, true);// 解析数据
         } else {
-            // 如何本地没有缓存的数据则从服务器获取数据
+            // 如何本地没有缓存的数据则从网络获取数据
             getDate();
         }
     }
