@@ -100,8 +100,10 @@
     <color name="subscribe_bg">#fff5f5f5</color>
     <color name="subscribe_seperate_line">#ffcdcdcd</color>
     <color name="tab_selected_bg">#384554</color>
-
     <color name="text_test">#0ad9b2</color>
 
+
+    <!--ListView条目点击-->
+    <color name="ListView_click">#eeeeee</color>
 
 </resources>
