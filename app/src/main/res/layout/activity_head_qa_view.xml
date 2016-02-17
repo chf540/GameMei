@@ -59,6 +59,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="问题类型："
+                        android:textColor="#8f949b"
                         android:textSize="12sp" />
 
                     <TextView
@@ -80,6 +81,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="发布时间："
+                        android:textColor="#8f949b"
                         android:textSize="12sp" />
 
                     <TextView
@@ -101,6 +103,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="悬赏："
+                        android:textColor="#8f949b"
                         android:textSize="12sp" />
 
                     <TextView
@@ -180,6 +183,9 @@
             android:id="@+id/linearLayout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
             android:orientation="vertical">
 
             <ImageView
@@ -195,8 +201,9 @@
             android:id="@+id/tv_best_answer_user_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:layout_toRightOf="@id/linearLayout"
+            android:layout_alignBottom="@+id/button3"
+            android:layout_toEndOf="@+id/linearLayout"
+            android:layout_toRightOf="@+id/linearLayout"
             android:singleLine="true"
             android:text="会游泳的鱼"
             android:textColor="#666666"
@@ -208,8 +215,7 @@
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/tv_best_answer_user_name"
             android:layout_alignStart="@+id/tv_best_answer_user_name"
-            android:layout_below="@+id/tv_best_answer_user_name"
-            android:layout_marginTop="5dp"
+            android:layout_centerVertical="true"
             android:drawableLeft="@mipmap/time"
             android:text="1个小时之前"
             android:textColor="#8f949b"
@@ -221,29 +227,32 @@
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/tv_best_answer_time"
             android:layout_alignStart="@+id/tv_best_answer_time"
-            android:layout_below="@+id/tv_best_answer_time"
+            android:layout_below="@+id/imageView"
             android:layout_marginTop="5dp"
             android:text="疯狂的小雨滴增长速度极快，它会淹没你的家园哦！它会淹没你的家园哦！"
             android:textColor="#333333" />
 
         <ImageView
+            android:id="@+id/imageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:layout_marginEnd="57dp"
-            android:layout_marginRight="57dp"
-            android:layout_toLeftOf="@+id/button3"
-            android:layout_toStartOf="@+id/button3"
-            android:src="@mipmap/test111" />
+            android:layout_marginLeft="34dp"
+            android:layout_marginStart="34dp"
+            android:layout_toEndOf="@+id/tv_best_answer_user_name"
+            android:layout_toRightOf="@+id/tv_best_answer_user_name"
+            android:src="@mipmap/correct" />
 
         <Button
             android:id="@+id/button3"
             android:layout_width="45dp"
             android:layout_height="20dp"
-            android:layout_alignEnd="@+id/tv_best_answer_content"
-            android:layout_alignParentTop="true"
-            android:layout_alignRight="@+id/tv_best_answer_content"
-            android:layout_marginRight="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/linearLayout"
+            android:layout_marginEnd="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="10dp"
             android:background="@drawable/bg_edittext"
             android:text="回复"
             android:textColor="#666666"

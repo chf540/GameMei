@@ -123,7 +123,7 @@
                 android:layout_alignParentLeft="true"
                 android:layout_centerVertical="true"
                 android:layout_margin="8dp"
-                android:src="@drawable/default_round_head" />
+                android:src="@mipmap/default_round_head" />
 
 
             <TextView
@@ -209,7 +209,7 @@
                 android:layout_alignParentLeft="true"
                 android:layout_centerVertical="true"
                 android:layout_margin="8dp"
-                android:src="@drawable/default_round_head" />
+                android:src="@mipmap/default_round_head" />
 
 
             <TextView
@@ -292,8 +292,7 @@
                 android:layout_alignParentLeft="true"
                 android:layout_centerVertical="true"
                 android:layout_margin="8dp"
-                android:src="@drawable/default_round_head" />
-
+                android:src="@mipmap/default_round_head" />
 
             <TextView
                 android:id="@+id/iv_user_name3"

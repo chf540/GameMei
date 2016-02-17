@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/app_top_bar"
+        layout="@layout/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="52dp" />
+
+    <!--展示下载内容的ListView-->
+    <gamemei.qiyun.com.gamemei.widget.xlistview.XListView
+        android:id="@+id/game_download_listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_top_bar"
+        android:background="@color/white"
+        android:divider="@null"
+        android:dividerHeight="0dip"
+        android:scrollbars="none" />
+
+</LinearLayout>

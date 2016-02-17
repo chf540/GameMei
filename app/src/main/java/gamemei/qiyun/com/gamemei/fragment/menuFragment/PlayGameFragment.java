@@ -6,6 +6,8 @@ import java.util.List;
 
 import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
+import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -22,6 +24,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RatingBar;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -36,6 +39,10 @@ import com.lidroid.xutils.http.client.HttpRequest.HttpMethod;
 import com.qiyun.sdk.GMSdk;
 
 import gamemei.qiyun.com.gamemei.R;
+import gamemei.qiyun.com.gamemei.activity.GameDetailActivity;
+import gamemei.qiyun.com.gamemei.activity.GameDownLoadActivity;
+import gamemei.qiyun.com.gamemei.activity.LoginActivity;
+import gamemei.qiyun.com.gamemei.adapter.GameListViewAdapter;
 import gamemei.qiyun.com.gamemei.bean.PlayGameInfoBean;
 import gamemei.qiyun.com.gamemei.fragment.common.BaseFragment;
 import gamemei.qiyun.com.gamemei.utils.AppUtils;
@@ -55,6 +62,7 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
      * 日志标记
      */
     private String TAG = "PlayGameFragment";
+
     private View view;
     /**
      * 下拉刷新的ListView
@@ -85,6 +93,10 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
      */
     private TextView tv_game_top;
     /**
+     * 下载按钮
+     */
+    private RelativeLayout rl_game_download;
+    /**
      * 全部分类View
      */
     private LinearLayout ll_game_Ranking;
@@ -92,11 +104,6 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
      * 排行榜View
      */
     private LinearLayout ll_game_type;
-    /**
-     * 游戏筛选，游戏类型的GRIDVIEW
-     */
-    private DragGrid game_search_type;
-
 
     private MyAdapter madapter;
     private HttpHandler handler;
@@ -133,11 +140,13 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
         game_choiceness = (TextView) view.findViewById(R.id.game_choiceness);
         ll_game_type = (LinearLayout) view.findViewById(R.id.ll_game_type);
         ll_game_Ranking = (LinearLayout) view.findViewById(R.id.ll_game_Ranking);
+        rl_game_download = (RelativeLayout) view.findViewById(R.id.rl_game_download);
 
         tv_game_all_classify.setOnClickListener(this);
         tv_game_top.setOnClickListener(this);
         game_on_line.setOnClickListener(this);
         game_choiceness.setOnClickListener(this);
+        rl_game_download.setOnClickListener(this);
         initFilter();
 
         return null;
@@ -190,51 +199,58 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
                 handlerFilter(0);
                 getDate();
                 madapter.notifyDataSetChanged();
+                xListView.setSelection(1);
                 break;
             case R.id.game_choiceness:
                 handlerFilter(1);
-                getDate();
+                getTopDate();
                 madapter.notifyDataSetChanged();
+                xListView.setSelection(1);
                 break;
             case R.id.tv_game_all_classify:
-                ll_game_Ranking.setVisibility(View.GONE);
-                //判断控件是否已展示
-                int isVisibel = ll_game_type.getVisibility();
-                if (isVisibel == 0) {
-                    ll_game_type.setVisibility(View.GONE);
-                    tv_game_all_classify.setTextColor(Color.rgb(36, 41, 51));
-                    //设置箭头
-                    Drawable drawable = getResources().getDrawable(R.mipmap.screen);
-                    drawable.setBounds(0, 0, drawable.getMinimumWidth(), drawable.getMinimumHeight());
-                    tv_game_all_classify.setCompoundDrawables(null, null, drawable, null);
-                } else {
-                    ll_game_type.setVisibility(View.VISIBLE);
-                    tv_game_all_classify.setTextColor(Color.rgb(10, 217, 178));
-                    //设置箭头
-                    Drawable drawable = getResources().getDrawable(R.mipmap.screen_pre);
-                    drawable.setBounds(0, 0, drawable.getMinimumWidth(), drawable.getMinimumHeight());
-                    tv_game_all_classify.setCompoundDrawables(null, null, drawable, null);
-                }
+                AppUtils.showTips(getActivity(), R.mipmap.tips_warning, "功能待实现");
+//                ll_game_Ranking.setVisibility(View.GONE);
+//                //判断控件是否已展示
+//                int isVisibel = ll_game_type.getVisibility();
+//                if (isVisibel == 0) {
+//                    ll_game_type.setVisibility(View.GONE);
+//                    tv_game_all_classify.setTextColor(Color.rgb(36, 41, 51));
+//                    //设置箭头
+//                    Drawable drawable = getResources().getDrawable(R.mipmap.screen);
+//                    drawable.setBounds(0, 0, drawable.getMinimumWidth(), drawable.getMinimumHeight());
+//                    tv_game_all_classify.setCompoundDrawables(null, null, drawable, null);
+//                } else {
+//                    ll_game_type.setVisibility(View.VISIBLE);
+//                    tv_game_all_classify.setTextColor(Color.rgb(10, 217, 178));
+//                    //设置箭头
+//                    Drawable drawable = getResources().getDrawable(R.mipmap.screen_pre);
+//                    drawable.setBounds(0, 0, drawable.getMinimumWidth(), drawable.getMinimumHeight());
+//                    tv_game_all_classify.setCompoundDrawables(null, null, drawable, null);
+//                }
                 break;
             case R.id.tv_game_top:
                 ll_game_type.setVisibility(View.GONE);
-                //判断控件是否已展示
-                int isVisibel1 = ll_game_Ranking.getVisibility();
-                if (isVisibel1 == 0) {
-                    ll_game_Ranking.setVisibility(View.GONE);
-                    tv_game_top.setTextColor(Color.rgb(36, 41, 51));
-                    //设置箭头
-                    Drawable drawable = getResources().getDrawable(R.mipmap.screen);
-                    drawable.setBounds(0, 0, drawable.getMinimumWidth(), drawable.getMinimumHeight());
-                    tv_game_top.setCompoundDrawables(null, null, drawable, null);
-                } else {
-                    ll_game_Ranking.setVisibility(View.VISIBLE);
-                    tv_game_top.setTextColor(Color.rgb(10, 217, 178));
-                    //设置箭头
-                    Drawable drawable = getResources().getDrawable(R.mipmap.screen_pre);
-                    drawable.setBounds(0, 0, drawable.getMinimumWidth(), drawable.getMinimumHeight());
-                    tv_game_top.setCompoundDrawables(null, null, drawable, null);
-                }
+                AppUtils.showTips(getActivity(), R.mipmap.tips_warning, "功能待实现");
+//                //判断控件是否已展示
+//                int isVisibel1 = ll_game_Ranking.getVisibility();
+//                if (isVisibel1 == 0) {
+//                    ll_game_Ranking.setVisibility(View.GONE);
+//                    tv_game_top.setTextColor(Color.rgb(36, 41, 51));
+//                    //设置箭头
+//                    Drawable drawable = getResources().getDrawable(R.mipmap.screen);
+//                    drawable.setBounds(0, 0, drawable.getMinimumWidth(), drawable.getMinimumHeight());
+//                    tv_game_top.setCompoundDrawables(null, null, drawable, null);
+//                } else {
+//                    ll_game_Ranking.setVisibility(View.VISIBLE);
+//                    tv_game_top.setTextColor(Color.rgb(10, 217, 178));
+//                    //设置箭头
+//                    Drawable drawable = getResources().getDrawable(R.mipmap.screen_pre);
+//                    drawable.setBounds(0, 0, drawable.getMinimumWidth(), drawable.getMinimumHeight());
+//                    tv_game_top.setCompoundDrawables(null, null, drawable, null);
+//                }
+                break;
+            case R.id.rl_game_download:
+                startActivity(new Intent(getActivity(), GameDownLoadActivity.class));
                 break;
             default:
                 break;
@@ -249,7 +265,7 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
         xListView.setAdapter(madapter);
         xListView.setPullRefreshEnable(true); // 设置可以下拉刷新和上拉加载
         //如果数据太少则关闭上拉加载
-        if (gameList.size() <= 4) {
+        if (gameList.size() <= 20) {
             xListView.setPullLoadEnable(false);
         }
         xListView.setXListViewListener(this); // 设置监听事件
@@ -259,6 +275,7 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
                 // TODO 点击跳转到游戏明细页面
+                startActivity(new Intent(getActivity(), GameDetailActivity.class));
             }
         });
     }
@@ -285,7 +302,35 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
      */
     private void getDate() {
         showLoading();
-        requestData(HttpMethod.GET, MyHttpUtils.PLAY_GAME_LIST, null,
+        requestData(HttpMethod.GET, MyHttpUtils.ALL_TYPE, null,
+                new RequestCallBack<String>() {
+                    @Override
+                    public void onFailure(HttpException arg0,
+                                          String responseInfo) {
+                        Toast.makeText(context, "网络出错，请检查网络",
+                                Toast.LENGTH_SHORT).show();
+                    }
+
+                    @Override
+                    public void onSuccess(ResponseInfo<String> responseInfo) {
+                        // 获取成功返回的json串
+                        String result = responseInfo.result;
+                        // 本地化存储
+                        SharedPreferencesUitl.saveStringData(getActivity(),
+                                MyHttpUtils.BASE_URL, result);
+                        // 解析数据
+                        processData(result, true);
+                        dismissLoading();//关闭loading界面
+                    }
+                });
+    }
+
+    /**
+     * xUtil获取网络数据
+     */
+    private void getTopDate() {
+        showLoading();
+        requestData(HttpMethod.GET, MyHttpUtils.Top, null,
                 new RequestCallBack<String>() {
                     @Override
                     public void onFailure(HttpException arg0,
@@ -340,7 +385,7 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
 
                     @Override
                     public void onFailure(HttpException arg0, String arg1) {
-                        Toast.makeText(context, "下载失败，请检查网络",
+                        Toast.makeText(context, "加载失败，请检查网络",
                                 Toast.LENGTH_SHORT).show();
                     }
 
@@ -412,7 +457,7 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
     public class MyAdapter extends BaseAdapter {
         private LayoutInflater mInflater = null;
 
-        private MyAdapter(PlayGameFragment fragmentPage2) {
+        private MyAdapter(PlayGameFragment playGameFragment) {
             this.mInflater = LayoutInflater.from(getActivity());
         }
 
@@ -448,7 +493,8 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
                         .findViewById(R.id.game_name);
                 holder.tv_game_desc = (TextView) convertView
                         .findViewById(R.id.tv_game_desc);
-
+                holder.iv_play_game = (ImageView) convertView
+                        .findViewById(R.id.iv_play_game);
                 // 将设置好的布局保存到缓存中，并将其设置在Tag里，以便后面方便取出Tag
                 convertView.setTag(holder);
             } else {
@@ -460,42 +506,41 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
                 info.games.get(position);
 
                 holder.game_name.setText(info.games.get(position).game_name);
-                holder.tv_game_desc.setText(info.games.get(position).game_desc);
+                holder.tv_game_desc.setText(info.games.get(position).game_name);
 
                 bitmapUtils.display(holder.game_image, MyHttpUtils.PHOTOS_URL
                         + info.games.get(position).getGame_image_url());
-
             }
             // 下载游戏
-//            holder.download.setOnClickListener(new OnClickListener() {
-//                @Override
-//                public void onClick(View v) {
-//
-//                    try {
-//                        String gameName = AppUtils.getSDPath() + "/gameMei/"
-//                                + info.games.get(position).game_name + ".zip";
-//                        File file = new File(gameName);
-//                        Log.i("hfcui----file", file.toString());
-//                        if (!file.exists()) {
-//                            DownLoadFiles(
-//                                    MyHttpUtils.DOWNLOAD_URL
-//                                            + info.games.get(position).game_download_url,
-//                                    gameName);
-//                        } else {
-//                            Toast.makeText(context, "正在加载游戏",
-//                                    Toast.LENGTH_SHORT).show();
-//                            if (GMSdk.share().initRuntime()
-//                                    && GMSdk.share().installGameZip(
-//                                    info.games.get(position).game_name,
-//                                    gameName)) {
-//                                GMSdk.share().runGame(
-//                                        info.games.get(position).game_name);
-//                            }
-//                        }
-//                    } catch (Exception e) {
-//                    }
-//                }
-//            });
+            holder.iv_play_game.setOnClickListener(new OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    try {
+                        String gameName = AppUtils.getSDPath() + "/gameMei/"
+                                + info.games.get(position).game_name + ".zip";
+                        File file = new File(gameName);
+                        Log.i("hfcui----file", file.toString());
+                        //如果游戏zip不存在下载游戏，如果存在的话打开游戏
+                        if (!file.exists()) {
+                            DownLoadFiles(
+                                    MyHttpUtils.DOWNLOAD_URL
+                                            + info.games.get(position).game_download_url,
+                                    gameName);
+                        } else {
+                            Toast.makeText(context, "正在加载游戏",
+                                    Toast.LENGTH_SHORT).show();
+                            if (GMSdk.share().initRuntime()
+                                    && GMSdk.share().installGameZip(
+                                    info.games.get(position).game_name,
+                                    gameName)) {
+                                GMSdk.share().runGame(
+                                        info.games.get(position).game_name);
+                            }
+                        }
+                    } catch (Exception e) {
+                    }
+                }
+            });
             return convertView;
         }
     }
@@ -506,6 +551,7 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
         public TextView game_name;
         public TextView tv_game_desc;
         public TextView game_author;
+        public ImageView iv_play_game;
     }
 
     @Override

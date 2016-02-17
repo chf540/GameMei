@@ -20,6 +20,10 @@ public class MyHttpUtils {
 
     public final static String DOWNLOAD_URL = "http://gamemei.com/";
 
+    public final static String ALL_TYPE = "http://www.gamemei.com/mobile/json/game_all_type.json";
+
+    public final static String Top = "http://www.gamemei.com/mobile/json/game_top.json";
+
     /**
      * 静态类保存Cookies
      * Created by hfcui on 2015/12/29.
