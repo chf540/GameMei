@@ -80,7 +80,7 @@ public abstract class BaseActivity extends FragmentActivity {
      */
     private void checkNet() {
         if (!AppUtils.isNetworkConnected(this)) {
-            AppUtils.showTips(this, R.drawable.tips_error, "网络未连接，请先连接网络...");
+            AppUtils.showTips(this, R.mipmap.tips_error, "网络未连接，请先连接网络...");
         }
     }
 

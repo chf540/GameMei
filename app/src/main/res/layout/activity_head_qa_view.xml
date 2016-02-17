@@ -229,12 +229,12 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_marginEnd="57dp"
-            android:layout_marginRight="57dp"
-            android:layout_toLeftOf="@+id/button3"
-            android:layout_toStartOf="@+id/button3"
-            android:src="@mipmap/test111" />
+            android:layout_above="@+id/tv_best_answer_content"
+            android:layout_marginLeft="34dp"
+            android:layout_marginStart="34dp"
+            android:layout_toEndOf="@+id/tv_best_answer_user_name"
+            android:layout_toRightOf="@+id/tv_best_answer_user_name"
+            android:src="@mipmap/correct" />
 
         <Button
             android:id="@+id/button3"

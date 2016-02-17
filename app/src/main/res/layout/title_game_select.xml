@@ -3,8 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="46dp"
     android:background="#242933"
-    android:orientation="horizontal"
-    android:splitMotionEvents="false">
+    android:orientation="horizontal">
 
     <View
         android:layout_width="0dp"
@@ -36,6 +35,7 @@
         android:textSize="16sp" />
 
     <RelativeLayout
+        android:id="@+id/rl_game_download"
         android:layout_width="0dp"
         android:layout_height="46dp"
         android:layout_weight="1">
@@ -46,7 +46,6 @@
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:layout_marginRight="20dp"
-            android:src="@mipmap/menu_btn" />
+            android:src="@mipmap/download" />
     </RelativeLayout>
-
 </LinearLayout>

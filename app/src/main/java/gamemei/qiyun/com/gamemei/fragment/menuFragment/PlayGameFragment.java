@@ -6,6 +6,7 @@ import java.util.List;
 
 import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -22,6 +23,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RatingBar;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -36,6 +38,9 @@ import com.lidroid.xutils.http.client.HttpRequest.HttpMethod;
 import com.qiyun.sdk.GMSdk;
 
 import gamemei.qiyun.com.gamemei.R;
+import gamemei.qiyun.com.gamemei.activity.GameDetailActivity;
+import gamemei.qiyun.com.gamemei.activity.GameDownLoadActivity;
+import gamemei.qiyun.com.gamemei.activity.LoginActivity;
 import gamemei.qiyun.com.gamemei.bean.PlayGameInfoBean;
 import gamemei.qiyun.com.gamemei.fragment.common.BaseFragment;
 import gamemei.qiyun.com.gamemei.utils.AppUtils;
@@ -55,6 +60,7 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
      * 日志标记
      */
     private String TAG = "PlayGameFragment";
+
     private View view;
     /**
      * 下拉刷新的ListView
@@ -85,6 +91,10 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
      */
     private TextView tv_game_top;
     /**
+     * 下载按钮
+     */
+    private RelativeLayout rl_game_download;
+    /**
      * 全部分类View
      */
     private LinearLayout ll_game_Ranking;
@@ -92,11 +102,6 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
      * 排行榜View
      */
     private LinearLayout ll_game_type;
-    /**
-     * 游戏筛选，游戏类型的GRIDVIEW
-     */
-    private DragGrid game_search_type;
-
 
     private MyAdapter madapter;
     private HttpHandler handler;
@@ -133,11 +138,13 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
         game_choiceness = (TextView) view.findViewById(R.id.game_choiceness);
         ll_game_type = (LinearLayout) view.findViewById(R.id.ll_game_type);
         ll_game_Ranking = (LinearLayout) view.findViewById(R.id.ll_game_Ranking);
+        rl_game_download = (RelativeLayout) view.findViewById(R.id.rl_game_download);
 
         tv_game_all_classify.setOnClickListener(this);
         tv_game_top.setOnClickListener(this);
         game_on_line.setOnClickListener(this);
         game_choiceness.setOnClickListener(this);
+        rl_game_download.setOnClickListener(this);
         initFilter();
 
         return null;
@@ -231,6 +238,9 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
                     tv_game_top.setCompoundDrawables(null, null, drawable, null);
                 }
                 break;
+            case R.id.rl_game_download:
+                startActivity(new Intent(getActivity(), GameDownLoadActivity.class));
+                break;
             default:
                 break;
         }
@@ -254,6 +264,7 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
                 // TODO 点击跳转到游戏明细页面
+                startActivity(new Intent(getActivity(), GameDetailActivity.class));
             }
         });
     }
@@ -335,7 +346,7 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
 
                     @Override
                     public void onFailure(HttpException arg0, String arg1) {
-                        Toast.makeText(context, "下载失败，请检查网络",
+                        Toast.makeText(context, "加载失败，请检查网络",
                                 Toast.LENGTH_SHORT).show();
                     }
 
@@ -443,7 +454,8 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
                         .findViewById(R.id.game_name);
                 holder.tv_game_desc = (TextView) convertView
                         .findViewById(R.id.tv_game_desc);
-
+                holder.iv_play_game = (ImageView) convertView
+                        .findViewById(R.id.iv_play_game);
                 // 将设置好的布局保存到缓存中，并将其设置在Tag里，以便后面方便取出Tag
                 convertView.setTag(holder);
             } else {
@@ -459,38 +471,37 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
 
                 bitmapUtils.display(holder.game_image, MyHttpUtils.PHOTOS_URL
                         + info.games.get(position).getGame_image_url());
-
             }
             // 下载游戏
-//            holder.download.setOnClickListener(new OnClickListener() {
-//                @Override
-//                public void onClick(View v) {
-//
-//                    try {
-//                        String gameName = AppUtils.getSDPath() + "/gameMei/"
-//                                + info.games.get(position).game_name + ".zip";
-//                        File file = new File(gameName);
-//                        Log.i("hfcui----file", file.toString());
-//                        if (!file.exists()) {
-//                            DownLoadFiles(
-//                                    MyHttpUtils.DOWNLOAD_URL
-//                                            + info.games.get(position).game_download_url,
-//                                    gameName);
-//                        } else {
-//                            Toast.makeText(context, "正在加载游戏",
-//                                    Toast.LENGTH_SHORT).show();
-//                            if (GMSdk.share().initRuntime()
-//                                    && GMSdk.share().installGameZip(
-//                                    info.games.get(position).game_name,
-//                                    gameName)) {
-//                                GMSdk.share().runGame(
-//                                        info.games.get(position).game_name);
-//                            }
-//                        }
-//                    } catch (Exception e) {
-//                    }
-//                }
-//            });
+            holder.iv_play_game.setOnClickListener(new OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    try {
+                        String gameName = AppUtils.getSDPath() + "/gameMei/"
+                                + info.games.get(position).game_name + ".zip";
+                        File file = new File(gameName);
+                        Log.i("hfcui----file", file.toString());
+                        //如果游戏zip不存在下载游戏，如果存在的话打开游戏
+                        if (!file.exists()) {
+                            DownLoadFiles(
+                                    MyHttpUtils.DOWNLOAD_URL
+                                            + info.games.get(position).game_download_url,
+                                    gameName);
+                        } else {
+                            Toast.makeText(context, "正在加载游戏",
+                                    Toast.LENGTH_SHORT).show();
+                            if (GMSdk.share().initRuntime()
+                                    && GMSdk.share().installGameZip(
+                                    info.games.get(position).game_name,
+                                    gameName)) {
+                                GMSdk.share().runGame(
+                                        info.games.get(position).game_name);
+                            }
+                        }
+                    } catch (Exception e) {
+                    }
+                }
+            });
             return convertView;
         }
     }
@@ -501,6 +512,7 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
         public TextView game_name;
         public TextView tv_game_desc;
         public TextView game_author;
+        public ImageView iv_play_game;
     }
 
     @Override

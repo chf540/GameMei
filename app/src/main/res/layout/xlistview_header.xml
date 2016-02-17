@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_toLeftOf="@id/xlistview_header_hint_textview"
-            android:src="@drawable/pulltorefresh_arrow" />
+            android:src="@mipmap/pulltorefresh_arrow" />
 
         <ProgressBar
             android:id="@+id/xlistview_header_progressbar"

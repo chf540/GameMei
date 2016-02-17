@@ -34,7 +34,7 @@ import gamemei.qiyun.com.gamemei.utils.AppUtils;
 import gamemei.qiyun.com.gamemei.widget.xlistview.XListView;
 
 /**
- * 经验详情界面
+ * 问答详情界面
  * Created by hfcui on 2016/1/28.
  */
 public class QADetailActivity extends BaseActivity implements View.OnClickListener {
