@@ -214,7 +214,6 @@ public class QADetailActivity extends BaseActivity implements View.OnClickListen
         });
     }
 
-
     /**
      * 设置XListView
      */
@@ -229,7 +228,7 @@ public class QADetailActivity extends BaseActivity implements View.OnClickListen
             @Override
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
-                Toast.makeText(getApplicationContext(), "hh", Toast.LENGTH_SHORT).show();
+                //TODO
             }
         });
     }

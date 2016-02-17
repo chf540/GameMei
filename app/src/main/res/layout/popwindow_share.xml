@@ -11,7 +11,8 @@
         android:layout_width="70dp"
         android:layout_height="wrap_content"
         android:background="@null"
-        android:text="分享" />
+        android:text="分享"
+        android:textSize="12sp" />
 
     <!--分割线-->
     <View
@@ -25,6 +26,7 @@
         android:layout_width="70dp"
         android:layout_height="wrap_content"
         android:background="@null"
-        android:text="收藏" />
+        android:text="收藏"
+        android:textSize="12sp" />
 
 </LinearLayout>
