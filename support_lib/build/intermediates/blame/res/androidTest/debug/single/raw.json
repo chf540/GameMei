@@ -10,9 +10,5 @@
     {
         "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\shake_sound.mp3",
         "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\raw\\shake_sound.mp3"
-    },
-    {
-        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\shake_sound.mp3",
-        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\raw\\shake_sound.mp3"
     }
 ]

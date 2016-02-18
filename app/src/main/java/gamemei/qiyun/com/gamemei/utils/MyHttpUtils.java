@@ -13,23 +13,17 @@ public class MyHttpUtils {
 
     //网络连接地址
     public final static String BASE_URL = "http://gamemei.com/qiyun/";
-
     public final static String PLAY_GAME_LIST = BASE_URL + "games/latest.js";
-
     public final static String PHOTOS_URL = "http://gamemei.com/";
-
     public final static String DOWNLOAD_URL = "http://gamemei.com/";
-
-    public final static String ALL_TYPE = "http://www.gamemei.com/mobile/json/game_all_type.json";
-
-    public final static String Top = "http://www.gamemei.com/mobile/json/game_top.json";
+    public final static String ALL_GAME_TYPE = "http://www.gamemei.com/mobile/json/game_all_type.json";
+    public final static String GAME_Top = "http://www.gamemei.com/mobile/json/game_top.json";
 
     /**
      * 静态类保存Cookies
      * Created by hfcui on 2015/12/29.
      */
     public static CookieStore cookieStore = null;
-
 
     /**
      * 请求网络数据

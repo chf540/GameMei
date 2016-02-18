@@ -8,10 +8,6 @@
         "source": "C:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\layout-h500dp-normal-v13\\umeng_socialize_ucenter.xml"
     },
     {
-        "merged": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-h500dp-normal-v13\\umeng_socialize_ucenter.xml",
-        "source": "E:\\StudioSpace\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\layout-h500dp-normal-v13\\umeng_socialize_ucenter.xml"
-    },
-    {
         "merged": "E:\\GameMei\\support_lib\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-h500dp-normal-v13\\umeng_socialize_ucenter.xml",
         "source": "E:\\GameMei\\support_lib\\build\\intermediates\\bundles\\debug\\res\\layout-h500dp-normal-v13\\umeng_socialize_ucenter.xml"
     }

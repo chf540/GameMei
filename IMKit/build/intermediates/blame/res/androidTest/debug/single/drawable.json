@@ -4,32 +4,16 @@
         "source": "C:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_refuse_selector.xml"
     },
     {
-        "merged": "E:\\StudioSpace\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_input.xml",
-        "source": "E:\\StudioSpace\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_input.xml"
-    },
-    {
-        "merged": "E:\\StudioSpace\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_finish_selector.xml",
-        "source": "E:\\StudioSpace\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_finish_selector.xml"
+        "merged": "H:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_keyboard.xml",
+        "source": "H:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_keyboard.xml"
     },
     {
         "merged": "H:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_bg_editinput.xml",
         "source": "H:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_bg_editinput.xml"
     },
     {
-        "merged": "H:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_keyboard.xml",
-        "source": "H:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_keyboard.xml"
-    },
-    {
         "merged": "C:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_smiley.xml",
         "source": "C:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_smiley.xml"
-    },
-    {
-        "merged": "E:\\StudioSpace\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_sound_off_selector.xml",
-        "source": "E:\\StudioSpace\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_sound_off_selector.xml"
-    },
-    {
-        "merged": "E:\\StudioSpace\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_over_selector.xml",
-        "source": "E:\\StudioSpace\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_over_selector.xml"
     },
     {
         "merged": "C:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_answer_selector.xml",
@@ -52,20 +36,16 @@
         "source": "E:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_preview_checkbox.xml"
     },
     {
-        "merged": "E:\\StudioSpace\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_public_service_unfollow_selector.xml",
-        "source": "E:\\StudioSpace\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_public_service_unfollow_selector.xml"
-    },
-    {
         "merged": "H:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_bg_item.xml",
         "source": "H:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_bg_item.xml"
     },
     {
-        "merged": "C:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_public_service_unfollow_selector.xml",
-        "source": "C:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_public_service_unfollow_selector.xml"
-    },
-    {
         "merged": "H:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_extend.xml",
         "source": "H:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_extend.xml"
+    },
+    {
+        "merged": "C:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_public_service_unfollow_selector.xml",
+        "source": "C:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_public_service_unfollow_selector.xml"
     },
     {
         "merged": "C:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_bg_menu.xml",
@@ -80,16 +60,12 @@
         "source": "E:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_bg_editinput.xml"
     },
     {
-        "merged": "C:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_photo_checkbox.xml",
-        "source": "C:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_photo_checkbox.xml"
-    },
-    {
         "merged": "H:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_public_service_unfollow_selector.xml",
         "source": "H:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_public_service_unfollow_selector.xml"
     },
     {
-        "merged": "E:\\StudioSpace\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_hands_free_selector.xml",
-        "source": "E:\\StudioSpace\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_hands_free_selector.xml"
+        "merged": "C:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_photo_checkbox.xml",
+        "source": "C:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_photo_checkbox.xml"
     },
     {
         "merged": "E:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_hands_free_selector.xml",
@@ -104,20 +80,12 @@
         "source": "E:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_sound_off_selector.xml"
     },
     {
-        "merged": "H:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_voice.xml",
-        "source": "H:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_voice.xml"
-    },
-    {
         "merged": "E:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_answer_selector.xml",
         "source": "E:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_answer_selector.xml"
     },
     {
-        "merged": "E:\\StudioSpace\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_preview_checkbox.xml",
-        "source": "E:\\StudioSpace\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_preview_checkbox.xml"
-    },
-    {
-        "merged": "E:\\StudioSpace\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_bg_editinput.xml",
-        "source": "E:\\StudioSpace\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_bg_editinput.xml"
+        "merged": "H:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_voice.xml",
+        "source": "H:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_voice.xml"
     },
     {
         "merged": "C:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_over_selector.xml",
@@ -128,20 +96,12 @@
         "source": "C:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_an_voice_receive.xml"
     },
     {
-        "merged": "E:\\StudioSpace\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_keyboard.xml",
-        "source": "E:\\StudioSpace\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_keyboard.xml"
-    },
-    {
         "merged": "C:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_finish_selector.xml",
         "source": "C:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_finish_selector.xml"
     },
     {
         "merged": "E:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_send.xml",
         "source": "E:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_send.xml"
-    },
-    {
-        "merged": "E:\\StudioSpace\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_photo_checkbox.xml",
-        "source": "E:\\StudioSpace\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_photo_checkbox.xml"
     },
     {
         "merged": "C:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_bg_item.xml",
@@ -156,10 +116,6 @@
         "source": "H:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_an_voice_receive.xml"
     },
     {
-        "merged": "E:\\StudioSpace\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_smiley.xml",
-        "source": "E:\\StudioSpace\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_smiley.xml"
-    },
-    {
         "merged": "H:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_sound_off_selector.xml",
         "source": "H:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_sound_off_selector.xml"
     },
@@ -170,14 +126,6 @@
     {
         "merged": "E:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_bg_item.xml",
         "source": "E:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_bg_item.xml"
-    },
-    {
-        "merged": "E:\\StudioSpace\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_extend.xml",
-        "source": "E:\\StudioSpace\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_extend.xml"
-    },
-    {
-        "merged": "E:\\StudioSpace\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_switch_btn.xml",
-        "source": "E:\\StudioSpace\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_switch_btn.xml"
     },
     {
         "merged": "H:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_over_selector.xml",
@@ -196,40 +144,24 @@
         "source": "C:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_voice.xml"
     },
     {
-        "merged": "E:\\StudioSpace\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_bg_menu.xml",
-        "source": "E:\\StudioSpace\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_bg_menu.xml"
-    },
-    {
-        "merged": "E:\\StudioSpace\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_bg_item.xml",
-        "source": "E:\\StudioSpace\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_bg_item.xml"
-    },
-    {
         "merged": "H:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_voice.xml",
         "source": "H:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_voice.xml"
-    },
-    {
-        "merged": "E:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_photo_checkbox.xml",
-        "source": "E:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_photo_checkbox.xml"
     },
     {
         "merged": "E:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_finish_selector.xml",
         "source": "E:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_finish_selector.xml"
     },
     {
+        "merged": "E:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_photo_checkbox.xml",
+        "source": "E:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_photo_checkbox.xml"
+    },
+    {
         "merged": "H:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_input.xml",
         "source": "H:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_input.xml"
     },
     {
-        "merged": "E:\\StudioSpace\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_public_service_enter_selector.xml",
-        "source": "E:\\StudioSpace\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_public_service_enter_selector.xml"
-    },
-    {
         "merged": "E:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_extend.xml",
         "source": "E:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_extend.xml"
-    },
-    {
-        "merged": "E:\\StudioSpace\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_send.xml",
-        "source": "E:\\StudioSpace\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_send.xml"
     },
     {
         "merged": "H:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_item_list_selector.xml",
@@ -240,28 +172,24 @@
         "source": "H:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_photo_checkbox.xml"
     },
     {
-        "merged": "C:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_preview_checkbox.xml",
-        "source": "C:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_preview_checkbox.xml"
+        "merged": "C:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_input.xml",
+        "source": "C:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_input.xml"
     },
     {
         "merged": "E:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_voice.xml",
         "source": "E:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_voice.xml"
     },
     {
-        "merged": "C:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_input.xml",
-        "source": "C:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_input.xml"
-    },
-    {
-        "merged": "E:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_over_selector.xml",
-        "source": "E:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_over_selector.xml"
+        "merged": "C:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_preview_checkbox.xml",
+        "source": "C:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_preview_checkbox.xml"
     },
     {
         "merged": "E:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_public_service_enter_selector.xml",
         "source": "E:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_public_service_enter_selector.xml"
     },
     {
-        "merged": "E:\\StudioSpace\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_item_top_list_selector.xml",
-        "source": "E:\\StudioSpace\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_item_top_list_selector.xml"
+        "merged": "E:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_over_selector.xml",
+        "source": "E:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_over_selector.xml"
     },
     {
         "merged": "E:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_smiley.xml",
@@ -270,10 +198,6 @@
     {
         "merged": "H:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ed_public_service_search_selector.xml",
         "source": "H:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ed_public_service_search_selector.xml"
-    },
-    {
-        "merged": "E:\\StudioSpace\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ed_public_service_search_selector.xml",
-        "source": "E:\\StudioSpace\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ed_public_service_search_selector.xml"
     },
     {
         "merged": "C:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_bg_editinput.xml",
@@ -288,28 +212,16 @@
         "source": "H:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_preview_checkbox.xml"
     },
     {
-        "merged": "E:\\StudioSpace\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_answer_selector.xml",
-        "source": "E:\\StudioSpace\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_answer_selector.xml"
-    },
-    {
-        "merged": "E:\\StudioSpace\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_an_voice_sent.xml",
-        "source": "E:\\StudioSpace\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_an_voice_sent.xml"
+        "merged": "C:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_hands_free_selector.xml",
+        "source": "C:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_hands_free_selector.xml"
     },
     {
         "merged": "H:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_switch_btn.xml",
         "source": "H:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_switch_btn.xml"
     },
     {
-        "merged": "C:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_hands_free_selector.xml",
-        "source": "C:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_hands_free_selector.xml"
-    },
-    {
         "merged": "C:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ed_public_service_search_selector.xml",
         "source": "C:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ed_public_service_search_selector.xml"
-    },
-    {
-        "merged": "E:\\StudioSpace\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_voice.xml",
-        "source": "E:\\StudioSpace\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_voice.xml"
     },
     {
         "merged": "C:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_switch_btn.xml",
@@ -320,10 +232,6 @@
         "source": "H:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_hands_free_selector.xml"
     },
     {
-        "merged": "E:\\StudioSpace\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_item_list_selector.xml",
-        "source": "E:\\StudioSpace\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_item_list_selector.xml"
-    },
-    {
         "merged": "H:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_finish_selector.xml",
         "source": "H:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_finish_selector.xml"
     },
@@ -332,44 +240,12 @@
         "source": "E:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_voice.xml"
     },
     {
-        "merged": "E:\\StudioSpace\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_voice.xml",
-        "source": "E:\\StudioSpace\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_voice.xml"
-    },
-    {
-        "merged": "C:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_extend.xml",
-        "source": "C:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_extend.xml"
-    },
-    {
-        "merged": "E:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_switch_btn.xml",
-        "source": "E:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_switch_btn.xml"
-    },
-    {
-        "merged": "E:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_item_list_selector.xml",
-        "source": "E:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_item_list_selector.xml"
-    },
-    {
-        "merged": "C:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_voice.xml",
-        "source": "C:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_voice.xml"
-    },
-    {
-        "merged": "H:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_public_service_enter_selector.xml",
-        "source": "H:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_public_service_enter_selector.xml"
-    },
-    {
-        "merged": "C:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_public_service_enter_selector.xml",
-        "source": "C:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_public_service_enter_selector.xml"
-    },
-    {
         "merged": "H:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_an_voice_sent.xml",
         "source": "H:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_an_voice_sent.xml"
     },
     {
         "merged": "C:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_an_voice_sent.xml",
         "source": "C:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_an_voice_sent.xml"
-    },
-    {
-        "merged": "E:\\StudioSpace\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_an_voice_receive.xml",
-        "source": "E:\\StudioSpace\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_an_voice_receive.xml"
     },
     {
         "merged": "E:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_public_service_unfollow_selector.xml",
@@ -384,20 +260,40 @@
         "source": "H:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_item_top_list_selector.xml"
     },
     {
+        "merged": "E:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_bg_menu.xml",
+        "source": "E:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_bg_menu.xml"
+    },
+    {
         "merged": "E:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_refuse_selector.xml",
         "source": "E:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_refuse_selector.xml"
     },
     {
-        "merged": "E:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_bg_menu.xml",
-        "source": "E:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_bg_menu.xml"
+        "merged": "C:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_ic_extend.xml",
+        "source": "C:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ic_extend.xml"
+    },
+    {
+        "merged": "E:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_item_list_selector.xml",
+        "source": "E:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_item_list_selector.xml"
+    },
+    {
+        "merged": "E:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_switch_btn.xml",
+        "source": "E:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_switch_btn.xml"
     },
     {
         "merged": "H:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_answer_selector.xml",
         "source": "H:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_answer_selector.xml"
     },
     {
+        "merged": "C:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_voice.xml",
+        "source": "C:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_voice.xml"
+    },
+    {
         "merged": "H:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_bg_menu.xml",
         "source": "H:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_bg_menu.xml"
+    },
+    {
+        "merged": "H:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_public_service_enter_selector.xml",
+        "source": "H:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_public_service_enter_selector.xml"
     },
     {
         "merged": "H:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_refuse_selector.xml",
@@ -408,8 +304,8 @@
         "source": "E:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_ed_public_service_search_selector.xml"
     },
     {
-        "merged": "E:\\StudioSpace\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_refuse_selector.xml",
-        "source": "E:\\StudioSpace\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_refuse_selector.xml"
+        "merged": "C:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_public_service_enter_selector.xml",
+        "source": "C:\\GameMei\\IMKit\\build\\intermediates\\bundles\\debug\\res\\drawable\\rc_btn_public_service_enter_selector.xml"
     },
     {
         "merged": "E:\\GameMei\\IMKit\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable\\rc_btn_input.xml",
