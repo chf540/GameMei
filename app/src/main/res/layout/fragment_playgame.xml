@@ -39,6 +39,7 @@
             android:visibility="gone">
 
             <LinearLayout
+                android:id="@+id/ll_new_game"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
@@ -67,6 +68,7 @@
                 android:background="#dedede" />
 
             <LinearLayout
+                android:id="@+id/ll_good_game"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
@@ -95,6 +97,7 @@
                 android:background="#dedede" />
 
             <LinearLayout
+                android:id="@+id/ll_game_popular"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
@@ -138,15 +141,17 @@
                     android:layout_gravity="center"
                     android:text="网络"
                     android:textColor="#0ad9b2"
-                    android:textSize="14dp" />
+                    android:textSize="14sp" />
 
                 <TextView
+                    android:id="@+id/net_game_single"
                     style="@style/TextView_game_all_type"
                     android:layout_width="45dp"
                     android:layout_marginLeft="14dp"
                     android:text="单机" />
 
                 <TextView
+                    android:id="@+id/net_game_net"
                     style="@style/TextView_game_all_type"
                     android:layout_width="45dp"
                     android:layout_marginLeft="7dp"
@@ -172,7 +177,7 @@
                     android:layout_marginTop="5dp"
                     android:text="类型"
                     android:textColor="#0ad9b2"
-                    android:textSize="14dp" />
+                    android:textSize="14sp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -185,19 +190,23 @@
                         android:orientation="horizontal">
 
                         <TextView
+                            android:id="@+id/game_type_1"
                             style="@style/TextView_game_all_type"
                             android:layout_marginLeft="14dp"
                             android:text="角色扮演" />
 
                         <TextView
+                            android:id="@+id/game_type_2"
                             style="@style/TextView_game_all_type"
                             android:text="飞行射击" />
 
                         <TextView
+                            android:id="@+id/game_type_3"
                             style="@style/TextView_game_all_type"
                             android:text="战旗卡牌" />
 
                         <TextView
+                            android:id="@+id/game_type_4"
                             style="@style/TextView_game_all_type"
                             android:text="经营策略" />
 
@@ -210,19 +219,23 @@
                         android:orientation="horizontal">
 
                         <TextView
+                            android:id="@+id/game_type_5"
                             style="@style/TextView_game_all_type"
                             android:layout_marginLeft="14dp"
                             android:text="休闲益智" />
 
                         <TextView
+                            android:id="@+id/game_type_6"
                             style="@style/TextView_game_all_type"
                             android:text="体育竞速" />
 
                         <TextView
+                            android:id="@+id/game_type_7"
                             style="@style/TextView_game_all_type"
                             android:text="音乐舞蹈" />
 
                         <TextView
+                            android:id="@+id/game_type_8"
                             style="@style/TextView_game_all_type"
                             android:text="棋牌游戏" />
 
@@ -235,6 +248,7 @@
                         android:orientation="horizontal">
 
                         <TextView
+                            android:id="@+id/game_type_9"
                             style="@style/TextView_game_all_type"
                             android:layout_marginLeft="15dp"
                             android:text="儿童游戏" />
@@ -264,12 +278,14 @@
                     android:textSize="14dp" />
 
                 <TextView
+                    android:id="@+id/hot_game_single"
                     style="@style/TextView_game_all_type"
                     android:layout_width="45dp"
                     android:layout_marginLeft="15dp"
                     android:text="单机" />
 
                 <TextView
+                    android:id="@+id/hot_game_net"
                     style="@style/TextView_game_all_type"
                     android:layout_width="45dp"
                     android:text="网游" />

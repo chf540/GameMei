@@ -96,6 +96,17 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
     private HttpHandler handler;
     private Handler mHandler;
     private GameListViewAdapter gameListViewAdapter;
+    /**
+     * 游戏类型
+     */
+//    private TextView net_game_single, net_game_net, hot_game_single, hot_game_net, game_type_1,
+//            game_type_2, game_type_3, game_type_4, game_type_5,
+//            game_type_6, game_type_7, game_type_8, game_type_9;
+
+    /**
+     * 好评榜
+     */
+    private LinearLayout ll_new_game, ll_good_game, ll_game_popular;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -121,6 +132,25 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
         mHandler = new Handler();
         bitmapUtils = new BitmapUtils(getActivity());
 
+        final int[] gameTypeId = new int[]{R.id.net_game_single, R.id.net_game_net, R.id.hot_game_single,
+                R.id.hot_game_net, R.id.game_type_1, R.id.game_type_2, R.id.game_type_3, R.id.game_type_4,
+                R.id.game_type_5, R.id.game_type_6, R.id.game_type_7, R.id.game_type_8, R.id.game_type_9,};
+        for (int i = 0; i < gameTypeId.length; i++) {
+            TextView tv = (TextView) view.findViewById(gameTypeId[i]);
+            tv.setOnClickListener(new OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    switch (view.getId()) {
+
+                    }
+                }
+            });
+        }
+
+        ll_new_game = (LinearLayout) view.findViewById(R.id.ll_new_game);
+        ll_good_game = (LinearLayout) view.findViewById(R.id.ll_good_game);
+        ll_game_popular = (LinearLayout) view.findViewById(R.id.ll_game_popular);
+
         tv_game_all_classify = (TextView) view.findViewById(R.id.tv_game_all_classify);
         tv_game_top = (TextView) view.findViewById(R.id.tv_game_top);
         game_on_line = (TextView) view.findViewById(R.id.game_on_line);
@@ -134,6 +164,9 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
         game_on_line.setOnClickListener(this);
         game_choiceness.setOnClickListener(this);
         rl_game_download.setOnClickListener(this);
+        ll_new_game.setOnClickListener(this);
+        ll_good_game.setOnClickListener(this);
+        ll_game_popular.setOnClickListener(this);
         initFilter();
 
         return null;
@@ -172,6 +205,127 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
             default:
                 break;
         }
+    }
+
+
+    /**
+     * 设置XListView
+     */
+    public void SetXListView() {
+        xListView = (XListView) view.findViewById(R.id.game_listview);
+        xListView.setAdapter(gameListViewAdapter = new GameListViewAdapter(this.getActivity(), gameList));
+        xListView.setPullRefreshEnable(true); // 设置可以下拉刷新和上拉加载
+        //如果数据太少则关闭上拉加载
+        if (gameList.size() <= 20) {
+            xListView.setPullLoadEnable(false);
+        }
+        xListView.setXListViewListener(this); // 设置监听事件
+        // 设置条目可以被点击
+        xListView.setOnItemClickListener(new OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view,
+                                    int position, long id) {
+                // TODO 点击跳转到游戏明细页面
+                startActivity(new Intent(getActivity(), GameDetailActivity.class));
+            }
+        });
+    }
+
+    /**
+     * 获取网络数据填充UI
+     */
+    @Override
+    public void initData() {
+        dismissLoading();
+        // 首先获取服务器端的数据缓存正在本地，再去服务器端拿取最新的数据。
+        String result = SharedPreferencesUitl.getStringData(context,
+                MyHttpUtils.ALL_GAME_TYPE, "");
+        if (!TextUtils.isEmpty(result)) {
+            processData(result, true);// 解析数据
+        } else {
+            // 如何本地没有缓存的数据则从网络获取数据
+            getDate(MyHttpUtils.ALL_GAME_TYPE);
+        }
+    }
+
+    /**
+     * xUtil获取网络数据
+     */
+    public void getDate(String url) {
+        requestData(HttpMethod.GET, url, null,
+                new RequestCallBack<String>() {
+                    @Override
+                    public void onFailure(HttpException arg0,
+                                          String responseInfo) {
+                        Toast.makeText(context, "网络出错，请检查网络",
+                                Toast.LENGTH_SHORT).show();
+                    }
+
+                    @Override
+                    public void onSuccess(ResponseInfo<String> responseInfo) {
+                        // 获取成功返回的json串
+                        String result = responseInfo.result;
+                        // 本地化存储
+                        SharedPreferencesUitl.saveStringData(getActivity(),
+                                MyHttpUtils.BASE_URL, result);
+                        // 解析数据
+                        processData(result, true);
+                    }
+                });
+    }
+
+    /**
+     * 解析数据 ----GSON
+     */
+    private void processData(String result, boolean a) {
+        // 对照bean解析json
+        Gson gson = new Gson();
+        PlayGameInfoBean infoBean = gson.fromJson(result,
+                PlayGameInfoBean.class);
+        gameList.clear();
+        for (int i = 0; i < infoBean.games.size(); i++) {
+            gameList.add(i, infoBean);
+        }
+        gameListViewAdapter.notifyDataSetChanged();
+    }
+
+    /**
+     * 下拉刷新界面
+     */
+    @Override
+    public void onRefresh() {
+        mHandler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                // gameList.clear();
+                // getDate();
+                gameListViewAdapter.notifyDataSetChanged();
+                onLoad();
+            }
+        }, 2000);
+    }
+
+    /**
+     * 上拉加载更多
+     */
+    @Override
+    public void onLoadMore() {
+        mHandler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                gameListViewAdapter.notifyDataSetChanged();
+                onLoad();
+            }
+        }, 2000);
+    }
+
+    /**
+     * 加载
+     */
+    private void onLoad() {
+        xListView.stopRefresh();
+        xListView.stopLoadMore();
+        xListView.setRefreshTime("刚刚");
     }
 
     /**
@@ -241,133 +395,56 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
             case R.id.rl_game_download:
                 startActivity(new Intent(getActivity(), GameDownLoadActivity.class));
                 break;
+            case R.id.net_game_single:
+                Toast.makeText(context, "查询网络-单机", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.net_game_net:
+                Toast.makeText(context, "查询网络-网游", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.hot_game_single:
+                Toast.makeText(context, "查询热门游戏-单机", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.hot_game_net:
+                Toast.makeText(context, "查询热门游戏-网游", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.game_type_1:
+                Toast.makeText(context, "查询角色扮演", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.game_type_2:
+                Toast.makeText(context, "查询飞行射击", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.game_type_3:
+                Toast.makeText(context, "查询战旗卡牌", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.game_type_4:
+                Toast.makeText(context, "查询经营策略", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.game_type_5:
+                Toast.makeText(context, "查询休闲益智", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.game_type_6:
+                Toast.makeText(context, "查询体育竞速", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.game_type_7:
+                Toast.makeText(context, "查询音乐舞蹈", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.game_type_8:
+                Toast.makeText(context, "查询棋牌游戏", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.game_type_9:
+                Toast.makeText(context, "查询儿童游戏", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.ll_new_game:
+                Toast.makeText(context, "查询新游榜", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.ll_good_game:
+                Toast.makeText(context, "查询好评榜", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.ll_game_popular:
+                Toast.makeText(context, "查询人气榜", Toast.LENGTH_SHORT).show();
+                break;
             default:
                 break;
         }
-    }
-
-    /**
-     * 设置XListView
-     */
-    public void SetXListView() {
-        xListView = (XListView) view.findViewById(R.id.game_listview);
-        xListView.setAdapter(gameListViewAdapter = new GameListViewAdapter(this.getActivity(), gameList));
-        xListView.setPullRefreshEnable(true); // 设置可以下拉刷新和上拉加载
-        //如果数据太少则关闭上拉加载
-        if (gameList.size() <= 20) {
-            xListView.setPullLoadEnable(false);
-        }
-        xListView.setXListViewListener(this); // 设置监听事件
-        // 设置条目可以被点击
-        xListView.setOnItemClickListener(new OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view,
-                                    int position, long id) {
-                // TODO 点击跳转到游戏明细页面
-                startActivity(new Intent(getActivity(), GameDetailActivity.class));
-            }
-        });
-    }
-
-    /**
-     * 获取网络数据填充UI
-     */
-    @Override
-    public void initData() {
-        dismissLoading();
-        // 首先获取服务器端的数据缓存正在本地，再去服务器端拿取最新的数据。
-        String result = SharedPreferencesUitl.getStringData(context,
-                MyHttpUtils.ALL_GAME_TYPE, "");
-        if (!TextUtils.isEmpty(result)) {
-            processData(result, true);// 解析数据
-        } else {
-            // 如何本地没有缓存的数据则从网络获取数据
-            getDate(MyHttpUtils.ALL_GAME_TYPE);
-        }
-    }
-
-    /**
-     * xUtil获取网络数据
-     */
-    public void getDate(String url) {
-        requestData(HttpMethod.GET, url, null,
-                new RequestCallBack<String>() {
-                    @Override
-                    public void onFailure(HttpException arg0,
-                                          String responseInfo) {
-                        Toast.makeText(context, "网络出错，请检查网络",
-                                Toast.LENGTH_SHORT).show();
-                    }
-                    @Override
-                    public void onSuccess(ResponseInfo<String> responseInfo) {
-                        // 获取成功返回的json串
-                        String result = responseInfo.result;
-                        // 本地化存储
-                        SharedPreferencesUitl.saveStringData(getActivity(),
-                                MyHttpUtils.BASE_URL, result);
-                        // 解析数据
-                        processData(result, true);
-                    }
-                });
-    }
-
-    /**
-     * 解析数据 ----GSON
-     */
-    private void processData(String result, boolean a) {
-        // 对照bean解析json
-        Gson gson = new Gson();
-        PlayGameInfoBean infoBean = gson.fromJson(result,
-                PlayGameInfoBean.class);
-        gameList.clear();
-        for (int i = 0; i < infoBean.games.size(); i++) {
-            gameList.add(i, infoBean);
-        }
-        gameListViewAdapter.notifyDataSetChanged();
-    }
-
-    /**
-     * 下拉刷新界面
-     */
-    @Override
-    public void onRefresh() {
-        mHandler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                // gameList.clear();
-                // getDate();
-                gameListViewAdapter.notifyDataSetChanged();
-                onLoad();
-            }
-        }, 2000);
-    }
-
-    /**
-     * 上拉加载更多
-     */
-    @Override
-    public void onLoadMore() {
-        mHandler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                gameListViewAdapter.notifyDataSetChanged();
-                onLoad();
-            }
-        }, 2000);
-    }
-
-    /**
-     * 加载
-     */
-    private void onLoad() {
-        xListView.stopRefresh();
-        xListView.stopLoadMore();
-        xListView.setRefreshTime("刚刚");
-    }
-
-    @Override
-    public void onDestroyView() {
-        super.onDestroyView();
-        Log.i("hfcui", "PlayGameView------onDestroyView");
     }
 }

@@ -47,14 +47,13 @@ public class HomeFragment extends BaseFragment implements OnClickListener {
     private View view;
 
     /**
-     * 用户选择的新闻分类列表
+     * 用户选择的顶部分类列表
      */
     protected static ArrayList<String> userChannelList;
     /**
      * 当前选中的栏目
      */
     private int columnSelectIndex = 0;
-
 
     private PagerSlidingTabStrip pagerSlidingTabStrip;
 
@@ -176,22 +175,22 @@ public class HomeFragment extends BaseFragment implements OnClickListener {
      */
     public OnPageChangeListener pageListener = new OnPageChangeListener() {
 
-        @Override
-        public void onPageScrollStateChanged(int arg0) {
+                @Override
+                public void onPageScrollStateChanged(int arg0) {
 
-        }
+                }
 
-        @Override
-        public void onPageScrolled(int arg0, float arg1, int arg2) {
+                @Override
+                public void onPageScrolled(int arg0, float arg1, int arg2) {
 
-        }
+                }
 
-        @Override
-        public void onPageSelected(int position) {
-            mViewPager.setCurrentItem(position);
-            //selectTab(position);
-        }
-    };
+                @Override
+                public void onPageSelected(int position) {
+                    mViewPager.setCurrentItem(position);
+                    //selectTab(position);
+                }
+            };
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
