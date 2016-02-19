@@ -15,7 +15,6 @@ import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 
@@ -178,7 +177,7 @@ public class MissionDetailActivity extends BaseActivity implements View.OnClickL
     private void setShareCollect() {
         LayoutInflater inflater = LayoutInflater.from(this);
         // 引入窗口配置文件
-        View view = inflater.inflate(R.layout.popwindow_share, null);
+        View view = inflater.inflate(R.layout.pop_share, null);
         final PopupWindow pop = new PopupWindow(view, ViewGroup.LayoutParams.WRAP_CONTENT,
                 ViewGroup.LayoutParams.WRAP_CONTENT, false);
         // 需要设置一下此参数，点击外边可消失

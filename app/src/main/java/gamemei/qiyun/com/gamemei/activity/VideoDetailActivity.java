@@ -23,7 +23,6 @@ import com.umeng.socialize.controller.UMServiceFactory;
 import com.umeng.socialize.controller.UMSocialService;
 import com.umeng.socialize.media.UMImage;
 import com.umeng.socialize.sso.QZoneSsoHandler;
-import com.umeng.socialize.sso.SinaSsoHandler;
 import com.umeng.socialize.sso.UMQQSsoHandler;
 import com.umeng.socialize.sso.UMSsoHandler;
 import com.umeng.socialize.weixin.controller.UMWXHandler;
@@ -180,7 +179,7 @@ public class VideoDetailActivity extends BaseActivity implements View.OnClickLis
     private void setShareCollect() {
         LayoutInflater inflater = LayoutInflater.from(this);
         // 引入窗口配置文件
-        View view = inflater.inflate(R.layout.popwindow_share, null);
+        View view = inflater.inflate(R.layout.pop_share, null);
         final PopupWindow pop = new PopupWindow(view, ViewGroup.LayoutParams.WRAP_CONTENT,
                 ViewGroup.LayoutParams.WRAP_CONTENT, false);
         // 需要设置一下此参数，点击外边可消失

@@ -5,7 +5,6 @@ import android.graphics.Color;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.text.Editable;
-import android.text.Layout;
 import android.text.TextUtils;
 import android.text.TextWatcher;
 import android.view.LayoutInflater;
@@ -18,7 +17,6 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
-import android.widget.Toast;
 
 import com.lidroid.xutils.ViewUtils;
 import com.umeng.socialize.controller.UMServiceFactory;
@@ -177,7 +175,7 @@ public class ExperienceDetailActivity extends BaseActivity implements View.OnCli
     private void setShareCollect() {
         LayoutInflater inflater = LayoutInflater.from(this);
         // 引入窗口配置文件
-        View view = inflater.inflate(R.layout.popwindow_share, null);
+        View view = inflater.inflate(R.layout.pop_share, null);
         final PopupWindow pop = new PopupWindow(view, ViewGroup.LayoutParams.WRAP_CONTENT,
                 ViewGroup.LayoutParams.WRAP_CONTENT, false);
         // 需要设置一下此参数，点击外边可消失

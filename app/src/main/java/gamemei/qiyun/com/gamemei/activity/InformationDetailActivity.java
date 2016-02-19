@@ -1,6 +1,5 @@
 package gamemei.qiyun.com.gamemei.activity;
 
-import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.BitmapDrawable;
@@ -11,19 +10,15 @@ import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.WindowManager;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 
-import com.lidroid.xutils.ViewUtils;
 import com.umeng.socialize.controller.UMServiceFactory;
 import com.umeng.socialize.controller.UMSocialService;
 import com.umeng.socialize.media.UMImage;
@@ -35,7 +30,6 @@ import com.umeng.socialize.weixin.controller.UMWXHandler;
 import gamemei.qiyun.com.gamemei.R;
 import gamemei.qiyun.com.gamemei.activity.common.BaseActivity;
 import gamemei.qiyun.com.gamemei.utils.AppUtils;
-import gamemei.qiyun.com.gamemei.widget.xlistview.XListView;
 
 /**
  * 经验详情界面
@@ -190,7 +184,7 @@ public class InformationDetailActivity extends BaseActivity implements View.OnCl
     private void setShareCollect() {
         LayoutInflater inflater = LayoutInflater.from(this);
         // 引入窗口配置文件
-        View view = inflater.inflate(R.layout.popwindow_share, null);
+        View view = inflater.inflate(R.layout.pop_share, null);
         final PopupWindow pop = new PopupWindow(view, ViewGroup.LayoutParams.WRAP_CONTENT,
                 ViewGroup.LayoutParams.WRAP_CONTENT, false);
         // 需要设置一下此参数，点击外边可消失

@@ -1,0 +1,177 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <!--游戏筛选,全部分类-->
+    <LinearLayout
+        android:id="@+id/ll_game_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <!--网络-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="网络"
+                android:textColor="#0ad9b2"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/net_game_single"
+                style="@style/TextView_game_all_type"
+                android:layout_width="45dp"
+                android:layout_marginLeft="14dp"
+                android:text="单机" />
+
+            <TextView
+                android:id="@+id/net_game_net"
+                style="@style/TextView_game_all_type"
+                android:layout_width="45dp"
+                android:layout_marginLeft="7dp"
+                android:text="网游" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dedede" />
+
+        <!--类型-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="类型"
+                android:textColor="#0ad9b2"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/game_type_1"
+                        style="@style/TextView_game_all_type"
+                        android:layout_marginLeft="14dp"
+                        android:text="角色扮演" />
+
+                    <TextView
+                        android:id="@+id/game_type_2"
+                        style="@style/TextView_game_all_type"
+                        android:text="飞行射击" />
+
+                    <TextView
+                        android:id="@+id/game_type_3"
+                        style="@style/TextView_game_all_type"
+                        android:text="战旗卡牌" />
+
+                    <TextView
+                        android:id="@+id/game_type_4"
+                        style="@style/TextView_game_all_type"
+                        android:text="经营策略" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/game_type_5"
+                        style="@style/TextView_game_all_type"
+                        android:layout_marginLeft="14dp"
+                        android:text="休闲益智" />
+
+                    <TextView
+                        android:id="@+id/game_type_6"
+                        style="@style/TextView_game_all_type"
+                        android:text="体育竞速" />
+
+                    <TextView
+                        android:id="@+id/game_type_7"
+                        style="@style/TextView_game_all_type"
+                        android:text="音乐舞蹈" />
+
+                    <TextView
+                        android:id="@+id/game_type_8"
+                        style="@style/TextView_game_all_type"
+                        android:text="棋牌游戏" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/game_type_9"
+                        style="@style/TextView_game_all_type"
+                        android:layout_marginLeft="15dp"
+                        android:text="儿童游戏" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dedede" />
+
+        <!--热门游戏-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="热门游戏"
+                android:textColor="#0ad9b2"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/hot_game_single"
+                style="@style/TextView_game_all_type"
+                android:layout_width="45dp"
+                android:layout_marginLeft="15dp"
+                android:text="单机" />
+
+            <TextView
+                android:id="@+id/hot_game_net"
+                style="@style/TextView_game_all_type"
+                android:layout_width="45dp"
+                android:text="网游" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

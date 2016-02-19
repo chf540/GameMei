@@ -27,14 +27,30 @@
             android:layout_marginTop="5dp"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/tv_qa_user_name"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:drawableLeft="@mipmap/portrait"
-                android:text="会游泳的鱼"
-                android:textColor="#0ad9b2"
-                android:textSize="12sp" />
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_qa_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/portrait"
+                    android:text="会游泳的鱼"
+                    android:textColor="#0ad9b2"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/bg_textview_border_red"
+                    android:padding="2dp"
+                    android:text="联系TA"
+                    android:textColor="@color/red"
+                    android:textSize="10sp" />
+            </LinearLayout>
 
             <ImageView
                 android:layout_width="wrap_content"
