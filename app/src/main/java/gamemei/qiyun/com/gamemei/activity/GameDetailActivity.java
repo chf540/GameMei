@@ -1,10 +1,12 @@
 package gamemei.qiyun.com.gamemei.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -26,7 +28,7 @@ import github.chenupt.multiplemodel.viewpager.PagerModelManager;
 /**
  * Created by hfcui on 2016/2/18
  */
-public class GameDetailActivity extends BaseActivity {
+public class GameDetailActivity extends BaseActivity implements View.OnClickListener {
 
     private ArrayList<Fragment> fragments = new ArrayList<Fragment>();
 
@@ -44,6 +46,10 @@ public class GameDetailActivity extends BaseActivity {
      * 顶部切换选择器
      */
     private PagerSlidingTabStrip game_viewpager_indicator;
+    /**
+     * 返回按钮
+     */
+    private LinearLayout ll_title_bar_back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,6 +63,9 @@ public class GameDetailActivity extends BaseActivity {
         game_viewpager_indicator = (PagerSlidingTabStrip) findViewById(R.id.game_viewpager_indicator);
         game_viewpager_indicator.setTabPaddingLeftRight(30);
         game_viewpager_indicator.setTabPaddingLeftRight(30);
+
+        ll_title_bar_back = (LinearLayout) findViewById(R.id.ll_game_title_bar_back);
+        ll_title_bar_back.setOnClickListener(this);
 
         gameViewPager = (ViewPager) findViewById(R.id.gameViewPager);
     }
@@ -129,5 +138,16 @@ public class GameDetailActivity extends BaseActivity {
             //selectTab(position);
         }
     };
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.ll_game_title_bar_back:
+                finish();
+                break;
+            default:
+                break;
+        }
+    }
 }
 

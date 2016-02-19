@@ -3,7 +3,7 @@
     style="@style/title_bar_style">
 
     <LinearLayout
-        android:id="@+id/ll_title_bar_back"
+        android:id="@+id/ll_game_title_bar_back"
         android:layout_width="60dp"
         android:layout_height="46dp"
         android:layout_centerVertical="true">

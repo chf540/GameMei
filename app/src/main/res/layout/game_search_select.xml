@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="42dp"
+    android:layout_height="wrap_content"
     android:orientation="vertical">
 
     <LinearLayout
@@ -14,7 +14,7 @@
         <RelativeLayout
             android:id="@+id/rl_game_all_classify"
             android:layout_width="0dp"
-            android:layout_height="28dp"
+            android:layout_height="30dp"
             android:layout_gravity="center"
             android:layout_weight="1">
 
@@ -41,7 +41,7 @@
         <RelativeLayout
             android:id="@+id/rl_game_top"
             android:layout_width="0dp"
-            android:layout_height="28dp"
+            android:layout_height="30dp"
             android:layout_gravity="center"
             android:layout_weight="1">
 
@@ -60,6 +60,7 @@
     </LinearLayout>
 
     <View
+        android:id="@+id/view_game_search"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="#bfbfbf" />

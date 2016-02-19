@@ -94,12 +94,15 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
      */
     private LinearLayout ll_game_type;
     /**
-     * 游戏类型搜索
+     * 全部类型popwindow
      */
-    TextView type_search;
+    private PopupWindow typeWindow;
+    /**
+     * 排行榜popwindow
+     */
+    private PopupWindow rankingsWindow;
 
-    private PopupWindow popupwindow;
-
+    private View view_game_search;//用于popwindow展示位置的view
     private HttpHandler handler;
     private Handler mHandler;
     private GameListViewAdapter gameListViewAdapter;
@@ -123,28 +126,13 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
     }
 
     @Override
-    public void onResume() {
-        initData();// 获取数据
-        super.onResume();
-    }
-
-    @Override
     public View initView() {
         mHandler = new Handler();
         bitmapUtils = new BitmapUtils(getActivity());
-
-//        final int[] gameTypeId = new int[]{R.id.net_game_single, R.id.net_game_net, R.id.hot_game_single,
-//                R.id.hot_game_net, R.id.game_type_1, R.id.game_type_2, R.id.game_type_3, R.id.game_type_4,
-//                R.id.game_type_5, R.id.game_type_6, R.id.game_type_7, R.id.game_type_8, R.id.game_type_9,};
-//        for (int i = 0; i < gameTypeId.length; i++) {
-//            type_search = (TextView) view.findViewById(gameTypeId[i]);
-//         //   setGameSearch();
-//        }
-
         ll_new_game = (LinearLayout) view.findViewById(R.id.ll_new_game);
         ll_good_game = (LinearLayout) view.findViewById(R.id.ll_good_game);
         ll_game_popular = (LinearLayout) view.findViewById(R.id.ll_game_popular);
-
+        view_game_search = view.findViewById(R.id.view_game_search);
         tv_game_all_classify = (TextView) view.findViewById(R.id.tv_game_all_classify);
         tv_game_rankings = (TextView) view.findViewById(R.id.tv_game_rankings);
         game_on_line = (TextView) view.findViewById(R.id.game_on_line);
@@ -340,65 +328,15 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
                 xListView.setSelection(1);
                 break;
             case R.id.tv_game_all_classify:
-                if (popupwindow != null && popupwindow.isShowing()) {
-                    popupwindow.dismiss();
-                    //设置文字颜色
-                    tv_game_all_classify.setTextColor(Color.rgb(36, 41, 51));
-                    //设置箭头
-                    Drawable drawable = getResources().getDrawable(R.mipmap.screen);
-                    drawable.setBounds(0, 0, drawable.getMinimumWidth(), drawable.getMinimumHeight());
-                    tv_game_all_classify.setCompoundDrawables(null, null, drawable, null);
-                } else {
-                    initAllGameTypePop();
-                    popupwindow.showAsDropDown(view, 0, 12);
-                    //设置文字颜色
-                    tv_game_all_classify.setTextColor(Color.rgb(10, 217, 178));
-                    //设置箭头
-                    Drawable drawable = getResources().getDrawable(R.mipmap.screen_pre);
-                    drawable.setBounds(0, 0, drawable.getMinimumWidth(), drawable.getMinimumHeight());
-                    tv_game_all_classify.setCompoundDrawables(null, null, drawable, null);
-                }
+                initAllGameTypePop();
+                typeWindow.showAsDropDown(view_game_search, 0, 0);
+                popOpen(tv_game_all_classify);
                 break;
             case R.id.tv_game_rankings:
-                if (popupwindow != null && popupwindow.isShowing()) {
-                    popupwindow.dismiss();
-                    //设置文字颜色
-                    tv_game_rankings.setTextColor(Color.rgb(36, 41, 51));
-                    //设置箭头
-                    Drawable drawable = getResources().getDrawable(R.mipmap.screen);
-                    drawable.setBounds(0, 0, drawable.getMinimumWidth(), drawable.getMinimumHeight());
-                    tv_game_rankings.setCompoundDrawables(null, null, drawable, null);
-                } else {
-                    initGameRankingPop();
-                    popupwindow.showAsDropDown(view, 0, 12);
-                    //设置文字颜色
-                    tv_game_rankings.setTextColor(Color.rgb(10, 217, 178));
-                    //设置箭头
-                    Drawable drawable = getResources().getDrawable(R.mipmap.screen_pre);
-                    drawable.setBounds(0, 0, drawable.getMinimumWidth(), drawable.getMinimumHeight());
-                    tv_game_rankings.setCompoundDrawables(null, null, drawable, null);
-                }
+                initGameRankingPop();
+                rankingsWindow.showAsDropDown(view_game_search, 0, 0);
+                popOpen(tv_game_rankings);
                 break;
-
-//              判断控件是否已展示
-//                int isVisibel1 = ll_game_Ranking.getVisibility();
-//                if (isVisibel1 == 0) {
-//                    ll_game_Ranking.setVisibility(View.GONE);
-//                    //设置文字颜色
-//                    tv_game_rankings.setTextColor(Color.rgb(36, 41, 51));
-//                    //设置箭头
-//                    Drawable drawable = getResources().getDrawable(R.mipmap.screen);
-//                    drawable.setBounds(0, 0, drawable.getMinimumWidth(), drawable.getMinimumHeight());
-//                    tv_game_rankings.setCompoundDrawables(null, null, drawable, null);
-//                } else {
-//                    ll_game_Ranking.setVisibility(View.VISIBLE);
-//                    //设置文字颜色
-//                    tv_game_rankings.setTextColor(Color.rgb(10, 217, 178));
-//                    //设置箭头
-//                    Drawable drawable = getResources().getDrawable(R.mipmap.screen_pre);
-//                    drawable.setBounds(0, 0, drawable.getMinimumWidth(), drawable.getMinimumHeight());
-//                    tv_game_rankings.setCompoundDrawables(null, null, drawable, null);
-//                }
             case R.id.rl_game_download:
                 startActivity(new Intent(getActivity(), GameDownLoadActivity.class));
                 break;
@@ -412,19 +350,26 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
         LayoutInflater inflater = LayoutInflater.from(getActivity());
         View view = inflater.inflate(R.layout.pop_game_ranking, null);
         // 创建PopupWindow实例
-        popupwindow = new PopupWindow(view, ViewGroup.LayoutParams.MATCH_PARENT,
+        rankingsWindow = new PopupWindow(view, ViewGroup.LayoutParams.MATCH_PARENT,
                 ViewGroup.LayoutParams.WRAP_CONTENT, false);
-        popupwindow.setBackgroundDrawable(new BitmapDrawable());
+        rankingsWindow.setBackgroundDrawable(new BitmapDrawable());
         //设置点击窗口外边窗口消失
-        popupwindow.setOutsideTouchable(true);
-        // 设置此参数获得焦点，否则无法点击
-        popupwindow.setFocusable(true);
-        /** 在这里可以实现自定义视图的功能 */
+        rankingsWindow.setOutsideTouchable(true);
+        //设置此参数获得焦点，否则无法点击
+        rankingsWindow.setFocusable(true);
+        //pop消失时的监听
+        rankingsWindow.setOnDismissListener(new PopupWindow.OnDismissListener() {
+            @Override
+            public void onDismiss() {
+                popClose(tv_game_rankings);
+            }
+        });
         //新游榜
         ll_new_game = (LinearLayout) view.findViewById(R.id.ll_new_game);
         ll_new_game.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
+                rankingsWindow.dismiss();
                 Toast.makeText(context, "查询新游榜", Toast.LENGTH_SHORT).show();
             }
         });
@@ -433,6 +378,7 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
         ll_good_game.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
+                rankingsWindow.dismiss();
                 Toast.makeText(context, "查询好评榜", Toast.LENGTH_SHORT).show();
             }
         });
@@ -441,6 +387,7 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
         ll_game_popular.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
+                rankingsWindow.dismiss();
                 Toast.makeText(context, "查询人气榜", Toast.LENGTH_SHORT).show();
             }
         });
@@ -451,14 +398,51 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
         LayoutInflater inflater = LayoutInflater.from(getActivity());
         View view = inflater.inflate(R.layout.pop_game_all_type, null);
         // 创建PopupWindow实例
-        popupwindow = new PopupWindow(view, ViewGroup.LayoutParams.MATCH_PARENT,
+        typeWindow = new PopupWindow(view, ViewGroup.LayoutParams.MATCH_PARENT,
                 ViewGroup.LayoutParams.WRAP_CONTENT, false);
-        popupwindow.setBackgroundDrawable(new BitmapDrawable());
+        typeWindow.setBackgroundDrawable(new BitmapDrawable());
         //设置点击窗口外边窗口消失
-        popupwindow.setOutsideTouchable(true);
+        typeWindow.setOutsideTouchable(true);
         // 设置此参数获得焦点，否则无法点击
-        popupwindow.setFocusable(true);
+        typeWindow.setFocusable(true);
+        //pop消失时的监听
+        typeWindow.setOnDismissListener(new PopupWindow.OnDismissListener() {
+            @Override
+            public void onDismiss() {
+                popClose(tv_game_all_classify);
+            }
+        });
         /** 在这里可以实现自定义视图的功能 */
 
+    }
+
+    /**
+     * pop弹出的时候文字变化
+     */
+    public void popOpen(TextView textView) {
+        //设置文字颜色
+        textView.setTextColor(Color.rgb(10, 217, 178));
+        //设置箭头
+        Drawable drawable = getResources().getDrawable(R.mipmap.screen_pre);
+        drawable.setBounds(0, 0, drawable.getMinimumWidth(), drawable.getMinimumHeight());
+        textView.setCompoundDrawables(null, null, drawable, null);
+    }
+
+    /**
+     * pop收起的时侯文字变化
+     */
+    public void popClose(TextView textView) {
+        //设置文字颜色
+        textView.setTextColor(Color.rgb(36, 41, 51));
+        //设置箭头
+        Drawable drawable = getResources().getDrawable(R.mipmap.screen);
+        drawable.setBounds(0, 0, drawable.getMinimumWidth(), drawable.getMinimumHeight());
+        textView.setCompoundDrawables(null, null, drawable, null);
+    }
+    
+    @Override
+    public void onResume() {
+        initData();// 获取数据
+        super.onResume();
     }
 }
