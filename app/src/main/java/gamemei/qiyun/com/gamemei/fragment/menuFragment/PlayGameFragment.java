@@ -1,7 +1,10 @@
 package gamemei.qiyun.com.gamemei.fragment.menuFragment;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.zip.Inflater;
 
 import android.content.Intent;
 import android.graphics.Color;
@@ -16,19 +19,23 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
+import android.widget.GridView;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
+import android.widget.SimpleAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.gson.Gson;
 import com.lidroid.xutils.BitmapUtils;
+import com.lidroid.xutils.ViewUtils;
 import com.lidroid.xutils.exception.HttpException;
 import com.lidroid.xutils.http.HttpHandler;
 import com.lidroid.xutils.http.ResponseInfo;
 import com.lidroid.xutils.http.callback.RequestCallBack;
 import com.lidroid.xutils.http.client.HttpRequest.HttpMethod;
+import com.lidroid.xutils.view.annotation.ViewInject;
 import com.qiyun.sdk.GMSdk;
 
 import gamemei.qiyun.com.gamemei.R;
@@ -107,6 +114,13 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
     private Handler mHandler;
     private GameListViewAdapter gameListViewAdapter;
 
+    private GridView gv_all_game;
+
+    int[] imageIds = new int[]{R.mipmap.time, R.mipmap.time, R.mipmap.time, R.mipmap.time
+            , R.mipmap.time, R.mipmap.time, R.mipmap.time, R.mipmap.time
+            , R.mipmap.time, R.mipmap.time, R.mipmap.time};
+
+
     /**
      * 好评榜
      */
@@ -122,7 +136,26 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
         initData();// 获取数据
         SetXListView();// 设置XListView
         showLoading();
+        setGridView();
         return view;
+    }
+
+    private void setGridView() {
+        LayoutInflater inflater = LayoutInflater.from(getActivity());
+        View view1 = inflater.inflate(R.layout.pop_game_all_type2, null);
+        gv_all_game = (GridView) view1.findViewById(R.id.gv_all_game);
+        //定义一个list来存放多个item元素
+        ArrayList<Map<String, Object>> listItems = new ArrayList<Map<String, Object>>();
+        for (int i = 0; i < imageIds.length; i++) {
+            Map<String, Object> item = new HashMap<>();
+            item.put("image", imageIds[i]);
+            listItems.add(item);
+        }
+        //创建simpleAdapter来设置元素。1.context对象 2.list对象（数据源）
+        // 3.item的布局文件 4.元素中的键名 5.该键名对应的组件的id
+        SimpleAdapter adapter = new SimpleAdapter(getActivity(), listItems, R.layout.item,
+                new String[]{"image"}, new int[]{R.id.item_imageView_id});
+        gv_all_game.setAdapter(adapter);
     }
 
     @Override
@@ -149,7 +182,6 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
         initFilter();
         return null;
     }
-
 
     /**
      * 初始化导航过滤器
@@ -345,6 +377,9 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
         }
     }
 
+    /**
+     * 游戏排行榜搜索
+     */
     public void initGameRankingPop() {
         // 引入窗口配置文件
         LayoutInflater inflater = LayoutInflater.from(getActivity());
@@ -393,10 +428,13 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
         });
     }
 
+    /**
+     * 游戏类型搜索
+     */
     public void initAllGameTypePop() {
         // 引入窗口配置文件
         LayoutInflater inflater = LayoutInflater.from(getActivity());
-        View view = inflater.inflate(R.layout.pop_game_all_type, null);
+        View view = inflater.inflate(R.layout.pop_game_all_type2, null);
         // 创建PopupWindow实例
         typeWindow = new PopupWindow(view, ViewGroup.LayoutParams.MATCH_PARENT,
                 ViewGroup.LayoutParams.WRAP_CONTENT, false);
@@ -439,7 +477,7 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
         drawable.setBounds(0, 0, drawable.getMinimumWidth(), drawable.getMinimumHeight());
         textView.setCompoundDrawables(null, null, drawable, null);
     }
-    
+
     @Override
     public void onResume() {
         initData();// 获取数据

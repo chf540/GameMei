@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <!--游戏筛选,全部分类-->
+    <LinearLayout
+        android:id="@+id/ll_game_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <!--网络-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="网络"
+                android:textColor="#0ad9b2"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/net_game_single"
+                style="@style/TextView_game_all_type"
+                android:layout_width="45dp"
+                android:layout_marginLeft="14dp"
+                android:text="单机" />
+
+            <TextView
+                android:id="@+id/net_game_net"
+                style="@style/TextView_game_all_type"
+                android:layout_width="45dp"
+                android:layout_marginLeft="7dp"
+                android:text="网游" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dedede" />
+
+        <!--类型-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="类型"
+                android:textColor="#0ad9b2"
+                android:textSize="14sp" />
+
+
+            <GridView
+                android:id="@+id/gv_all_game"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnWidth="90dp"
+                android:gravity="center"
+                android:horizontalSpacing="10dp"
+                android:numColumns="4"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="10dp" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#dedede" />
+
+        <!--热门游戏-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="热门游戏"
+                android:textColor="#0ad9b2"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/hot_game_single"
+                style="@style/TextView_game_all_type"
+                android:layout_width="45dp"
+                android:layout_marginLeft="15dp"
+                android:text="单机" />
+
+            <TextView
+                android:id="@+id/hot_game_net"
+                style="@style/TextView_game_all_type"
+                android:layout_width="45dp"
+                android:text="网游" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
