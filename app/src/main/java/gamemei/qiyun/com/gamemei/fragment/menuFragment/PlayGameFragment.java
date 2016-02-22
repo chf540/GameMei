@@ -21,6 +21,7 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.GridView;
 import android.widget.LinearLayout;
+import android.widget.ListAdapter;
 import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
 import android.widget.SimpleAdapter;
@@ -108,6 +109,10 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
      * 排行榜popwindow
      */
     private PopupWindow rankingsWindow;
+    /**
+     * 好评榜
+     */
+    private LinearLayout ll_new_game, ll_good_game, ll_game_popular;
 
     private View view_game_search;//用于popwindow展示位置的view
     private HttpHandler handler;
@@ -116,15 +121,16 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
 
     private GridView gv_all_game;
 
-    int[] imageIds = new int[]{R.mipmap.time, R.mipmap.time, R.mipmap.time, R.mipmap.time
-            , R.mipmap.time, R.mipmap.time, R.mipmap.time, R.mipmap.time
-            , R.mipmap.time, R.mipmap.time, R.mipmap.time};
-
-
     /**
-     * 好评榜
+     * 菜单弹出来时候的菜单项图案
      */
-    private LinearLayout ll_new_game, ll_good_game, ll_game_popular;
+    private int[] images = {R.mipmap.time, R.mipmap.time, R.mipmap.time, R.mipmap.time
+            , R.mipmap.time, R.mipmap.time, R.mipmap.time, R.mipmap.time};
+    /**
+     * 菜单弹出来时候的菜单项文字
+     */
+    private String[] names = {"搜索", "文件管理", "下载管理", "全屏", "网址", "书签", "加入书签",
+            "分享页面"};
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -141,22 +147,29 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
     }
 
     private void setGridView() {
-        LayoutInflater inflater = LayoutInflater.from(getActivity());
-        View view1 = inflater.inflate(R.layout.pop_game_all_type2, null);
-        gv_all_game = (GridView) view1.findViewById(R.id.gv_all_game);
-        //定义一个list来存放多个item元素
-        ArrayList<Map<String, Object>> listItems = new ArrayList<Map<String, Object>>();
-        for (int i = 0; i < imageIds.length; i++) {
-            Map<String, Object> item = new HashMap<>();
-            item.put("image", imageIds[i]);
-            listItems.add(item);
-        }
-        //创建simpleAdapter来设置元素。1.context对象 2.list对象（数据源）
-        // 3.item的布局文件 4.元素中的键名 5.该键名对应的组件的id
-        SimpleAdapter adapter = new SimpleAdapter(getActivity(), listItems, R.layout.item,
-                new String[]{"image"}, new int[]{R.id.item_imageView_id});
-        gv_all_game.setAdapter(adapter);
+        View contentView = getActivity().getLayoutInflater().
+                inflate(R.layout.pop_game_all_type2, null);
+        gv_all_game = (GridView) contentView.findViewById(R.id.gv_all_game);
+        gv_all_game.setAdapter(getAdapter());
     }
+
+    /**
+     * 返回网格布局的适配器
+     */
+    private ListAdapter getAdapter() {
+        List<HashMap<String, Object>> data = new ArrayList<HashMap<String, Object>>();
+        for (int i = 0; i < images.length; i++) {
+            HashMap<String, Object> item = new HashMap<String, Object>();
+            item.put("image", images[i]);
+            item.put("name", names[i]);
+            data.add(item);
+        }
+        SimpleAdapter simpleAdapter = new SimpleAdapter(getActivity(), data,
+                R.layout.item_game_all_type, new String[]{"image", "name"},
+                new int[]{R.id.imageView, R.id.textView});
+        return simpleAdapter;
+    }
+
 
     @Override
     public View initView() {

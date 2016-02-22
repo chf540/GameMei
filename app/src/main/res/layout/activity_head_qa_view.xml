@@ -46,7 +46,10 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:background="@drawable/bg_textview_border_red"
-                    android:padding="2dp"
+                    android:paddingBottom="1dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="1dp"
                     android:text="联系TA"
                     android:textColor="@color/red"
                     android:textSize="10sp" />

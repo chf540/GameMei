@@ -1,8 +1,8 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:background="@color/white">
 
     <include
         android:id="@+id/head_filter"
@@ -10,10 +10,18 @@
         android:layout_width="match_parent"
         android:layout_height="46dp" />
 
+    <include
+        android:id="@+id/game_info"
+        layout="@layout/item_game_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/head_filter" />
+
     <gamemei.qiyun.com.gamemei.widget.slidingtab.PagerSlidingTabStrip
         android:id="@+id/game_viewpager_indicator"
         android:layout_width="match_parent"
         android:layout_height="45dp"
+        android:layout_below="@id/game_info"
         android:fillViewport="false"
         android:textColor="#666666"
         app:pstsDividerColor="#dfdfdf"
@@ -25,6 +33,27 @@
     <android.support.v4.view.ViewPager
         android:id="@+id/gameViewPager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:layout_below="@id/game_viewpager_indicator"
+        android:layout_marginBottom="45dp" />
 
-</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp">
+
+        <Button
+            android:id="@+id/trial_game"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/button_shape_blue"
+            android:text="试 玩"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+</RelativeLayout>

@@ -61,7 +61,6 @@
                 android:textColor="#0ad9b2"
                 android:textSize="14sp" />
 
-
             <GridView
                 android:id="@+id/gv_all_game"
                 android:layout_width="wrap_content"
