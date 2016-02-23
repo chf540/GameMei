@@ -79,6 +79,7 @@ public class HotFragment extends BaseFragment implements XListView.IXListViewLis
      * 游戏列表
      */
     private List<Top_HotTopicBean> hotList = new ArrayList<Top_HotTopicBean>();
+
     private View view;
     private Handler mHandler;
 

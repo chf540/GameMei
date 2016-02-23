@@ -37,7 +37,7 @@
                 android:layout_marginTop="10dp"
                 android:text="游戏介绍"
                 android:textColor="#333333"
-                android:textSize="14sp" />
+                android:textSize="16sp" />
 
             <View
                 android:layout_width="58dp"
@@ -92,7 +92,7 @@
                 android:layout_marginTop="10dp"
                 android:text="基本信息"
                 android:textColor="#333333"
-                android:textSize="14sp" />
+                android:textSize="16sp" />
 
             <View
                 android:layout_width="58dp"
@@ -116,24 +116,28 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="出品公司：网易移动游戏"
+                    android:textColor="#8f949b"
                     android:textSize="14sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="画面：2D        语言：中文"
+                    android:textColor="#8f949b"
                     android:textSize="14sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="标签：动作冒险   角色扮演"
+                    android:textColor="#8f949b"
                     android:textSize="14sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="更新时间：2016-02-22"
+                    android:textColor="#8f949b"
                     android:textSize="14sp" />
 
             </LinearLayout>
@@ -153,7 +157,7 @@
                 android:layout_marginTop="10dp"
                 android:text="相关推荐"
                 android:textColor="#333333"
-                android:textSize="14sp" />
+                android:textSize="16sp" />
 
             <View
                 android:layout_width="58dp"
@@ -166,11 +170,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="#bfbfbf" />
-            <!--游戏缩略图-->
+
             <HorizontalScrollView
                 android:id="@+id/relevant_game"
                 android:layout_width="match_parent"
-                android:layout_height="120dp"
+                android:layout_height="100dp"
                 android:background="@color/white"
                 android:scrollbars="none">
 
@@ -196,7 +200,7 @@
                 android:layout_marginTop="10dp"
                 android:text="玩过的玩家还玩"
                 android:textColor="#333333"
-                android:textSize="14sp" />
+                android:textSize="16sp" />
 
             <View
                 android:layout_width="100dp"
@@ -209,16 +213,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="#bfbfbf" />
-            <!--游戏缩略图-->
+
             <HorizontalScrollView
-                android:id="@+id/gameer_same"
+                android:id="@+id/gamers_same"
                 android:layout_width="match_parent"
-                android:layout_height="120dp"
+                android:layout_height="100dp"
                 android:background="@color/white"
                 android:scrollbars="none">
 
                 <LinearLayout
-                    android:id="@+id/ll_gameer_same"
+                    android:id="@+id/ll_gamers_same"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@color/white"

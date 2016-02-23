@@ -144,6 +144,10 @@
         <activity
             android:name=".activity.GameDetailActivity"
             android:screenOrientation="portrait" />
+        <!--游戏缩略图点击后全屏显示图片界面-->
+        <activity
+            android:name=".activity.ImageActivity"
+            android:screenOrientation="portrait" />
 
         <meta-data
             android:name="com.google.android.gms.version"
