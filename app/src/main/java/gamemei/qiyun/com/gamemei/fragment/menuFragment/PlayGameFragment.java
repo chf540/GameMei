@@ -145,11 +145,11 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
         setGridView();
         return view;
     }
-
+    View popContentView;
     private void setGridView() {
-        View contentView = getActivity().getLayoutInflater().
+        popContentView = getActivity().getLayoutInflater().
                 inflate(R.layout.pop_game_all_type2, null);
-        gv_all_game = (GridView) contentView.findViewById(R.id.gv_all_game);
+        gv_all_game = (GridView) popContentView.findViewById(R.id.gv_all_game);
         gv_all_game.setAdapter(getAdapter());
     }
 
@@ -446,10 +446,10 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
      */
     public void initAllGameTypePop() {
         // 引入窗口配置文件
-        LayoutInflater inflater = LayoutInflater.from(getActivity());
-        View view = inflater.inflate(R.layout.pop_game_all_type2, null);
+//        LayoutInflater inflater = LayoutInflater.from(getActivity());
+        // View view = inflater.inflate(R.layout.pop_game_all_type2, null);
         // 创建PopupWindow实例
-        typeWindow = new PopupWindow(view, ViewGroup.LayoutParams.MATCH_PARENT,
+        typeWindow = new PopupWindow(popContentView, ViewGroup.LayoutParams.MATCH_PARENT,
                 ViewGroup.LayoutParams.WRAP_CONTENT, false);
         typeWindow.setBackgroundDrawable(new BitmapDrawable());
         //设置点击窗口外边窗口消失
