@@ -17,6 +17,8 @@ import com.lidroid.xutils.exception.HttpException;
 import com.lidroid.xutils.http.HttpHandler;
 import com.lidroid.xutils.http.ResponseInfo;
 import com.lidroid.xutils.http.callback.RequestCallBack;
+import com.lidroid.xutils.util.LogUtils;
+import com.nostra13.universalimageloader.utils.L;
 import com.qiyun.sdk.GMSdk;
 
 import java.io.File;
@@ -120,6 +122,14 @@ public class GameListViewAdapter extends BaseAdapter {
                 }
             }
         });
+
+        LogUtils.e("info.getType()"+ info.getType());
+
+        if(info.getType()==0){
+            holder.iv_play_game.setBackgroundResource(R.mipmap.button_play);
+        }else{
+            holder.iv_play_game.setBackgroundResource(R.mipmap.button_download);
+        }
         return convertView;
     }
 
