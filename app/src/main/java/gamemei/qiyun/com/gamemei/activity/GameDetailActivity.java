@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -62,6 +63,10 @@ public class GameDetailActivity extends BaseActivity implements View.OnClickList
      * 返回按钮
      */
     private LinearLayout ll_title_bar_back;
+    /**
+     * 下载按钮
+     */
+    private LinearLayout ll_title_bar_download;
     /**
      * 试玩按钮
      */
@@ -173,27 +178,25 @@ public class GameDetailActivity extends BaseActivity implements View.OnClickList
         game_viewpager_indicator.setTabPaddingLeftRight(30);
         game_viewpager_indicator.setTabPaddingLeftRight(30);
 
-        item_game_detail = View.inflate(getApplicationContext(), R.layout.item_game_detail, null);
-        ViewUtils.inject(this, item_game_detail);
+        gameViewPager = (ViewPager) findViewById(R.id.gameViewPager);
 
-        trial_game = (Button) findViewById(R.id.trial_game);
         ll_title_bar_back = (LinearLayout) findViewById(R.id.ll_game_title_bar_back);
-        ll_share = (LinearLayout) item_game_detail.findViewById(R.id.ll_share);
-        ll_collect = (LinearLayout) item_game_detail.findViewById(R.id.ll_collect);
+        ll_share = (LinearLayout) findViewById(R.id.ll_share);
+        ll_collect = (LinearLayout) findViewById(R.id.ll_collect);
+        ll_title_bar_download = (LinearLayout) findViewById(R.id.ll_title_bar_download);
 
-        trial_game.setOnClickListener(this);
-        ll_title_bar_back.setOnClickListener(this);
         ll_share.setOnClickListener(this);
         ll_collect.setOnClickListener(this);
 
-        gameViewPager = (ViewPager) findViewById(R.id.gameViewPager);
+        ll_title_bar_back.setOnClickListener(this);
+        ll_title_bar_download.setOnClickListener(this);
     }
 
     @Override
     protected void initData() {
         typeList = new ArrayList<>();
         typeList.add("详情");
-        typeList.add("评论");
+        typeList.add("评论（1314）");
     }
 
     @Override
@@ -264,14 +267,14 @@ public class GameDetailActivity extends BaseActivity implements View.OnClickList
             case R.id.ll_game_title_bar_back:
                 finish();
                 break;
-            case R.id.trial_game:
-                Toast.makeText(this, "试玩游戏", Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.ll_share:
-                mController.openShare(this, false);
-                break;
-            case R.id.ll_collect:
-                Toast.makeText(this, "已收藏", Toast.LENGTH_SHORT).show();
+//            case R.id.ll_share:
+//                mController.openShare(GameDetailActivity.this, false);
+//                break;
+//            case R.id.ll_collect:
+//                Toast.makeText(this, "已收藏", Toast.LENGTH_SHORT).show();
+//                break;
+            case R.id.ll_title_bar_download:
+                startActivity(new Intent(this, GameDownLoadActivity.class));
                 break;
             default:
                 break;

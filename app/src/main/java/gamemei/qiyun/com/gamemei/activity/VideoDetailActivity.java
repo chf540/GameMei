@@ -246,7 +246,7 @@ public class VideoDetailActivity extends BaseActivity implements View.OnClickLis
     @Override
     protected void initView() {
         madapter = new MyAdapter();
-        activity_head_video_view = View.inflate(getApplicationContext(), R.layout.activity_head_video_view, null);
+        activity_head_video_view = View.inflate(getApplicationContext(), R.layout.head_video_view, null);
         ViewUtils.inject(this, activity_head_video_view);
         video_picture = (ImageView) activity_head_video_view.findViewById(R.id.video_picture);
         iv_play = (ImageView) activity_head_video_view.findViewById(R.id.iv_play);

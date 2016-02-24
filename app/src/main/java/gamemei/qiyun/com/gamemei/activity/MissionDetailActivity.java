@@ -245,7 +245,7 @@ public class MissionDetailActivity extends BaseActivity implements View.OnClickL
     @Override
     protected void initView() {
         madapter = new MyAdapter();
-        activity_head_mission_view = View.inflate(getApplicationContext(), R.layout.activity_head_mission_view, null);
+        activity_head_mission_view = View.inflate(getApplicationContext(), R.layout.head_mission_view, null);
         ViewUtils.inject(this, activity_head_mission_view);
         ll_title_bar_back = (LinearLayout) findViewById(R.id.ll_title_bar_back);
         ll_title_bar_more = (LinearLayout) findViewById(R.id.ll_title_bar_more);
@@ -348,7 +348,6 @@ public class MissionDetailActivity extends BaseActivity implements View.OnClickL
         });
         builder.create().show();
     }
-
 
     /**
      * ListView 适配器

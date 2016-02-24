@@ -8,7 +8,9 @@ import android.text.TextPaint;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -18,6 +20,7 @@ import com.ms.square.android.expandabletextview.ExpandableTextView;
 
 import gamemei.qiyun.com.gamemei.R;
 import gamemei.qiyun.com.gamemei.activity.GameDetailActivity;
+import gamemei.qiyun.com.gamemei.activity.GameDownLoadActivity;
 import gamemei.qiyun.com.gamemei.activity.ImageActivity;
 import gamemei.qiyun.com.gamemei.fragment.common.BaseFragment;
 
@@ -25,7 +28,7 @@ import gamemei.qiyun.com.gamemei.fragment.common.BaseFragment;
  * 游戏详情-详情界面
  * Created by hfcui on 2016/2/18
  */
-public class GameDetailFragment extends BaseFragment {
+public class GameDetailFragment extends BaseFragment implements OnClickListener {
 
     View view;
     /**
@@ -48,6 +51,10 @@ public class GameDetailFragment extends BaseFragment {
      * 玩过的玩家还玩
      */
     private LinearLayout ll_gamers_same;
+    /**
+     * 试玩按钮
+     */
+    private Button btn_trial_game;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -70,6 +77,7 @@ public class GameDetailFragment extends BaseFragment {
     public View initView() {
         ll_relevant_game = (LinearLayout) view.findViewById(R.id.ll_relevant_game);
         ll_gamers_same = (LinearLayout) view.findViewById(R.id.ll_gamers_same);
+        btn_trial_game = (Button) view.findViewById(R.id.btn_trial_game);
 
         ll_game_Thumbnail = (LinearLayout) view.findViewById(R.id.ll_game_Thumbnail);
         expandableTextView = (ExpandableTextView) view.findViewById(R.id.expand_text_view);
@@ -79,6 +87,8 @@ public class GameDetailFragment extends BaseFragment {
                 "这次要面对人造人强力的重型武器装备," +
                 "和外星人,我们的流浪汉能否继续逃亡呢?");
         setGameThumbnail();
+
+        btn_trial_game.setOnClickListener(this);
         return null;
     }
 
@@ -92,7 +102,7 @@ public class GameDetailFragment extends BaseFragment {
             ImageView icon = (ImageView) gameThumbnail
                     .findViewById(R.id.id_index_gallery_item_image);// 拿个这行的icon 就可以设置图片
             icon.setImageResource(R.mipmap.game_01);
-            gameThumbnail.setOnClickListener(new View.OnClickListener() {// 每个item的点击事件加在这里
+            gameThumbnail.setOnClickListener(new OnClickListener() {// 每个item的点击事件加在这里
                 @Override
                 public void onClick(View v) {
                     startActivity(new Intent(getActivity(), ImageActivity.class));
@@ -119,7 +129,7 @@ public class GameDetailFragment extends BaseFragment {
                     .findViewById(R.id.iv_hot_game_icon);
             icon.setImageResource(R.mipmap.play);
             // 每个item的点击事件
-            relevantGame.setOnClickListener(new View.OnClickListener() {
+            relevantGame.setOnClickListener(new OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     startActivity(new Intent(getActivity(), GameDetailActivity.class));
@@ -148,13 +158,27 @@ public class GameDetailFragment extends BaseFragment {
                     .findViewById(R.id.iv_hot_game_icon);
             icon.setImageResource(R.mipmap.play);
             // 每个item的点击事件
-            gamersSame.setOnClickListener(new View.OnClickListener() {
+            gamersSame.setOnClickListener(new OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     startActivity(new Intent(getActivity(), GameDetailActivity.class));
                 }
             });
             ll_gamers_same.addView(gamersSame);
+        }
+    }
+
+    /**
+     * 处理点击事件
+     */
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.btn_trial_game:
+                Toast.makeText(getActivity(), "试玩游戏", Toast.LENGTH_SHORT).show();
+                break;
+            default:
+                break;
         }
     }
 }

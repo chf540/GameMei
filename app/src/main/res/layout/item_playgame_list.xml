@@ -71,7 +71,7 @@
                     android:id="@+id/tv_game_grade"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="100分"
+                    android:text="4.8分"
                     android:textSize="14sp" />
 
                 <!--人数-->
@@ -79,7 +79,7 @@
                     android:id="@+id/tv_game_population"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginLeft="8dp"
                     android:text="180万人试玩"
                     android:textSize="14sp" />
 
@@ -88,8 +88,8 @@
                     android:id="@+id/tv_game_size"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:text="200MB"
+                    android:layout_marginLeft="8dp"
+                    android:text="120MB"
                     android:textSize="14sp" />
             </LinearLayout>
 
@@ -108,14 +108,13 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_weight="1">
+            android:layout_weight="1.2">
 
             <ImageView
                 android:id="@+id/iv_play_game"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                 />
+                android:layout_marginLeft="10dp" />
         </LinearLayout>
     </LinearLayout>
 

@@ -184,7 +184,7 @@
         <item name="android:windowIsFloating">true</item>
     </style>
 
-    <!--游戏-全部分类-->
+    <!--游戏-全部分类TextView-->
     <style name="TextView_game_all_type">
         <item name="android:layout_height">26dp</item>
         <item name="android:layout_width">70dp</item>

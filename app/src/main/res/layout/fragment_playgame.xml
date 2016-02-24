@@ -18,7 +18,7 @@
 
     <!--游戏列表-->
     <gamemei.qiyun.com.gamemei.widget.xlistview.XListView
-        android:id="@+id/game_listview"
+        android:id="@+id/game_listView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:divider="@null"

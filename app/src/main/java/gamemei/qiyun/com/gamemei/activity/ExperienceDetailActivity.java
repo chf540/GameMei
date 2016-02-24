@@ -243,7 +243,7 @@ public class ExperienceDetailActivity extends BaseActivity implements View.OnCli
     @Override
     protected void initView() {
         madapter = new MyAdapter();
-        activity_head_experience_view = View.inflate(getApplicationContext(), R.layout.activity_head_experience_view, null);
+        activity_head_experience_view = View.inflate(getApplicationContext(), R.layout.head_experience_view, null);
         ViewUtils.inject(this, activity_head_experience_view);
         iv_experience_picture = (ImageView) activity_head_experience_view.findViewById(R.id.iv_experience_picture);
         ll_title_bar_back = (LinearLayout) findViewById(R.id.ll_title_bar_back);

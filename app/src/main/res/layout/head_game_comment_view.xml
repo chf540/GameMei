@@ -1,0 +1,231 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+        android:background="#eeeeee" />
+
+    <!--综合得分-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="综合得分"
+                android:textColor="#333333" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/score" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="5"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="1314人评分" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#66666666" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RatingBar
+                    style="@style/RatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:rating="5" />
+
+                <ProgressBar
+                    android:id="@+id/progress_1"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="200dip"
+                    android:layout_height="8dp"
+                    android:layout_marginLeft="5dp"
+                    android:max="100"
+                    android:progress="100"
+                    android:progressDrawable="@drawable/progressbar" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp">
+
+                <RatingBar
+                    style="@style/RatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:rating="4" />
+
+                <ProgressBar
+                    android:id="@+id/progress_2"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="200dip"
+                    android:layout_height="8dp"
+                    android:layout_marginLeft="5dp"
+                    android:max="100"
+                    android:progress="10"
+                    android:progressDrawable="@drawable/progressbar" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp">
+
+                <RatingBar
+                    style="@style/RatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:rating="3" />
+
+                <ProgressBar
+                    android:id="@+id/progress_3"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="200dip"
+                    android:layout_height="8dp"
+                    android:layout_marginLeft="5dp"
+                    android:max="100"
+                    android:progress="60"
+                    android:progressDrawable="@drawable/progressbar" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp">
+
+                <RatingBar
+                    style="@style/RatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:rating="2" />
+
+                <ProgressBar
+                    android:id="@+id/progress_4"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="200dip"
+                    android:layout_height="8dp"
+                    android:layout_marginLeft="5dp"
+                    android:max="100"
+                    android:progress="70"
+                    android:progressDrawable="@drawable/progressbar" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp">
+
+                <RatingBar
+                    style="@style/RatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:rating="1" />
+
+                <ProgressBar
+                    android:id="@+id/progress_5"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="200dip"
+                    android:layout_height="8dp"
+                    android:layout_marginLeft="5dp"
+                    android:max="100"
+                    android:progress="30"
+                    android:progressDrawable="@drawable/progressbar" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+        android:background="#eeeeee" />
+
+    <!--评论头部-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="评论"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="32dp"
+            android:layout_height="2dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="#0ad9b2" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#bfbfbf" />
+    </LinearLayout>
+
+
+</LinearLayout>

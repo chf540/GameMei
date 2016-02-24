@@ -146,7 +146,9 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
         setGridView();
         return view;
     }
+
     View popContentView;
+
     private void setGridView() {
         popContentView = getActivity().getLayoutInflater().
                 inflate(R.layout.pop_game_all_type2, null);
@@ -237,7 +239,7 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
      * 设置XListView
      */
     public void SetXListView() {
-        xListView = (XListView) view.findViewById(R.id.game_listview);
+        xListView = (XListView) view.findViewById(R.id.game_listView);
         xListView.setAdapter(gameListViewAdapter = new GameListViewAdapter(this.getActivity(), gameList));
         xListView.setPullRefreshEnable(true); // 设置可以下拉刷新和上拉加载
         //如果数据太少则关闭上拉加载
@@ -266,16 +268,16 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
         String result = SharedPreferencesUitl.getStringData(context,
                 MyHttpUtils.ALL_GAME_TYPE, "");
         if (!TextUtils.isEmpty(result)) {
-            processData(result, true,0);// 解析数据
+            processData(result, true, 0);// 解析数据
         } else {
             // 如何本地没有缓存的数据则从网络获取数据
-            getDate(MyHttpUtils.ALL_GAME_TYPE,0);
+            getDate(MyHttpUtils.ALL_GAME_TYPE, 0);
         }
     }
 
     /**
      * xUtil获取网络数据
-     *
+     * <p/>
      * type: 类型
      */
     public void getDate(String url, final int type) {
@@ -296,7 +298,7 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
                         SharedPreferencesUitl.saveStringData(getActivity(),
                                 MyHttpUtils.BASE_URL, result);
                         // 解析数据
-                        processData(result, true,type);
+                        processData(result, true, type);
                     }
                 });
     }
@@ -304,17 +306,14 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
     /**
      * 解析数据 ----GSON
      */
-    private void processData(String result, boolean a,int type) {
+    private void processData(String result, boolean a, int type) {
         // 对照bean解析json
         Gson gson = new Gson();
         PlayGameInfoBean infoBean = gson.fromJson(result,
                 PlayGameInfoBean.class);
         gameList.clear();
         for (int i = 0; i < infoBean.games.size(); i++) {
-
-            LogUtils.e("请求数据Type是:   "+ type);
-
-
+            LogUtils.e("请求数据Type是:   " + type);
             infoBean.setType(type);
             gameList.add(i, infoBean);
         }
@@ -370,13 +369,13 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
         switch (view.getId()) {
             case R.id.game_on_line:
                 handlerFilter(0);
-                getDate(MyHttpUtils.ALL_GAME_TYPE,0);
+                getDate(MyHttpUtils.ALL_GAME_TYPE, 0);
                 gameListViewAdapter.notifyDataSetChanged();
                 xListView.setSelection(1);
                 break;
             case R.id.game_choiceness:
                 handlerFilter(1);
-                getDate(MyHttpUtils.GAME_Top,1);
+                getDate(MyHttpUtils.GAME_Top, 1);
                 gameListViewAdapter.notifyDataSetChanged();
                 xListView.setSelection(1);
                 break;

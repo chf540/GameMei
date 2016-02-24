@@ -87,7 +87,6 @@ public class GameListViewAdapter extends BaseAdapter {
         if (info != null) {
             info.games.get(position);
             holder.game_name.setText(info.games.get(position).game_name);
-            //TODO 描述乱码待服务器修改数据
             holder.tv_game_desc.setText(info.games.get(position).game_name);
             bitmapUtils.display(holder.game_image, MyHttpUtils.PHOTOS_URL
                     + info.games.get(position).getGame_image_url());
@@ -122,12 +121,10 @@ public class GameListViewAdapter extends BaseAdapter {
                 }
             }
         });
-
-        LogUtils.e("info.getType()"+ info.getType());
-
-        if(info.getType()==0){
+        LogUtils.e("info.getType()" + info.getType());
+        if (info.getType() == 0) {
             holder.iv_play_game.setBackgroundResource(R.mipmap.button_play);
-        }else{
+        } else {
             holder.iv_play_game.setBackgroundResource(R.mipmap.button_download);
         }
         return convertView;

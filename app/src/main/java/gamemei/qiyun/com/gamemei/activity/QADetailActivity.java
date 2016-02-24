@@ -239,7 +239,7 @@ public class QADetailActivity extends BaseActivity implements View.OnClickListen
     @Override
     protected void initView() {
         madapter = new MyAdapter();
-        activity_head_qa_view = View.inflate(getApplicationContext(), R.layout.activity_head_qa_view, null);
+        activity_head_qa_view = View.inflate(getApplicationContext(), R.layout.head_qa_view, null);
         ViewUtils.inject(this, activity_head_qa_view);
         ll_title_bar_back = (LinearLayout) findViewById(R.id.ll_title_bar_back);
         ll_title_bar_more = (LinearLayout) findViewById(R.id.ll_title_bar_more);

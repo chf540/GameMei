@@ -13,7 +13,7 @@
         <LinearLayout
             android:id="@+id/ll_new_game"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:orientation="horizontal"
             android:padding="12dp">
 
@@ -42,7 +42,7 @@
         <LinearLayout
             android:id="@+id/ll_good_game"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:orientation="horizontal"
             android:padding="12dp">
 
@@ -71,7 +71,7 @@
         <LinearLayout
             android:id="@+id/ll_game_popular"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:orientation="horizontal"
             android:padding="12dp">
 
