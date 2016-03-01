@@ -62,7 +62,13 @@ public class ChannelManage {
 
     }
 
-    private ChannelManage(SQLHelper paramDBHelper) throws SQLException {
+    /**
+     * 异常处理
+     *
+     * @param paramDBHelper
+     * @throws SQLException
+     */
+    public ChannelManage(SQLHelper paramDBHelper) throws SQLException {
         if (channelDao == null)
             channelDao = new ChannelDao(paramDBHelper.getContext());
         return;
@@ -180,7 +186,7 @@ public class ChannelManage {
     /**
      * 初始化数据库内的频道数据
      */
-    private void initDefaultChannel() {
+    public void initDefaultChannel() {
         Log.d("deleteAll", "deleteAll");
         deleteAllChannel();
         saveUserChannel(defaultUserChannels);

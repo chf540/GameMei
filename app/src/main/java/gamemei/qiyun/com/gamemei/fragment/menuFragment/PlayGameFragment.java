@@ -3,8 +3,6 @@ package gamemei.qiyun.com.gamemei.fragment.menuFragment;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-import java.util.zip.Inflater;
 
 import android.content.Intent;
 import android.graphics.Color;
@@ -30,14 +28,12 @@ import android.widget.Toast;
 
 import com.google.gson.Gson;
 import com.lidroid.xutils.BitmapUtils;
-import com.lidroid.xutils.ViewUtils;
 import com.lidroid.xutils.exception.HttpException;
 import com.lidroid.xutils.http.HttpHandler;
 import com.lidroid.xutils.http.ResponseInfo;
 import com.lidroid.xutils.http.callback.RequestCallBack;
 import com.lidroid.xutils.http.client.HttpRequest.HttpMethod;
 import com.lidroid.xutils.util.LogUtils;
-import com.lidroid.xutils.view.annotation.ViewInject;
 import com.qiyun.sdk.GMSdk;
 
 import gamemei.qiyun.com.gamemei.R;
@@ -123,15 +119,14 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
     private GridView gv_all_game;
 
     /**
-     * 菜单弹出来时候的菜单项图案
-     */
-    private int[] images = {R.mipmap.time, R.mipmap.time, R.mipmap.time, R.mipmap.time
-            , R.mipmap.time, R.mipmap.time, R.mipmap.time, R.mipmap.time};
-    /**
      * 菜单弹出来时候的菜单项文字
      */
-    private String[] names = {"搜索", "文件管理", "下载管理", "全屏", "网址", "书签", "加入书签",
-            "分享页面"};
+    private String[] gameType = {
+            "角色扮演", "飞行射击",
+            "战棋卡牌", "经营策略",
+            "休闲益智", "体育竞速",
+            "动作冒险", "音乐舞蹈",
+            "棋牌游戏", "儿童游戏"};
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -151,25 +146,24 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
 
     private void setGridView() {
         popContentView = getActivity().getLayoutInflater().
-                inflate(R.layout.pop_game_all_type2, null);
+                inflate(R.layout.pop_game_all_type1, null);
         gv_all_game = (GridView) popContentView.findViewById(R.id.gv_all_game);
         gv_all_game.setAdapter(getAdapter());
     }
 
     /**
-     * 返回网格布局的适配器
+     * 返回类型布局的适配器
      */
     private ListAdapter getAdapter() {
         List<HashMap<String, Object>> data = new ArrayList<HashMap<String, Object>>();
-        for (int i = 0; i < images.length; i++) {
+        for (int i = 0; i < gameType.length; i++) {
             HashMap<String, Object> item = new HashMap<String, Object>();
-            item.put("image", images[i]);
-            item.put("name", names[i]);
+            item.put("name", gameType[i]);
             data.add(item);
         }
         SimpleAdapter simpleAdapter = new SimpleAdapter(getActivity(), data,
-                R.layout.item_game_all_type, new String[]{"image", "name"},
-                new int[]{R.id.imageView, R.id.textView});
+                R.layout.item_game_all_type, new String[]{"name"},
+                new int[]{R.id.textView});
         return simpleAdapter;
     }
 
@@ -452,10 +446,6 @@ public class PlayGameFragment extends BaseFragment implements XListView.IXListVi
      * 游戏类型搜索
      */
     public void initAllGameTypePop() {
-        // 引入窗口配置文件
-//        LayoutInflater inflater = LayoutInflater.from(getActivity());
-        // View view = inflater.inflate(R.layout.pop_game_all_type2, null);
-        // 创建PopupWindow实例
         typeWindow = new PopupWindow(popContentView, ViewGroup.LayoutParams.MATCH_PARENT,
                 ViewGroup.LayoutParams.WRAP_CONTENT, false);
         typeWindow.setBackgroundDrawable(new BitmapDrawable());
