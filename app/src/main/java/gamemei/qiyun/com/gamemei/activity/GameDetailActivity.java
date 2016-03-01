@@ -267,12 +267,12 @@ public class GameDetailActivity extends BaseActivity implements View.OnClickList
             case R.id.ll_game_title_bar_back:
                 finish();
                 break;
-//            case R.id.ll_share:
-//                mController.openShare(GameDetailActivity.this, false);
-//                break;
-//            case R.id.ll_collect:
-//                Toast.makeText(this, "已收藏", Toast.LENGTH_SHORT).show();
-//                break;
+            case R.id.ll_share:
+                mController.openShare(GameDetailActivity.this, false);
+                break;
+            case R.id.ll_collect:
+                Toast.makeText(this, "已收藏", Toast.LENGTH_SHORT).show();
+                break;
             case R.id.ll_title_bar_download:
                 startActivity(new Intent(this, GameDownLoadActivity.class));
                 break;
