@@ -29,6 +29,7 @@ import gamemei.qiyun.com.gamemei.widget.rollviewpager.BinnerPlugin;
 import gamemei.qiyun.com.gamemei.widget.xlistview.XListView;
 
 /**
+ * 热门界面
  * Created by hfcui on 2016/1/8
  */
 public class HotFragment extends BaseFragment implements XListView.IXListViewListener {

@@ -19,6 +19,7 @@ import gamemei.qiyun.com.gamemei.activity.common.BaseActivity;
 import gamemei.qiyun.com.gamemei.utils.SharedPreferencesUitl;
 
 /**
+ * 手机号注册界面
  * Created by hfcui on 2016/1/5
  */
 public class TelRegisterActivity extends BaseActivity {

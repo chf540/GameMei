@@ -15,7 +15,7 @@ import com.umeng.message.UmengRegistrar;
 import gamemei.qiyun.com.gamemei.R;
 
 /**
- * 首页面
+ * 启动页面
  *
  * @author hfcui
  */

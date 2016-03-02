@@ -7,6 +7,9 @@ import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.View;
 
+/**
+ * ViewPager共有Adapter
+ */
 public class ViewPagerAdapter extends PagerAdapter {
 
 	// 界面列表

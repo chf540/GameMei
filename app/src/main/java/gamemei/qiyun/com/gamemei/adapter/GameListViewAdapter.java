@@ -29,6 +29,9 @@ import gamemei.qiyun.com.gamemei.bean.PlayGameInfoBean;
 import gamemei.qiyun.com.gamemei.utils.AppUtils;
 import gamemei.qiyun.com.gamemei.utils.MyHttpUtils;
 
+/**
+ * 游戏列表填充Adapter
+ */
 public class GameListViewAdapter extends BaseAdapter {
     private LayoutInflater mInflater;
     private Context mContext;

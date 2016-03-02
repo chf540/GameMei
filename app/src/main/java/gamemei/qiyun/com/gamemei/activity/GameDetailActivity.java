@@ -261,6 +261,11 @@ public class GameDetailActivity extends BaseActivity implements View.OnClickList
         }
     };
 
+    /**
+     * 处理点击事件
+     *
+     * @param view
+     */
     @Override
     public void onClick(View view) {
         switch (view.getId()) {

@@ -14,6 +14,9 @@ import android.widget.TextView;
 import gamemei.qiyun.com.gamemei.R;
 import gamemei.qiyun.com.gamemei.bean.ChannelItem;
 
+/**
+ * 用户订阅栏目
+ */
 public class ChannelDragAdapter extends BaseAdapter {
     private Context context;
     /**

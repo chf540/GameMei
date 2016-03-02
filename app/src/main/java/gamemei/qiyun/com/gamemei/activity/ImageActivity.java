@@ -20,6 +20,8 @@ import gamemei.qiyun.com.gamemei.activity.SplashViewPagerActivity;
 import gamemei.qiyun.com.gamemei.activity.common.BaseActivity;
 
 /**
+ * 游戏缩略图展示界面
+ *
  * @author hfcui
  */
 public class ImageActivity extends BaseActivity {

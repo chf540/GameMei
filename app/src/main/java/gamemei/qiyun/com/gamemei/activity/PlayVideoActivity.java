@@ -10,6 +10,7 @@ import gamemei.qiyun.com.gamemei.R;
 import gamemei.qiyun.com.gamemei.activity.common.BaseActivity;
 
 /**
+ * 视频播放界面
  * Created by hfcui on 2016/1/25.
  */
 public class PlayVideoActivity extends BaseActivity {

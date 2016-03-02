@@ -21,6 +21,7 @@ import gamemei.qiyun.com.gamemei.utils.AppUtils;
 import gamemei.qiyun.com.gamemei.utils.SharedPreferencesUitl;
 
 /**
+ * 注册界面
  * Created by hfcui on 2015/1/26
  */
 public class RegisterActivity extends BaseActivity implements View.OnClickListener {

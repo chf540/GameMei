@@ -14,6 +14,9 @@ import android.widget.TextView;
 import gamemei.qiyun.com.gamemei.R;
 import gamemei.qiyun.com.gamemei.bean.ChannelItem;
 
+/**
+ * 推荐订阅栏目
+ */
 public class ChannelOtherAdapter extends BaseAdapter {
     private Context context;
     public List<ChannelItem> channelList;

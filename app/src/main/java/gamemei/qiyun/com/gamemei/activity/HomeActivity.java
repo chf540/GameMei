@@ -28,8 +28,10 @@ import gamemei.qiyun.com.gamemei.widget.dialog.QuitDialog;
 import io.rong.imkit.RongIM;
 import io.rong.imlib.RongIMClient;
 
+/**
+ * 主界面
+ */
 public class HomeActivity extends BaseActivity {
-
     /**
      * 日志标记
      */
